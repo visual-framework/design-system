@@ -44,6 +44,7 @@
     "terser": "3.14.*"
   },
   "dependencies": {
-    "@11ty/eleventy-plugin-rss": "^1.0.6"
+    "@11ty/eleventy-plugin-rss": "^1.0.6",
+    "@visual-framework/vf-masthead": "^0.0.30"
   }
 }

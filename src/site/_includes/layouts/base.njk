@@ -8,10 +8,29 @@
     <title>{{ title or (renderData and renderData.title) or siteConfig.siteInformation.title}}</title>
   </head>
   <body class="{{ bodyClass }}" >
+
     {% render '@vf-global-header' %}
+
     <div class="vf-body">
+
       <div class="vf-grid">
         <div>
+          <nav class="vf-navigation vf-navigation--main">
+            <ul class="vf-navigation__list | vf-list--inline">
+              <li class="vf-navigation__item">
+                <a href="/" class="vf-navigation__link">Home</a>
+              </li>
+              <li class="vf-navigation__item">
+                <a href="/getting-started/" class="vf-navigation__link">Getting Started</a>
+              </li>
+              <li class="vf-navigation__item">
+                <a href="/brand-guidelines/" class="vf-navigation__link">Brand Guidelines</a>
+              </li>
+              <li class="vf-navigation__item">
+                <a href="/styles/" class="vf-navigation__link">Styles</a>
+              </li>
+            </ul>
+          </nav>
           {{ content | safe }}
         </div>
       </div>

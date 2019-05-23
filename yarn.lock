@@ -875,6 +875,14 @@
     "@visual-framework/vf-sass-config" "^0.0.25"
     node-normalize-scss "^8.0.0"
 
+"@visual-framework/vf-grid@^0.0.29":
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-grid/-/vf-grid-0.0.30.tgz#196c277907bcd1455c5dac7d9d8ecc15f7720f7a"
+  integrity sha512-kpu6yAo3RYN9Hv6EeC5KF5uHw1tUD7UzjgAjJaWCxZYw7cWVTprM+7eB15FxCtZbkva+K1RE96E+z/EftPb2Gg==
+  dependencies:
+    "@visual-framework/vf-sass-config" "^0.0.26"
+    node-normalize-scss "^8.0.0"
+
 "@visual-framework/vf-heading@0.0.28":
   version "0.0.28"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-heading/-/vf-heading-0.0.28.tgz#3d825386b638bf5100d6cebc3be0c3ca2a13d64c"
@@ -904,6 +912,15 @@
     "@visual-framework/vf-sass-config" "^0.0.25"
     node-normalize-scss "^8.0.0"
 
+"@visual-framework/vf-masthead@^0.0.30":
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-masthead/-/vf-masthead-0.0.30.tgz#dfb7a5c501b3eec1daaff2ba8212a66c7a425c05"
+  integrity sha512-I3OLnrKTspIoH85XxJyYlU2+vkaWDsqu79LEpPT25vBxsTWSUfNybewqOEEbTQTxVqRQyN47d+hCTzgaK9dhdg==
+  dependencies:
+    "@visual-framework/vf-grid" "^0.0.29"
+    "@visual-framework/vf-sass-config" "^0.0.26"
+    node-normalize-scss "^8.0.0"
+
 "@visual-framework/vf-navigation@^0.0.29":
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-navigation/-/vf-navigation-0.0.29.tgz#3e68913f205d745c57977f09d51d9efad62c01e0"
@@ -919,6 +936,13 @@
 "@visual-framework/vf-sass-config@^0.0.25":
   version "0.0.25"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-sass-config/-/vf-sass-config-0.0.25.tgz#f54c59a82883827674d9618cefb273b6e44f6733"
+  dependencies:
+    node-normalize-scss "^8.0.0"
+
+"@visual-framework/vf-sass-config@^0.0.26":
+  version "0.0.26"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-sass-config/-/vf-sass-config-0.0.26.tgz#bb008ad51486621609ecc99ccdcd72ea174e6f2d"
+  integrity sha512-4ddEDlaCBITpN5iOYQBRhYWIR1Hd5uG6v2qiy0nx0lkrrP55tA5PgWKgradVMMEptznDLz/45gawLsVR0BX7MA==
   dependencies:
     node-normalize-scss "^8.0.0"
 
