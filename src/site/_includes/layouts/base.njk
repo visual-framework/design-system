@@ -10,31 +10,24 @@
   <body class="{{ bodyClass }}" >
 
     {% render '@vf-global-header' %}
+    <div class="vf-masthead" style="background-color: var(--vf-masthead__color--background, var(--vf-masthead__color--background-default)); color: var(--vf-masthead__color--foreground, var(--vf-masthead__color--foreround-default) );">
+      <div class="vf-masthead__inner">
+        <div class="vf-masthead__title">
+          <h1 class="vf-masthead__heading">
+            <a href="#" class="vf-masthead__heading__link">{{title}}</a>
+            <span class="vf-masthead__heading--additional">{{subtitle}}</span>
+          </h1>
+        </div>
+      </div>
+    </div>
 
     <div class="vf-body">
 
       <div class="vf-grid">
         <div>
-          <nav class="vf-navigation vf-navigation--main">
-            <ul class="vf-navigation__list | vf-list--inline">
-              <li class="vf-navigation__item">
-                <a href="/" class="vf-navigation__link">Home</a>
-              </li>
-              <li class="vf-navigation__item">
-                <a href="/getting-started/" class="vf-navigation__link">Getting Started</a>
-              </li>
-              <li class="vf-navigation__item">
-                <a href="/brand-guidelines/" class="vf-navigation__link">Brand Guidelines</a>
-              </li>
-              <li class="vf-navigation__item">
-                <a href="/styles/" class="vf-navigation__link">Styles</a>
-              </li>
-            </ul>
-          </nav>
           {{ content | safe }}
         </div>
       </div>
     </div>
-    {% include "footer.njk" %}
   </body>
 </html>
