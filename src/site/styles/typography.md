@@ -37,10 +37,20 @@ EMBL uses two typefaces from the IBM Plex family; Sans and Mono. *Sans* is to be
 When using IBM Plex for digital products, you can use Google Fonts to serve the fonts directly. The font stacks are as follows:
 
 <h5 class="vf-text vf-text--heading-r">Sans Serif font stack</h5>
+<div class="vf-box">
 font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+</div>
+
+<code class="vf-code-example">
+  <pre class="vf-code-example__pre">
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  </pre>
+</code>
 
 <h5 class="vf-text vf-text--heading-r">Mono font stack</h5>
+<div class="vf-box">
 font-family: 'IBM Plex Mono', 'Menlo', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', Courier, monospace;
+</div>
 
 <h4 class="vf-text vf-text--heading-r">Microsoft Office</h4>
 We cannot embed IBM Plex into our distributable Microsoft Office templates such as Powerpoint and Word. For this case, we will use a typeface that looks close to IBM Plex but is distributed as part of the Microsoft Office installation. This typeface is *Franklin Gothic*.
