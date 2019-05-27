@@ -2,6 +2,7 @@
 The second core element of the EMBL Brand is the typeface IBM Plex. Use it where possible. Two variations should be used:
 
 IBM Plex Sans
+
 IBM Plex Mono
 
 For Microsoft Office, use Franklin Gothic (medium for Headlines, book for bodytext) or IBM Plex Sans
