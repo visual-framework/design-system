@@ -1,3 +1,9 @@
+---
+title: Colours
+order: 100
+isIndex: true
+---
+
 The colour set: Overview
 Besides logo, typeface and graphical elements, colours are one the most important parts of a corporate design. 
 
