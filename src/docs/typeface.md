@@ -1,3 +1,9 @@
+---
+title: Typeface
+order: 100
+isIndex: true
+---
+
 # The typeface: Overview
 A core element of the EMBL Brand is the typeface IBM Plex. Use it where possible. Two variations should be used:
 
