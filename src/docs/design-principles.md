@@ -1,6 +1,6 @@
 # EMBL Design Principles
 
-Developed in 2019 with close input from EMBL senior scientists 
+Developed in 2019 with close input from EMBL senior scientists
 
 EMBL needs a strong, overarching brand: EMBL first. If necessary, sub entities such as sites or projects should be expressed after the parent brand  .
 
@@ -47,3 +47,5 @@ We will make the design language accessible where people are already working.
 Forging a new path is hard. And sometimes a waste of energy. By understanding how the brand is expressed currently, we develop new ways to provide the ingredients of the brand to the people already doing the work, in the place they are doing it. We will invent new ways with which to distribute the brand across a constantly moving, evolving system. We shouldn’t press pause.
 
 7. White space is important
+
+All our designs will incorporate a degree of white space to increase legibility and to allow the designs to breathe.
