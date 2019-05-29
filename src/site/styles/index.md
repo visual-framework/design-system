@@ -10,11 +10,11 @@ layout: layouts/base.njk
   <ul class="vf-navigation__list | vf-list--inline">
     <li class="vf-navigation__item"><a href="/styles/typography/" class="vf-navigation__link">Typography</a></li>
     <li class="vf-navigation__item"><a href="/styles/colour/" class="vf-navigation__link">Colour</a></li>
+    <li class="vf-navigation__item"><a href="/styles/spacing/" class="vf-navigation__link">Spacing</a></li>
     <li class="vf-navigation__item"><a href="/styles/images/" class="vf-navigation__link">Images</a></li>
     <li class="vf-navigation__item"><a href="/styles/illustration-and-infographics/" class="vf-navigation__link">Illustration and Infographics</a></li>
   </ul>
 </nav>
-
 <nav class="vf-breadcrumbs" aria-label="Breadcrumb">
   <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
     <li class="vf-breadcrumbs__item">
