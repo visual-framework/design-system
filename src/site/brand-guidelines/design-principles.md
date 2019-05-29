@@ -13,6 +13,21 @@ layout: layouts/base.njk
   </ul>
 </nav>
 
+
+<nav class="vf-breadcrumbs" aria-label="Breadcrumb">
+  <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
+    <li class="vf-breadcrumbs__item">
+      <a href="/" class="vf-breadcrumbs__link">Home</a>
+    </li>
+    <li class="vf-breadcrumbs__item">
+      <a href="/brand-guidelines/" class="vf-breadcrumbs__link">Brand Guidelines</a>
+    </li>
+    <li class="vf-breadcrumbs__item">
+      Design Principles
+    </li>
+  </ul>
+</nav>
+
 # EMBL Design Principles
 
 *Developed in 2019 with close input from EMBL senior scientists*

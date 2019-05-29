@@ -14,6 +14,20 @@ layout: layouts/base.njk
 </ul>
 </nav>
 
+<nav class="vf-breadcrumbs" aria-label="Breadcrumb">
+  <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
+    <li class="vf-breadcrumbs__item">
+      <a href="/" class="vf-breadcrumbs__link">Home</a>
+    </li>
+    <li class="vf-breadcrumbs__item">
+      <a href="/styles/" class="vf-breadcrumbs__link">Styles</a>
+    </li>
+    <li class="vf-breadcrumbs__item">
+      Typography
+    </li>
+  </ul>
+</nav>
+
 <section class="vf-intro | embl-grid embl-grid--has-centered-content">
 <div><!-- empty --></div>
 <div>
