@@ -27,8 +27,10 @@ layout: layouts/base.njk
 
 <div></div>
 <div class="vf-content">
-<h3>Typeface: IBM Plex</h3>
-<p>EMBL uses open-source typeface [IBM Plex](https://github.com/ibm/plex). IBM Plex is a super-family typeface designed to meet the needs of a modern brand typeface:</p>
+
+### Typeface: IBM Plex
+
+EMBL uses open-source typeface [IBM Plex](https://github.com/ibm/plex). IBM Plex is a super-family typeface designed to meet the needs of a modern brand typeface:
 
 <ul class="vf-list vf-list--unordered">
 <li class="vf-list__item">Adaptable: It is adaptable to many media types: projection, or print, to high and low resolution screens. </li>
