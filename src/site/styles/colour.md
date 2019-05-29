@@ -4,16 +4,6 @@ order: 100
 isIndex: true
 layout: layouts/base.njk
 ---
-<script>
-function hexToRGB(hex) {
-    var r = parseInt(hex.slice(1, 3), 16),
-        g = parseInt(hex.slice(3, 5), 16),
-        b = parseInt(hex.slice(5, 7), 16);
-    return "rgb(" + r + ", " + g + ", " + b + ")";
-
-    document.getElementById('text').innerHTML = rgb;
-}
-</script>
 
 <nav class="vf-navigation vf-navigation--main">
   <ul class="vf-navigation__list | vf-list--inline">
@@ -88,7 +78,6 @@ The set below shows all the colours for the EMBL brand. Other colours are not al
   margin: 0 0 12px 0;
 }
 
-
 .swatch__colour-hex,
 .swatch__sass-variable,
 .swatch__css-property {
@@ -119,14 +108,11 @@ The set below shows all the colours for the EMBL brand. Other colours are not al
 {% for item in styles.colour.properties %}
 
 <article class="swatch">
-  <script>
-    console.log (hexToRGB( "{{ item.value }}"));
-  </script>
   <div class="swatch__colour" style="background-color: {{ item.value}};"></div>
   <section class="swatch__details">
   <h3 class="swatch__colour-name">{{ item.meta.friendlyName }}</h3>
   <p class="swatch__colour-hex"><span class="swatch__meta">Hex: </span>{{ item.value }}</p>
-  <p class="swatch__colour-hex"><span class="swatch__meta">RGB: </span>{{ item.meta.rgb }}</p>
+  <p class="swatch__colour-hex"><span class="swatch__meta">RGB: </span> {{ item.value | hextorgb }}</p>
   {% if item.meta.sassVariable %}
   <p class="swatch__sass-variable"><span class="swatch__meta">Sass Variable: </span>{{ item.meta.sassVariable }}</p>
   {% endif %}

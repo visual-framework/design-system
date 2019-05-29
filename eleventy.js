@@ -24,6 +24,7 @@ module.exports = function(config) {
 
   // Add some utiliuty filters
   config.addFilter("squash", require("./src/filters/squash.js") );
+  config.addFilter("hextorgb", require("./src/filters/hextorgb.js") );
   config.addFilter("dateDisplay", (dateObj, format = "LLL d, y") => {
     return DateTime.fromJSDate(dateObj, {
       zone: "utc"

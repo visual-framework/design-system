@@ -46,6 +46,7 @@
   "dependencies": {
     "@11ty/eleventy-plugin-rss": "^1.0.6",
     "@visual-framework/vf-code-example": "^0.0.29",
+    "@visual-framework/vf-intro": "^0.0.30",
     "@visual-framework/vf-masthead": "^0.0.30"
   }
 }

@@ -998,6 +998,24 @@
     "@visual-framework/vf-sass-config" "^0.0.25"
     node-normalize-scss "^8.0.0"
 
+"@visual-framework/vf-heading@^0.0.29":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-heading/-/vf-heading-0.0.29.tgz#199610840c78bf671b683ae19395cfe569a7d3d4"
+  integrity sha512-wSGPIg0vIduPVL1QllEPsdNMtuG1XhjAsMEf/8MFp1cDqH5GWs/iQDADfqdEXtbYqySynNv2TvOjatKCK6o5fg==
+  dependencies:
+    "@visual-framework/vf-sass-config" "^0.0.26"
+    node-normalize-scss "^8.0.0"
+
+"@visual-framework/vf-intro@^0.0.30":
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-intro/-/vf-intro-0.0.30.tgz#6afcd1753afa30ad6a5cde8b8cfb571cb5dbf1ca"
+  integrity sha512-QVlloC0fM+7kXV1j1/2ZiseH3yMHFR5U2zuhGM/8VHYFHvd8zOkioCI+9yiL/y8xedSVtSu2j4+dOqvWNmtfYg==
+  dependencies:
+    "@visual-framework/vf-heading" "^0.0.29"
+    "@visual-framework/vf-sass-config" "^0.0.26"
+    "@visual-framework/vf-text" "^0.0.29"
+    node-normalize-scss "^8.0.0"
+
 "@visual-framework/vf-list@^0.0.28":
   version "0.0.28"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-list/-/vf-list-0.0.28.tgz#2b248ab3789b1deb8a75e4875c51cf556906f235"
@@ -1057,6 +1075,14 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-sass-config/-/vf-sass-config-0.0.26.tgz#bb008ad51486621609ecc99ccdcd72ea174e6f2d"
   integrity sha512-4ddEDlaCBITpN5iOYQBRhYWIR1Hd5uG6v2qiy0nx0lkrrP55tA5PgWKgradVMMEptznDLz/45gawLsVR0BX7MA==
   dependencies:
+    node-normalize-scss "^8.0.0"
+
+"@visual-framework/vf-text@^0.0.29":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-text/-/vf-text-0.0.29.tgz#76786376a1052da5038fb6059a33a853641a54f0"
+  integrity sha512-9umwOn2l+qvUw14bkzSgINBQWWYAQzkBdDaVcZmI28pkUzwXRbkLWmZnDkyLifUKL8npcUoF+SdLEeMB5tNEEw==
+  dependencies:
+    "@visual-framework/vf-sass-config" "^0.0.26"
     node-normalize-scss "^8.0.0"
 
 "@webassemblyjs/ast@1.8.5":
