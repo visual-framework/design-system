@@ -1,5 +1,5 @@
 ---
-title: Print
+title: Visual Framework
 date: 2018-08-22 12:24:50
 layout: layouts/base.njk
 ---
@@ -8,7 +8,7 @@ layout: layouts/base.njk
   <ul class="vf-navigation__list | vf-list--inline">
     <li class="vf-navigation__item"><a href="/getting-started/print/" class="vf-navigation__link">Print</a></li>
     <li class="vf-navigation__item"><a href="/getting-started/digital/" class="vf-navigation__link">Digital</a></li>
-    <li class="vf-navigation__item"><a href="/getting-started/visual-framework/" class="vf-navigation__link">Visual Framework</a></li>
+    <li class="vf-navigation__item"><a href="/getting-started/visual-framework/" class="vf-navigation__link">Visual Framework</a></li>    
   </ul>
 </nav>
 
@@ -21,11 +21,13 @@ layout: layouts/base.njk
       <a href="/getting-started" class="vf-breadcrumbs__link">Getting Started</a>
     </li>
     <li class="vf-breadcrumbs__item">
-      Print
+      Visual Framework
     </li>
   </ul>
 </nav>
 
-# EMBL Print Design System
+# The Visual Framework for EMBL.org
 
-Guidance on all printed assets, including Microsoft Word documents, Powerpoint presentations, posters and stationary. A Wordpress site hosts the guidelines. Printed templates including Photoshop, Powerpoint and ZIP files as well as colour palettes are hosted on Bynder.
+The Visual Framework (VF) is designed with the needs of life science websites and services. It goes beyond guidance for tables, graphs, data-heavy typography and focuses on sane defaults. It implements CSS in a way that does not interfere with existing components. The VF 2.0 enables consistency and portability, it is extensible, modular and overridable; here to help and not get in the way.
+
+*Eleventy* - a static site generator which transforms a directory of templates (of varying types) into HTML - makes use of the Visual Framework for styling.
