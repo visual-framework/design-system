@@ -13,6 +13,7 @@ layout: layouts/base.njk
   </ul>
 </nav>
 
+
 <nav class="vf-breadcrumbs" aria-label="Breadcrumb">
   <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
     <li class="vf-breadcrumbs__item">
@@ -26,6 +27,9 @@ layout: layouts/base.njk
     </li>
   </ul>
 </nav>
+
+# EMBL Design Principles
+
 *Developed in 2019 with close input from EMBL senior scientists*
 
 EMBL needs a strong, overarching brand: EMBL first. If necessary, sub entities such as sites or projects should be expressed after the parent brand  .
