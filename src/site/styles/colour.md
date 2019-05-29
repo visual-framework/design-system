@@ -53,6 +53,8 @@ The set below shows all the colours for the EMBL brand. Other colours are not al
 }
 .swatch {
   border: 2px solid #333;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .swatch__details {
@@ -63,8 +65,8 @@ The set below shows all the colours for the EMBL brand. Other colours are not al
   grid-column-start: 1;
 }
 .swatch__colour {
-  border-bottom: 2px solid #333;
-  height: 230px;
+  border-right: 2px solid #333;
+  height: 100%;
   width: 100%;
 }
 .swatch__colour-name {
@@ -81,12 +83,9 @@ The set below shows all the colours for the EMBL brand. Other colours are not al
 .swatch__colour-hex,
 .swatch__sass-variable,
 .swatch__css-property {
-  display: grid;
-  grid-template-columns: max-content 1fr;
-  grid-gap: 8px;
   font-family: monospace;
   font-size: 1em;
-  align-items: center;
+  align-items: start;
 }
 
 .swatch__colour-hex,
@@ -102,9 +101,16 @@ The set below shows all the colours for the EMBL brand. Other colours are not al
 .swatch__meta {
   font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
 }
+.swatch__meta {
+  display: block;
+  margin-bottom: 4px;
+}
+.swatch__css-property {
+  margin-bottom: 0;
+}
 </style>
 
-<main class="swatches | vf-grid vf-grid__col-3">
+<main class="swatches | vf-grid vf-grid__col-2">
 {% for item in styles.colour.properties %}
 
 <article class="swatch">
@@ -114,10 +120,11 @@ The set below shows all the colours for the EMBL brand. Other colours are not al
   <p class="swatch__colour-hex"><span class="swatch__meta">Hex: </span>{{ item.value }}</p>
   <p class="swatch__colour-hex"><span class="swatch__meta">RGB: </span> {{ item.value | hextorgb }}</p>
   {% if item.meta.sassVariable %}
-  <p class="swatch__sass-variable"><span class="swatch__meta">Sass Variable: </span>{{ item.meta.sassVariable }}</p>
+  <p class="swatch__sass-variable"><span class="swatch__meta">Sass Variable: </span>${{- item.meta.sassVariable }}</p>
+  <p class="swatch__sass-variable"><span class="swatch__meta">Sass Map: </span>map-get($vf-colors-map, {{ item.meta.sassVariable }})</p>
   {% endif %}
   {% if item.meta.CSSCustomProperty %}
-  <p class="swatch__css-property"><span class="swatch__meta">CSS: </span>{{ item.meta.CSSCustomProperty }}</p>
+  <p class="swatch__css-property"><span class="swatch__meta">CSS Custom Property: </span>{{ item.meta.CSSCustomProperty }}</p>
   {% endif %}
   {% if item.meta.comment %}
   <h4 class="swatch__notes">notes:</h4>
