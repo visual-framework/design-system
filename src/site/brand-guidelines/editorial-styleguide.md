@@ -1,6 +1,5 @@
 ---
-title: Brand Guidelines
-subtitle: Editorial Styleguide
+title: Editorial Styleguide
 date: 2018-08-22 12:24:50
 layout: layouts/base.njk
 ---

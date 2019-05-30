@@ -1,6 +1,5 @@
 ---
-title: Getting Started
-subtitle: Digital
+title: Digital
 date: 2018-08-22 12:24:50
 layout: layouts/base.njk
 ---
