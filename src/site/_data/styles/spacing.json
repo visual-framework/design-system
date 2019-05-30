@@ -1,0 +1,88 @@
+{
+  "properties": [
+    {
+      "type": "number",
+      "category": "spacing",
+      "name": "spacing0",
+      "value": 0,
+      "meta": {
+        "friendlyName": null,
+        "sassVariable": "$vf-spacing--0",
+        "CSSCustomProperty": "--vf-spacing--0",
+        "comment": null
+      }
+    },
+    {
+      "type": "number",
+      "category": "spacing",
+      "name": "spacingXs",
+      "value": "4px",
+      "meta": {
+        "friendlyName": null,
+        "sassVariable": "$vf-spacing--xs",
+        "CSSCustomProperty": "--vf-spacing--xs",
+        "comment": null
+      }
+    },
+    {
+      "type": "number",
+      "category": "spacing",
+      "name": "spacingS",
+      "value": "8px",
+      "meta": {
+        "friendlyName": null,
+        "sassVariable": "$vf-spacing--s",
+        "CSSCustomProperty": "--vf-spacing--s",
+        "comment": null
+      }
+    },
+    {
+      "type": "number",
+      "category": "spacing",
+      "name": "spacingR",
+      "value": "16px",
+      "meta": {
+        "friendlyName": null,
+        "sassVariable": "$vf-spacing--r",
+        "CSSCustomProperty": "--vf-spacing--r",
+        "comment": null
+      }
+    },
+    {
+      "type": "number",
+      "category": "spacing",
+      "name": "spacingL",
+      "value": "20px",
+      "meta": {
+        "friendlyName": null,
+        "sassVariable": "$vf-spacing--l",
+        "CSSCustomProperty": "--vf-spacing--l",
+        "comment": null
+      }
+    },
+    {
+      "type": "number",
+      "category": "spacing",
+      "name": "spacingXl",
+      "value": "24px",
+      "meta": {
+        "friendlyName": null,
+        "sassVariable": "$vf-spacing--xl",
+        "CSSCustomProperty": "--vf-spacing--xl",
+        "comment": null
+      }
+    },
+    {
+      "type": "number",
+      "category": "spacing",
+      "name": "spacingXxl",
+      "value": "32px",
+      "meta": {
+        "friendlyName": null,
+        "sassVariable": "$vf-spacing--xxl",
+        "CSSCustomProperty": "--vf-spacing--xxl",
+        "comment": null
+      }
+    }
+  ]
+}

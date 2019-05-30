@@ -1,6 +1,5 @@
 ---
-title: Brand Guidelines
-subtitle: Logo
+title: Logo
 date: 2018-08-22 12:24:50
 layout: layouts/base.njk
 ---
