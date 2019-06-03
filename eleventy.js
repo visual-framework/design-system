@@ -23,6 +23,7 @@ module.exports = function(config) {
   });
 
   // Add some utiliuty filters
+  config.addFilter("markdown", require("./src/filters/markdown.js") );
   config.addFilter("squash", require("./src/filters/squash.js") );
   config.addFilter("hextorgb", require("./src/filters/hextorgb.js") );
   config.addFilter("dateDisplay", (dateObj, format = "LLL d, y") => {
@@ -39,9 +40,9 @@ module.exports = function(config) {
   // {% sampleShortcode "firstName", "lastName" %}
   // handlebars
   // {{ sampleShortcode "firstName" "lastName" }}
-  config.addShortcode("sampleShortcode", function(firstName, lastName) {
-    return 'hi ' + firstName + lastName;
-  });
+  // config.addShortcode("sampleShortcode", function(firstName, lastName) {
+  //   return 'hi ' + firstName + lastName;
+  // });
 
   // minify the html output
   // config.addTransform("htmlmin", require("./src/utils/minify-html.js"));
