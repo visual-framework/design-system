@@ -912,6 +912,11 @@
     "@types/unist" "*"
     "@types/vfile-message" "*"
 
+"@visual-framework/embl-logo@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@visual-framework/embl-logo/-/embl-logo-0.0.11.tgz#bd9eb3f2f714dd89a3205683173d96fc0904fc89"
+  integrity sha512-piPQh4o8CdRNSlgi7oU6L4vzUGZ/zYqlCWWYOYbCh5MN3MA/wRyB401CwitAbSE6L0m4AAzfHiOpb7OgodxYLg==
+
 "@visual-framework/vf-badge@^0.0.29":
   version "0.0.29"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-badge/-/vf-badge-0.0.29.tgz#11d5b49bc77485aa0279980e565c10a04ff42687"
@@ -999,6 +1004,13 @@
     "@visual-framework/vf-text" "^0.0.29"
     node-normalize-scss "^8.0.0"
 
+"@visual-framework/vf-lede@^0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-lede/-/vf-lede-0.0.6.tgz#386fddd26ec1fd1089660f01198f2be8d1e4116e"
+  integrity sha512-2FEL9xh/pst4xY6hvZXs3YBjf/dlrc9M4V0fsWm1Kz0kBAG0EwU64Mf5iqLKJblk9Jv5vhep06aIT6S/iMwmkw==
+  dependencies:
+    "@visual-framework/vf-sass-config" "^0.0.12"
+
 "@visual-framework/vf-list@^0.0.30":
   version "0.0.30"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-list/-/vf-list-0.0.30.tgz#6bf96aaa52250fe8561aea4b2af38e4d12d4708e"
@@ -1035,6 +1047,13 @@
   version "0.0.17"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-no-js/-/vf-no-js-0.0.17.tgz#2d2df78c85a4222aa692a604792e6db3a0e0dd8f"
   integrity sha512-JaiDwJb7PCOsr5D28xRkl0/5BjvweD/tYD9tEdgSKBK/xtmBgt9+P/DC/BH3LAuqwoGmlOxhCAJiNavccoOadQ==
+
+"@visual-framework/vf-sass-config@^0.0.12":
+  version "0.0.12"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-sass-config/-/vf-sass-config-0.0.12.tgz#75a9a4819e7821bd54b5d0bdd16fa70d2b6eaf57"
+  integrity sha512-dwLo5H7gF4jTit03lV9yYzYUV6KlNtAHqoIWX10mUnZzpA2S9TxHg4NZLWhDZ+f/gWbUHNmlrzPS60OBrhtINQ==
+  dependencies:
+    node-normalize-scss "^8.0.0"
 
 "@visual-framework/vf-sass-config@^0.0.25":
   version "0.0.25"

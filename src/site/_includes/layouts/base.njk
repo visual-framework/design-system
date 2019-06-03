@@ -9,7 +9,15 @@
 </head>
 <style>.vf-intro {margin-top: 3rem;}</style>
 <body class="{{ bodyClass }}" >
-  {% render '@vf-global-header' %}
+
+  <header class="vf-global-header">
+    <div class="vf-global-header__inner">
+      {% render '@embl-logo--responsive' %}
+      <p class="vf-global-header__site-name">{{ text }}</p>
+      {# {% render '@vf-navigation--global' %} #}
+    </div>
+  </header>
+
   <header class="vf-header">
     <div class="vf-masthead" style="background-color: var(--vf-masthead__color--background, var(--vf-masthead__color--background-default)); color: var(--vf-masthead__color--foreground, var(--vf-masthead__color--foreround-default) );
     --vf-masthead__bg-image: url('/assets/background.jpg');
