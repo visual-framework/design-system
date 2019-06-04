@@ -1,25 +1,38 @@
 ---
 title: EMBL Design System
 date: 2018-08-22 12:24:50
+is_index: true
 layout: layouts/base.njk
 ---
 
-<nav class="vf-navigation vf-navigation--main">
-  <ul class="vf-navigation__list | vf-list--inline">
-    <li class="vf-navigation__item"><a href="/getting-started/" class="vf-navigation__link">Getting Started</a></li>
-    <li class="vf-navigation__item"><a href="/brand-guidelines/" class="vf-navigation__link">Brand Guidelines</a></li>
-    <li class="vf-navigation__item"><a href="/styles/" class="vf-navigation__link">Styles</a></li>
-  </ul>
-</nav>
 
+<div class="vf-grid vf-content">
 
-<div class="vf-content">
-# EMBL Design System
-
-
-The EMBL Design System (EDS) is the laboratory’s design system for communications in all media. The system contains basic information about EMBL branding including colours, typography, and guidelines for the use of the EMBL logo. You will find onboarding tools, design templates and practical resources on the EMBL Design System website.
-
-[Sitemap for upcominng site](https://docs.google.com/drawings/d/1YeOy417worJ1aNxtsbDLoch8X8OwDitZT2i-ZThwAlM/edit?ts=5ce66269)
+{% render '@vf-intro', {"vf_intro_phase": "alpha", "vf_intro_heading": title,
+  "vf_intro_lede": siteConfig.siteInformation.short_description+".",
+  "vf_intro_text": [
+    "The system contains basic information about EMBL branding including colours, typography, and guidelines for the use of the EMBL logo. You will find onboarding tools, design templates and practical resources on the EMBL Design System (EDS) website.",
+    "[Sitemap for upcoming site](https://docs.google.com/drawings/d/1YeOy417worJ1aNxtsbDLoch8X8OwDitZT2i-ZThwAlM/edit?ts=5ce66269)" | markdown
+  ]
+} %}
 
 </div>
 
+
+
+<section class="embl-grid embl-grid--has-centered-content">
+  <div></div>
+  <div class="vf-content">
+    {# show all pages classes as sections #}
+    {%- for section in collections.sections %}
+      {% if section.data.is_index ==  true %}
+        {% set absolutePostUrl %}{{ metadata.id }}{{ section.url }}{% endset %}
+
+## [{{ section.data.title }}]({{ absolutePostUrl }})
+
+{{ section.data.subtitle }}
+
+      {% endif %}
+    {%- endfor %}
+  </div>
+</section>

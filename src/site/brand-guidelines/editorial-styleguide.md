@@ -1,7 +1,10 @@
 ---
 title: Editorial Styleguide
+subtitle: subtitle here
+section: guidelines
 date: 2018-08-22 12:24:50
-layout: layouts/base.njk
+tags: posts
+layout: layouts/post.njk
 ---
 
 <nav class="vf-navigation vf-navigation--main">

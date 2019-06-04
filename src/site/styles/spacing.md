@@ -1,33 +1,10 @@
 ---
-title: Styles
-order: 100
-isIndex: true
-layout: layouts/base.njk
+title: Spacing
+section: styles
+tags: posts
+layout: layouts/post.njk
 ---
 
-<nav class="vf-navigation vf-navigation--main">
-  <ul class="vf-navigation__list | vf-list--inline">
-    <li class="vf-navigation__item"><a href="/styles/typography/" class="vf-navigation__link">Typography</a></li>
-    <li class="vf-navigation__item"><a href="/styles/colour/" class="vf-navigation__link">Colour</a></li>
-    <li class="vf-navigation__item"><a href="/styles/spacing/" class="vf-navigation__link">Spacing</a></li>
-    <li class="vf-navigation__item"><a href="/styles/images/" class="vf-navigation__link">Images</a></li>
-    <li class="vf-navigation__item"><a href="/styles/illustration-and-infographics/" class="vf-navigation__link">Illustration and Infographics</a></li>
-  </ul>
-</nav>
-
-<nav class="vf-breadcrumbs" aria-label="Breadcrumb">
-  <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
-    <li class="vf-breadcrumbs__item">
-      <a href="/" class="vf-breadcrumbs__link">Home</a>
-    </li>
-    <li class="vf-breadcrumbs__item">
-      <a href="/styles/" class="vf-breadcrumbs__link">Styles</a>
-    </li>
-    <li class="vf-breadcrumbs__item">
-      Spacing
-    </li>
-  </ul>
-</nav>
 <style>
 .swatches {
     grid-row-gap: 32px;

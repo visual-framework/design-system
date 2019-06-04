@@ -1,12 +1,30 @@
 <div class="vf-body">
 <div class="vf-grid">
   <div>
-    <a href="https://github.com/visual-framework/vf-eleventy" class="vf-link">View vf-eleventy on GitHub</a> |
+    {# <a href="https://github.com/visual-framework/vf-eleventy" class="vf-link">View vf-eleventy on GitHub</a> |
     <a href="https://github.com/visual-framework/vf-core" class="vf-link">VF-Core v2.0-alpha.4</a> |
-    <a href="https://embl-vf.slack.com/messages" class="vf-link">Get help on Slack</a>
+    <a href="https://embl-vf.slack.com/messages" class="vf-link">Get help on Slack</a> #}
   </div>
 </div>
 </div>
+
+{% render '@vf-footer' %}
+
+{% if serverInfo.environment == "development" %}
+<div class="vf-banner vf-banner--fixed vf-banner--bottom vf-banner--notice"
+data-vf-js-banner
+data-vf-js-banner-state="persistent"
+{# data-vf-js-banner-button-text="Gotcha" #}
+{# data-vf-js-banner-cookie-name="environment-{{serverInfo.environment}}" #}
+{# data-vf-js-banner-cookie-version="0.1" #}
+data-vf-js-banner-auto-accept="false">
+  <div class="vf-banner__content | vf-grid" data-vf-js-banner-text>
+    <p class="vf-text vf-text--body-l">
+      You're on your local {{serverInfo.environment}} environment.
+    </p>
+  </div>
+</div>
+{% endif %}
 
 <!-- This page was generated on {{ site.buildTime | dateDisplay('LLL d, yyyy - HH:mm') }} -->
 <script src="https://dev.assets.emblstatic.net/vf/develop/scripts/scripts.js"></script>

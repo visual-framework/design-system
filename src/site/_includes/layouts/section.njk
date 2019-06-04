@@ -1,0 +1,40 @@
+---
+layout: layouts/base.njk
+pageClass: posts
+templateEngineOverride: njk, md
+---
+
+{# Use this template for main sections of a site. #}
+
+<section class="vf-intro | embl-grid embl-grid--has-centered-content">
+  <div></div>
+  <div>
+    <h1 class="vf-intro__heading">{{title}}</h1>
+    <p class="vf-intro__text">{{subtitle}}</p>
+  </div>
+</section>
+
+
+
+<main class="embl-grid embl-grid--has-centered-content">
+  <div></div>
+  <div class="vf-content">
+{{ content | safe }}
+  </div>
+</main>
+
+<section class="embl-grid embl-grid--has-centered-content">
+  <div></div>
+  <div class="vf-content">
+    {%- for post in collections.posts %}
+      {% if section == post.data.section %}
+        {% set absolutePostUrl %}{{ metadata.id }}{{ post.url }}{% endset %}
+
+## [{{ post.data.title }}]({{ absolutePostUrl }})
+
+{{ post.data.subtitle }}
+
+      {% endif %}
+    {%- endfor %}
+  </div>
+</section>

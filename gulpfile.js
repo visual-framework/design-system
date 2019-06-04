@@ -34,6 +34,7 @@ gulp.task('elventy-set-to-serve', function(done) {
   // Since we're not using the 11ty command line directly, we need to set the
   // `--serve` param manually
   process.argv.push('--serve');
+  process.env.ELEVENTY_ENV = 'development';
   fractalBuildMode = 'server';
   done();
 });
@@ -42,6 +43,7 @@ gulp.task('elventy-set-to-build', function(done) {
   // Since we're not using the 11ty command line directly, we need to set the
   // `--serve` param manually
   process.argv.push('--quiet');
+  process.env.ELEVENTY_ENV = 'production';
   done();
 });
 
@@ -53,6 +55,7 @@ gulp.task('eleventy', function(done) {
   global.vfDocsPath      = __dirname + '/src/fractal/docs';
   global.vfOpenBrowser   = false; // if you want to open a browser tab for the component library
   global.fractal         = require('@visual-framework/vf-core/fractal.js').initialize(fractalBuildMode,fractalReadyCallback); // make fractal components are available gloablly
+
 
   function fractalReadyCallback(fractal) {
     global.fractal = fractal; // save fractal globally

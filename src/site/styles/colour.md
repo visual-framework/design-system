@@ -1,46 +1,15 @@
 ---
-title: Styles
-order: 100
-isIndex: true
-layout: layouts/base.njk
+title: Colours
+subtitle: Besides logo, typeface and graphical elements, colours are one the most important parts of a corporate design
+section: styles
+tags: posts
+layout: layouts/post.njk
 ---
 
-<nav class="vf-navigation vf-navigation--main">
-  <ul class="vf-navigation__list | vf-list--inline">
-    <li class="vf-navigation__item"><a href="/styles/typography/" class="vf-navigation__link">Typography</a></li>
-    <li class="vf-navigation__item"><a href="/styles/colour/" class="vf-navigation__link">Colour</a></li>
-    <li class="vf-navigation__item"><a href="/styles/spacing/" class="vf-navigation__link">Spacing</a></li>
-    <li class="vf-navigation__item"><a href="/styles/images/" class="vf-navigation__link">Images</a></li>
-    <li class="vf-navigation__item"><a href="/styles/illustration-and-infographics/" class="vf-navigation__link">Illustration and Infographics</a></li>
-  </ul>
-</nav>
-
-<nav class="vf-breadcrumbs" aria-label="Breadcrumb">
-  <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
-    <li class="vf-breadcrumbs__item">
-      <a href="/" class="vf-breadcrumbs__link">Home</a>
-    </li>
-    <li class="vf-breadcrumbs__item">
-      <a href="/styles/" class="vf-breadcrumbs__link">Styles</a>
-    </li>
-    <li class="vf-breadcrumbs__item">
-      Colour
-    </li>
-  </ul>
-</nav>
-
-<section class="vf-intro | embl-grid embl-grid--has-centered-content">
-  <div><!-- empty --></div>
-  <div>
-    <h1 class="vf-intro__heading vf-intro__heading--has-tag">Colour<a href="" class="vf-badge vf-badge--primary vf-badge--phases">Alpha</a></h1>
-    <p class="vf-lede">Besides logo, typeface and graphical elements, colours are one the most important parts of a corporate design.</p>
-    <p class="vf-intro__text">Besides logo, typeface and graphical elements, colours are one the most important parts of a corporate design.</p>
-    <div class="vf-intro__text">The set below shows all the colours for the EMBL brand. Other colours are not allowed. Any kind of colour coding in alignment with a service, group etc. is not allowed. Our main colour is white, in order to underline the bespoke usage of white space in our visual example.</div>
-  </div>
-</section>
+<div class="vf-intro__text">The set below shows all the colours for the EMBL brand. Other colours are not allowed. Any kind of colour coding in alignment with a service, group etc. is not allowed. Our main colour is white, in order to underline the bespoke usage of white space in our visual example.</div>
 
 
-# The colour set: Overview
+## The colour set: Overview
 
 Besides logo, typeface and graphical elements, colours are one the most important parts of a corporate design.
 
