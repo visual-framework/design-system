@@ -968,6 +968,11 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-favicon/-/vf-favicon-0.0.30.tgz#d820976bbbce43667ae5e95971cd9b4d052b206d"
   integrity sha512-2FPuKG0RS9i/tqOXdpdDy4td2LpKCXI+qdqPTrVFthDVT4Z5inJLp5Xz1MJ0C8jsuweCdm0Bk/doRnWSWbQ63g==
 
+"@visual-framework/vf-footer@^0.0.16":
+  version "0.0.16"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-footer/-/vf-footer-0.0.16.tgz#2ce8c5ba9b70c8b5814ff98f50670447dea70c42"
+  integrity sha512-RORGt18qRcRn3yahX67Udnc5H9FqKlAxHbyC4ipn9tGdm4lv2dYyO0YiE5Vgtip0xDNjOG9IVbU9WkSrcxh+Iw==
+
 "@visual-framework/vf-global-header@0.0.31":
   version "0.0.31"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-global-header/-/vf-global-header-0.0.31.tgz#35d0375204e247911a5dabc1b6fa3ffe50506928"
@@ -1023,11 +1028,6 @@
   dependencies:
     "@visual-framework/vf-sass-config" "^0.0.25"
     node-normalize-scss "^8.0.0"
-
-"@visual-framework/vf-logo@^0.0.31":
-  version "0.0.31"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-logo/-/vf-logo-0.0.31.tgz#82c315eb009df84beed0c0eca29e53ecc21b4e8c"
-  integrity sha512-Mu8a6wZHz7qoIJHFfy7KXsDS6LSN3fkKVw4oLPqorD9MTgxASYj17JSGv3p3jD8g+4XgbV4RyZp4Lggt4LSdfQ==
 
 "@visual-framework/vf-masthead@^0.0.32":
   version "0.0.32"
