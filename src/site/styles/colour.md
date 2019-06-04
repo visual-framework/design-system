@@ -6,7 +6,7 @@ tags: posts
 layout: layouts/post.njk
 ---
 
-<div class="vf-intro__text">The set below shows all the colours for the EMBL brand. Other colours are not allowed. Any kind of colour coding in alignment with a service, group etc. is not allowed. Our main colour is white, in order to underline the bespoke usage of white space in our visual example.</div>
+The set below shows all the colours for the EMBL brand. Other colours are not allowed. Any kind of colour coding in alignment with a service, group etc. is not allowed. Our main colour is white, in order to underline the bespoke usage of white space in our visual example.
 
 
 ## The colour set: Overview

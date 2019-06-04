@@ -7,8 +7,6 @@ tags: posts
 layout: layouts/post.njk
 ---
 
-# EMBL Design Principles
-
 *Developed in 2019 with close input from EMBL senior scientists*
 
 EMBL needs a strong, overarching brand: EMBL first. If necessary, sub entities such as sites or projects should be expressed after the parent brand  .
