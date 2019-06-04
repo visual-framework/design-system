@@ -3,7 +3,7 @@ is_index: true
 title: Getting started
 section: gettingstarted
 date: 2018-08-22 12:24:50
-layout: layouts/base.njk
+layout: layouts/section.njk
 ---
 
 ## Sections

@@ -1,14 +1,11 @@
 ---
 is_index: true
-title: Brand guidelines
+title: EMBL Brand guidelines
+subtitle: The EMBL brand, with its three core elements - logo, typeface and colour set - is designed to make a memorable impression and signal to people what they can expect from the organisation.
 section: guidelines
 date: 2018-08-22 12:24:50
-layout: layouts/base.njk
+layout: layouts/section.njk
 ---
-
-# EMBL Brand Guidelines
-
-The EMBL brand, with its three core elements - logo, typeface and colour set - is designed to make a memorable impression and signal to people what they can expect from the organisation.
 
 The EMBL Brand is the organisation’s visual identity in print and online.
 
