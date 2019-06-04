@@ -14,7 +14,9 @@ templateEngineOverride: njk, md
   <div></div>
   <div>
     <h1 class="vf-intro__heading">{{title}}</h1>
+    {% if subtitle %}
     <p class="vf-intro__text">{{subtitle}}</p>
+    {% endif %}
   </div>
 </section>
 
