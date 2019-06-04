@@ -26,7 +26,7 @@ layout: layouts/base.njk
     {# show all pages classes as sections #}
     {%- for section in collections.sections %}
       {% if section.data.is_index ==  true %}
-        {% set absolutePostUrl %}{{ metadata.id }}{{ post.url }}{% endset %}
+        {% set absolutePostUrl %}{{ metadata.id }}{{ section.url }}{% endset %}
 
 ## [{{ section.data.title }}]({{ absolutePostUrl }})
 
