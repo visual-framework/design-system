@@ -1,7 +1,8 @@
 ---
 title: Spacing
 section: styles
-layout: layouts/base.njk
+tags: posts
+layout: layouts/post.njk
 ---
 
 <style>

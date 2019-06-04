@@ -1,13 +1,11 @@
 ---
 is_index: true
 title: Getting started
+subtitle: A short summary on this section
 section: gettingstarted
+tags: sections
 date: 2018-08-22 12:24:50
 layout: layouts/section.njk
 ---
 
 ## Sections
-
-- <a href="/getting-started/print/" class="vf-navigation__link">Print</a>
-- <a href="/getting-started/digital/" class="vf-navigation__link">Digital</a>
-- <a href="/getting-started/visual-framework/" class="vf-navigation__link">Visual Framework</a>

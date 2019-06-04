@@ -3,6 +3,7 @@ is_index: true
 title: EMBL Brand guidelines
 subtitle: The EMBL brand, with its three core elements - logo, typeface and colour set - is designed to make a memorable impression and signal to people what they can expect from the organisation.
 section: guidelines
+tags: sections
 date: 2018-08-22 12:24:50
 layout: layouts/section.njk
 ---
@@ -19,17 +20,4 @@ For questions, including advice and approvals, contact the Design Team Lead: [de
 
 Corporate design is the manner in which an organisation presents itself visually to the public. A good corporate design should readily identify the organisation; differentiate it from other organisations; and provide a coherent design system across all communications channels.  Visual consistency is key - it should not matter whether content is print or digital.
 
-## The EMBL brand: Three core elements
-
-The EMBL brand is made up of three core elements: the EMBL logo, the IBM Plex typeface, and the colour set. You will find a summary of the rules for each at the links below:
-
-- [logo](embl-logo.md)
-- [typeface](typeface.md)
-- [colour set](colours.md)
-
-
 ## Sections
-
-- <a href="/brand-guidelines/design-principles/" class="vf-navigation__link">Design Principles</a>
-- <a href="/brand-guidelines/logo/" class="vf-navigation__link">Logo</a>
-- <a href="/brand-guidelines/editorial-styleguide/" class="vf-navigation__link">Editorial Styleguide</a>

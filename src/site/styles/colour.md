@@ -1,7 +1,8 @@
 ---
 title: Styles
 section: styles
-layout: layouts/base.njk
+tags: posts
+layout: layouts/post.njk
 ---
 
 <section class="vf-intro | embl-grid embl-grid--has-centered-content">

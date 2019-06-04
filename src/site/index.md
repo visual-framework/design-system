@@ -17,3 +17,22 @@ layout: layouts/base.njk
 } %}
 
 </div>
+
+
+
+<section class="embl-grid embl-grid--has-centered-content">
+  <div></div>
+  <div class="vf-content">
+    {# show all pages classes as sections #}
+    {%- for section in collections.sections %}
+      {% if section.data.is_index ==  true %}
+        {% set absolutePostUrl %}{{ metadata.id }}{{ post.url }}{% endset %}
+
+## [{{ section.data.title }}]({{ absolutePostUrl }})
+
+{{ section.data.subtitle }}
+
+      {% endif %}
+    {%- endfor %}
+  </div>
+</section>

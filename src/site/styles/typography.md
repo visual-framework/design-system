@@ -3,7 +3,8 @@ title: Typography
 section: styles
 subtitle:
 date: 2018-08-22 12:24:50
-layout: layouts/base.njk
+tags: posts
+layout: layouts/post.njk
 ---
 
 <section class="vf-intro | embl-grid embl-grid--has-centered-content">
