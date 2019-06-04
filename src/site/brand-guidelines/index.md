@@ -1,27 +1,10 @@
 ---
-title: Brand Guidelines
+is_index: true
+title: Brand guidelines
+section: guidelines
 date: 2018-08-22 12:24:50
 layout: layouts/base.njk
 ---
-
-<nav class="vf-navigation vf-navigation--main">
-  <ul class="vf-navigation__list | vf-list--inline">
-    <li class="vf-navigation__item"><a href="/brand-guidelines/design-principles/" class="vf-navigation__link">Design Principles</a></li>
-    <li class="vf-navigation__item"><a href="/brand-guidelines/logo/" class="vf-navigation__link">Logo</a></li>
-    <li class="vf-navigation__item"><a href="/brand-guidelines/editorial-styleguide/" class="vf-navigation__link">Editorial Styleguide</a></li>
-  </ul>
-</nav>
-
-<nav class="vf-breadcrumbs" aria-label="Breadcrumb">
-  <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
-    <li class="vf-breadcrumbs__item">
-      <a href="/" class="vf-breadcrumbs__link">Home</a>
-    </li>
-    <li class="vf-breadcrumbs__item">
-      Brand Guidelines
-    </li>
-  </ul>
-</nav>
 
 # EMBL Brand Guidelines
 
@@ -46,3 +29,10 @@ The EMBL brand is made up of three core elements: the EMBL logo, the IBM Plex ty
 - [logo](embl-logo.md)
 - [typeface](typeface.md)
 - [colour set](colours.md)
+
+
+## Sections
+
+- <a href="/brand-guidelines/design-principles/" class="vf-navigation__link">Design Principles</a>
+- <a href="/brand-guidelines/logo/" class="vf-navigation__link">Logo</a>
+- <a href="/brand-guidelines/editorial-styleguide/" class="vf-navigation__link">Editorial Styleguide</a>
