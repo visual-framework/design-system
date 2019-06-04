@@ -1,22 +1,15 @@
 ---
-title: Styles
+title: Colours
+subtitle: Besides logo, typeface and graphical elements, colours are one the most important parts of a corporate design
 section: styles
 tags: posts
 layout: layouts/post.njk
 ---
 
-<section class="vf-intro | embl-grid embl-grid--has-centered-content">
-  <div><!-- empty --></div>
-  <div>
-    <h1 class="vf-intro__heading vf-intro__heading--has-tag">Colour<a href="" class="vf-badge vf-badge--primary vf-badge--phases">Alpha</a></h1>
-    <p class="vf-lede">Besides logo, typeface and graphical elements, colours are one the most important parts of a corporate design.</p>
-    <p class="vf-intro__text">Besides logo, typeface and graphical elements, colours are one the most important parts of a corporate design.</p>
-    <div class="vf-intro__text">The set below shows all the colours for the EMBL brand. Other colours are not allowed. Any kind of colour coding in alignment with a service, group etc. is not allowed. Our main colour is white, in order to underline the bespoke usage of white space in our visual example.</div>
-  </div>
-</section>
+<div class="vf-intro__text">The set below shows all the colours for the EMBL brand. Other colours are not allowed. Any kind of colour coding in alignment with a service, group etc. is not allowed. Our main colour is white, in order to underline the bespoke usage of white space in our visual example.</div>
 
 
-# The colour set: Overview
+## The colour set: Overview
 
 Besides logo, typeface and graphical elements, colours are one the most important parts of a corporate design.
 
