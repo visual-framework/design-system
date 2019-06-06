@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bcc90532-46e2-43f5-ada4-8163140ed723/deploy-status)](https://app.netlify.com/sites/heuristic-swirles-12e12d/deploys)
+
 # EMBL Design System documentation
 
 The EMBL Design System (EDS) is the laboratory’s design system for communications in all media. The system contains basic information about EMBL branding including colours, typography, and guidelines for the use of the EMBL logo. You will find onboarding tools, design templates and practical resources on the EMBL Design System website. [sitemap here](

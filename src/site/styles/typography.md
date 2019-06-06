@@ -7,18 +7,6 @@ tags: posts
 layout: layouts/post.njk
 ---
 
-<section class="vf-intro | embl-grid embl-grid--has-centered-content">
-<div><!-- empty --></div>
-<div>
-<h1 class="vf-intro__heading vf-intro__heading--has-tag">Typography<a href="#" class="vf-badge vf-badge--primary vf-badge--phases">Alpha</a></h1>
-<p class="vf-lede">EMBL communications materials and services have broad typographic needs: from rich and engaging editorial content, to information-dense scientific figures and web applications. Any typeface EMBL uses has to be able to work hard to meet these requirements.</p>
-</div>
-</section>
-
-<section class="embl-grid embl-grid--has-centered-content">
-
-<div></div>
-<div class="vf-content">
 
 ### Typeface: IBM Plex
 
@@ -58,19 +46,3 @@ We cannot embed IBM Plex into our distributable Microsoft Office templates such 
 #### Mailchimp
 
 Mailchimp is used for our email newsletter distributions. The template builder includes some webfonts, but not IBM Plex currently. Therefore we are substituting IBM Plex for *Source Sans Pro*.
-
-</div>
-</section>
-
-<section class="embl-grid embl-grid--has-centered-content">
-<div></div>
-<div>
-
-<h3 class="vf-text vf-text--heading-l">Sizes</h3>
-
-{% render '@vf-heading' %}
-
-<p>Lead paragraph</p>
-<p>Paragraph</p>
-</div>
-</section>

@@ -1,15 +1,12 @@
 ---
 title: Logo
-subtitle: subtitle here
+subtitle: Use of the logo
 section: guidelines
 date: 2018-08-22 12:24:50
 tags: posts
 layout: layouts/post.njk
 ---
 
-# The EMBL logo: Overview
-
-Use of the logo
 The EMBL logo is protected under the Paris Convention, which protects names and logos of intergovernmental organisations. You may not use or reproduce the logo without EMBL’s explicit consent.
 
 *Elements of the logo*
