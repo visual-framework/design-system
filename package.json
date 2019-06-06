@@ -1,17 +1,18 @@
 {
-  "name": "@visual-framework/vf-boilerplate-eleventy",
+  "name": "@embl-communications/design-system",
   "version": "0.0.1",
-  "description": "Build a site with Visual Framework components using the the Eleventy templating engine.",
+  "description": "Onboarding for the EMBL Design system.",
   "main": "gulpfile.js",
   "scripts": {
     "start": "npm run dev",
     "dev": "gulp dev",
     "build": "gulp build && echo \"🏋 Build completed\" && exit 0",
+    "update-components": "yarn upgrade-interactive --latest",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/visual-framework/vf-eleventy.git"
+    "url": "https://github.com/embl-communications/design-system.git"
   },
   "author": "Ken Hawkins <ken.hawkins@embl.de> (https://www.embl.de/aboutus/communication_outreach/)",
   "license": "Apache-2.0",
