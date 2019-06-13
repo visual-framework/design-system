@@ -1,6 +1,6 @@
 const gulp  = require('gulp');
 const rename = require('gulp-rename');
-
+const ext_replace = require('gulp-ext-replace');
 let fractalBuildMode = 'build';
 
 // Gulp tasks live in their own files, for the sake of clarity.
@@ -71,8 +71,15 @@ gulp.task('build', gulp.series(
   'eleventy'
 ));
 
+gulp.task("copyJs", function () {
+  return gulp.src('./node_modules/@visual-framework/vf-design-tokens/dist/json/*.json')
+  .pipe(gulp.dest('./src/site/_data/styles/'))
+  .pipe(ext_replace('.ios.json', '.json'))
+});
+
 // Build and watch things during dev
 gulp.task('dev', gulp.series(
+  'copyJs',
   gulp.parallel('css','js'),
   'elventy-set-to-serve',
   'eleventy',

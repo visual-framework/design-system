@@ -81,7 +81,7 @@ The set below shows all the colours for the EMBL brand. Other colours are not al
 </style>
 
 <main class="swatches | vf-grid vf-grid__col-2">
-{% for item in styles.colour.properties %}
+{% for item in styles.colors.properties %}
 
 <article class="swatch">
   <div class="swatch__colour" style="background-color: {{ item.value}};"></div>
@@ -89,13 +89,6 @@ The set below shows all the colours for the EMBL brand. Other colours are not al
   <h3 class="swatch__colour-name">{{ item.meta.friendlyName }}</h3>
   <p class="swatch__colour-hex"><span class="swatch__meta">Hex: </span>{{ item.value }}</p>
   <p class="swatch__colour-hex"><span class="swatch__meta">RGB: </span> {{ item.value | hextorgb }}</p>
-  {% if item.meta.sassVariable %}
-  <p class="swatch__sass-variable"><span class="swatch__meta">Sass Variable: </span>${{- item.meta.sassVariable }}</p>
-  <p class="swatch__sass-variable"><span class="swatch__meta">Sass Map: </span>map-get($vf-colors-map, {{ item.meta.sassVariable }})</p>
-  {% endif %}
-  {% if item.meta.CSSCustomProperty %}
-  <p class="swatch__css-property"><span class="swatch__meta">CSS Custom Property: </span>{{ item.meta.CSSCustomProperty }}</p>
-  {% endif %}
   {% if item.meta.comment %}
   <h4 class="swatch__notes">notes:</h4>
   <p class="swatch__comment">{{ item.meta.comment }}</p>

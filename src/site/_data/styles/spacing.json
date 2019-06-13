@@ -3,10 +3,10 @@
     {
       "type": "number",
       "category": "spacing",
-      "name": "spacing0",
+      "name": "vfSpacing0",
       "value": 0,
       "meta": {
-        "friendlyName": null,
+        "friendlyName": "Spacing 0",
         "sassVariable": "$vf-spacing--0",
         "CSSCustomProperty": "--vf-spacing--0",
         "comment": null
@@ -15,10 +15,10 @@
     {
       "type": "number",
       "category": "spacing",
-      "name": "spacingXs",
+      "name": "vfSpacingXs",
       "value": "4px",
       "meta": {
-        "friendlyName": null,
+        "friendlyName": "Spacing Extra Small",
         "sassVariable": "$vf-spacing--xs",
         "CSSCustomProperty": "--vf-spacing--xs",
         "comment": null
@@ -27,10 +27,10 @@
     {
       "type": "number",
       "category": "spacing",
-      "name": "spacingS",
+      "name": "vfSpacingS",
       "value": "8px",
       "meta": {
-        "friendlyName": null,
+        "friendlyName": "Spacing Small",
         "sassVariable": "$vf-spacing--s",
         "CSSCustomProperty": "--vf-spacing--s",
         "comment": null
@@ -39,10 +39,10 @@
     {
       "type": "number",
       "category": "spacing",
-      "name": "spacingR",
+      "name": "vfSpacingR",
       "value": "16px",
       "meta": {
-        "friendlyName": null,
+        "friendlyName": "Spacing Regular",
         "sassVariable": "$vf-spacing--r",
         "CSSCustomProperty": "--vf-spacing--r",
         "comment": null
@@ -51,10 +51,10 @@
     {
       "type": "number",
       "category": "spacing",
-      "name": "spacingL",
+      "name": "vfSpacingL",
       "value": "20px",
       "meta": {
-        "friendlyName": null,
+        "friendlyName": "Spacing Large",
         "sassVariable": "$vf-spacing--l",
         "CSSCustomProperty": "--vf-spacing--l",
         "comment": null
@@ -63,10 +63,10 @@
     {
       "type": "number",
       "category": "spacing",
-      "name": "spacingXl",
+      "name": "vfSpacingXl",
       "value": "24px",
       "meta": {
-        "friendlyName": null,
+        "friendlyName": "Spacing Extra Large",
         "sassVariable": "$vf-spacing--xl",
         "CSSCustomProperty": "--vf-spacing--xl",
         "comment": null
@@ -75,10 +75,10 @@
     {
       "type": "number",
       "category": "spacing",
-      "name": "spacingXxl",
+      "name": "vfSpacingXxl",
       "value": "32px",
       "meta": {
-        "friendlyName": null,
+        "friendlyName": "Spacing Extra Extra Large",
         "sassVariable": "$vf-spacing--xxl",
         "CSSCustomProperty": "--vf-spacing--xxl",
         "comment": null
