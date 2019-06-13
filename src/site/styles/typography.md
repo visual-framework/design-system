@@ -46,3 +46,47 @@ We cannot embed IBM Plex into our distributable Microsoft Office templates such 
 #### Mailchimp
 
 Mailchimp is used for our email newsletter distributions. The template builder includes some webfonts, but not IBM Plex currently. Therefore we are substituting IBM Plex for *Source Sans Pro*.
+
+<style>
+.vf-swatch {
+  grid-column: 2 / -2 !important;
+}
+</style>
+
+{% for item in styles.typography.properties %}
+<article class="vf-swatch">
+    <h3 class="vf-swatch__colour-name">
+      {{ item.meta.friendlyName }}
+    </h3>
+    <p
+      class="vf-body--r"
+      style="font-size: {{ item.value.fontSize }};
+             font-weight: {{ item.value.fontWeight }};
+            line-height: {{ item.value.lineHeight }}
+    ">
+      {{ item.meta.alphabet }}
+    </p>
+    <p
+      class="vf-body--r"
+      style="font-size: {{ item.value.fontSize }};
+             font-weight: {{ item.value.fontWeight }};
+            line-height: {{ item.value.lineHeight }}
+    ">
+      {{ item.meta.pangram }}
+    </p>
+
+    {% if item.meta.comment %}
+    {{ item.meta.comment }}
+    {% endif %}
+
+
+- Font Size: {{ item.value.fontSize }}
+- Font Weight: {{ item.value.fontWeight }}
+- Ling Height: {{ item.value.lineHeight}}
+
+</article>
+{% else %}
+
+<p>bugger</p>
+
+{% endfor %}
