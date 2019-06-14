@@ -81,10 +81,11 @@ The set below shows all the colours for the EMBL brand. Other colours are not al
 </style>
 
 <main class="swatches | vf-grid vf-grid__col-2">
+
 {% for item in styles.colors.properties %}
 
 <article class="swatch">
-  <div class="swatch__colour" style="background-color: {{ item.value}};"></div>
+  <div class="swatch__colour" style="background-color: {{ item.value }};"></div>
   <section class="swatch__details">
   <h3 class="swatch__colour-name">{{ item.meta.friendlyName }}</h3>
   <p class="swatch__colour-hex"><span class="swatch__meta">Hex: </span>{{ item.value }}</p>
@@ -98,7 +99,7 @@ The set below shows all the colours for the EMBL brand. Other colours are not al
 
 {% else %}
 
-<p>bugger</p>
+<p>nope</p>
 
 {% endfor %}
 </main>

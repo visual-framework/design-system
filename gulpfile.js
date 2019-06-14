@@ -71,15 +71,30 @@ gulp.task('build', gulp.series(
   'eleventy'
 ));
 
-gulp.task("copyJs", function () {
-  return gulp.src('./node_modules/@visual-framework/vf-design-tokens/dist/json/*.json')
+gulp.task("copyColor", function () {
+  return gulp.src('./node_modules/@visual-framework/vf-design-tokens/dist/json/vf-colors.ios.json')
+  .pipe(rename('colors.json'))
   .pipe(gulp.dest('./src/site/_data/styles/'))
-  .pipe(ext_replace('.ios.json', '.json'))
+});
+gulp.task("copyUI", function () {
+  return gulp.src('./node_modules/@visual-framework/vf-design-tokens/dist/json/vf-ui-colors.ios.json')
+  .pipe(rename('uiColors.json'))
+  .pipe(gulp.dest('./src/site/_data/styles/'))
+});
+gulp.task("copyType", function () {
+  return gulp.src('./node_modules/@visual-framework/vf-design-tokens/dist/json/vf-font--sans.ios.json')
+  .pipe(rename('typography.json'))
+  .pipe(gulp.dest('./src/site/_data/styles/'))
+});
+gulp.task("copySpacing", function () {
+  return gulp.src('./node_modules/@visual-framework/vf-design-tokens/dist/json/vf-spacing.ios.json')
+  .pipe(rename('spacing.json'))
+  .pipe(gulp.dest('./src/site/_data/styles/'))
 });
 
 // Build and watch things during dev
 gulp.task('dev', gulp.series(
-  'copyJs',
+  gulp.parallel(['copyColor', 'copyUI', 'copyType', 'copySpacing']),
   gulp.parallel('css','js'),
   'elventy-set-to-serve',
   'eleventy',
