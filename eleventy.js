@@ -99,7 +99,8 @@ module.exports = function(config) {
     ],
     htmlTemplateEngine : ["njk", "md"],
     markdownTemplateEngine : "njk",
-    passthroughFileCopy: true
+    passthroughFileCopy: true,
+    pathPrefix: "/"
   };
 
 };
