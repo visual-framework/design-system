@@ -459,6 +459,21 @@
     "@types/unist" "*"
     "@types/vfile-message" "*"
 
+"@visual-framework/embl-breadcrumbs-lookup@^1.0.0-alpha.3":
+  version "1.0.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/@visual-framework/embl-breadcrumbs-lookup/-/embl-breadcrumbs-lookup-1.0.0-alpha.3.tgz#9b3d2d9093ca89ab8d08ad3062629317544726df"
+  integrity sha512-BC7Qx08l5BDK2Krypr1oLhdKwksaL9jJSCBwwACP43URbTc4eQeh2pa6U+EHc9BoWnd0mptbohGHPgPL51TBhQ==
+
+"@visual-framework/embl-content-hub-loader@^1.0.0-beta.3":
+  version "1.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@visual-framework/embl-content-hub-loader/-/embl-content-hub-loader-1.0.0-beta.3.tgz#923c3a933708becf260b53da40b1fb268b9fc8ab"
+  integrity sha512-6I3E3ojPXLMU2L6Ko+jCNBpgVtAjSIBBTytRk241uvjvOLpWQSKbs14V47dzpfuvdSMiv4hQXkrNZMc9RxG+sQ==
+
+"@visual-framework/embl-content-meta-properties@^1.0.0-alpha.3":
+  version "1.0.0-alpha.3"
+  resolved "https://registry.yarnpkg.com/@visual-framework/embl-content-meta-properties/-/embl-content-meta-properties-1.0.0-alpha.3.tgz#41ca06a2dd7afc76d3e2abdf61ac02b0464a72b2"
+  integrity sha512-R06PIMHy2OOc5rjdVHo4d/3ZK/OmpPKW7I1o6nvLZ3KFRga4RYAHKcWQfMQdnKZ3qiTK+J4TWxRYC6j9o0wv3w==
+
 "@visual-framework/embl-grid@^1.0.0-alpha.3":
   version "1.0.0-alpha.3"
   resolved "https://registry.yarnpkg.com/@visual-framework/embl-grid/-/embl-grid-1.0.0-alpha.3.tgz#64b76d18bdef5959eac97fac6b4347ad344627f0"
