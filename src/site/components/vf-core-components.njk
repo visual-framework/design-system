@@ -1,0 +1,31 @@
+---
+title: Components from `vf-core`
+date: 2019-04-09 12:24:50
+tags: posts
+layout: layouts/components.njk
+section: components
+templateEngineOverride: njk, md
+pagination:
+  data: fractalEnvironment.vfCoreComponents
+  size: 1
+permalink: components/vf-core-components/{{ pagination.items[0].name | slug }}/index.html
+---
+
+{# {% render '@vf-breadcrumbs--default', {
+  "component-type": "block",
+  "breadcrumbs": [
+    {
+      "text": "Components",
+      "url": '/components' | url
+    },
+    {
+      "text": "VF-Core Components",
+      "url": '/components/vf-core-components' | url
+    },
+    {
+      "text": pagination.items[0].title
+    }
+  ]
+} %} #}
+
+<!-- no special content -->

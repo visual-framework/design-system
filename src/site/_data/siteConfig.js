@@ -6,5 +6,23 @@ module.exports = {
     url: "https://heuristic-swirles-12e12d.netlify.com/",
     author: "EMBL Digital communications",
     email: "digital-comms@embl.org",
+  },
+  sections: {
+    guidelines: {
+      url: '/guidelines',
+      title: 'Guidelines'
+    },
+    patterns: {
+      url: '/patterns',
+      title: 'Patterns'
+    },
+    styles: {
+      url: '/styles',
+      title: 'Styles'
+    },
+    components: {
+      url: '/components',
+      title: 'Components'
+    }
   }
 };
