@@ -18,9 +18,9 @@ module.exports = function(config) {
   // -----
 
   // {{ "myContent" | sampleFilter }}
-  config.addFilter("sampleFilter", function(value) {
-    return 'ddd' + value;
-  });
+  // config.addFilter("sampleFilter", function(value) {
+  //   return 'ddd' + value;
+  // });
 
   // Add any utiliuty filters
   config.addFilter("hextorgb", require("./src/filters/hextorgb.js") );
