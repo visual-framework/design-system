@@ -33,7 +33,7 @@
     </div>
   </div> #}
 
-
+{#
   <div class="vf-masthead" style="background-color: var(--vf-masthead__color--background, var(--vf-masthead__color--background-default)); color: var(--vf-masthead__color--foreground, var(--vf-masthead__color--foreround-default) );">
     <div class="vf-masthead__inner">
       <div class="vf-masthead__title">
@@ -41,16 +41,15 @@
           <a href="/" class="vf-masthead__heading__link">{{siteConfig.siteInformation.title}}</a>
           <span class="vf-masthead__heading--additional">{{siteConfig.siteInformation.short_description}}</span>
         </h1>
-        {# <h2 class="vf-masthead__subheading">
+        <h2 class="vf-masthead__subheading">
           <span class="vf-masthead__location">VF Hamburg</span>
           <span class="vf-masthead__group">Structural Biology</span>
-        </h2> #}
+        </h2>
       </div>
     </div>
   </div>
 
 
-<div class="vf-body">
 
   <nav class="vf-navigation vf-navigation--main">
     <ul class="vf-navigation__list | vf-list--inline">
@@ -58,36 +57,35 @@
       <li class="vf-navigation__item {% if section == "guidelines" %}is-active{% endif %}"><a href="/brand-guidelines/" class="vf-navigation__link">Brand guidelines</a></li>
       <li class="vf-navigation__item {% if section == "styles" %}is-active{% endif %}"><a href="/styles/" class="vf-navigation__link">Styles</a></li>
     </ul>
-  </nav>
+  </nav> #}
 
 
-  {% if is_index != true %}
+  {% if page.url != '/' %}
+  {# don't show breadcrumb on homepage #}
   <nav class="vf-breadcrumbs" aria-label="Breadcrumb">
     <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
-      {# <li class="vf-breadcrumbs__item">
-        <a href="/" class="vf-breadcrumbs__link">Home</a>
-      </li> #}
       <li class="vf-breadcrumbs__item">
-        {% if section == "gettingstarted" %}
-          <a href="/getting-started/" class="vf-breadcrumbs__link">Getting started</a>
-        {% endif %}
-        {% if section == "guidelines" %}
-          <a href="/brand-guidelines/" class="vf-breadcrumbs__link">Brand guidelines</a>
-        {% endif %}
-        {% if section == "styles" %}
-          <a href="/styles/" class="vf-breadcrumbs__link">Styles</a>
-        {% endif %}
+        <a href="{{ '/' | url }}" class="vf-breadcrumbs__link">{{siteConfig.siteInformation.title}}</a>
       </li>
+      {# don't show section link on a section #}
+      {% if is_index != true %}
+        {# load section breadcrumbs from siteConfig.js #}
+        <li class="vf-breadcrumbs__item">
+          <a href="{{ siteConfig.sections[section].url | url }}" class="vf-breadcrumbs__link">{{ siteConfig.sections[section].title }}</a>
+        </li>
+      {% endif %}
       <li class="vf-breadcrumbs__item">
-        {{ title }}
+        {% if pagination.items[0].name %}
+          {{ pagination.items[0].name }}
+        {% else %}
+          {{ title }}
+        {% endif %}
       </li>
     </ul>
   </nav>
   {% endif %}
 
   {{ content | safe }}
-
-</div>
-{% include "footer.njk" %}
+  {% include "footer.njk" %}
 </body>
 </html>
