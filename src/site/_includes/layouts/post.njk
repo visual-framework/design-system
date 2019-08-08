@@ -15,7 +15,7 @@ templateEngineOverride: njk, md
   <div>
     <h1 class="vf-intro__heading">{{title}}</h1>
     {% if subtitle %}
-    <p class="vf-intro__text">{{subtitle}}</p>
+<div class="vf-lede">{{subtitle | markdown | safe | replace("<p>", "<span class='vf-content'>") | replace("</p>", "</span>") }}</div>
     {% endif %}
   </div>
 </section>
