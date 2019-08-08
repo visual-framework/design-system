@@ -59,7 +59,7 @@ Mailchimp is used for our email newsletter distributions. The template builder i
       {{ item.meta.friendlyName }}
     </h3>
     <p
-      class="vf-body--r"
+      class="vf-u-type__text-body--3"
       style="font-size: {{ item.value.fontSize }};
              font-weight: {{ item.value.fontWeight }};
             line-height: {{ item.value.lineHeight }}
@@ -67,7 +67,7 @@ Mailchimp is used for our email newsletter distributions. The template builder i
       {{ item.meta.alphabet }}
     </p>
     <p
-      class="vf-body--r"
+      class="vf-u-type__text-body--3"
       style="font-size: {{ item.value.fontSize }};
              font-weight: {{ item.value.fontWeight }};
             line-height: {{ item.value.lineHeight }}

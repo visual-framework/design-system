@@ -16,7 +16,7 @@ vfMastheadSetStyle();
 import { vfTabs } from 'vf-tabs/vf-tabs';
 vfTabs();
 
-import 'vf-form/vf-form__core/assets/float-labels.js';
+import 'vf-form__core/assets/vf-form__float-labels.js';
 
 // All EMBL JS
 import { emblConditionalEdit } from 'embl-conditional-edit/embl-conditional-edit';

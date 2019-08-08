@@ -9,90 +9,87 @@
   <title>{{ title or (renderData and renderData.title) or siteConfig.siteInformation.title}}</title>
 </head>
 <style>.vf-intro {margin-top: 3rem;}</style>
-<body class="{{ bodyClass }} vf-body" >
+<body class="{{ bodyClass }}" >
 
-
-  <div class="vf-grid vf-u-margin__top--r">
   <!-- embl global banner -->
-  <link rel="import" href="https://dev.beta.embl.org/api/v1/pattern.html?filter-content-type=article&filter-id=580&pattern=node-body&source=contenthub" data-target="self" data-embl-js-content-hub-loader>
-  </div>
+  <link rel="import" href="https://dev.beta.embl.org/api/v1/pattern.html?filter-content-type=article&filter-id=574&pattern=node-body&source=contenthub" data-target="self" data-embl-js-content-hub-loader>
 
-  <header class="vf-global-header">
-    <div class="vf-global-header__inner">
-      {% render '@embl-logo--responsive' %}
-      <p class="vf-global-header__site-name">{{ text }}</p>
-      {# {% render '@vf-navigation--global' %} #}
+  <section class="vf-body">
+
+    <div class="vf-grid vf-u-margin__top--lg">
+    <!-- embl global banner -->
+    <link rel="import" href="https://dev.beta.embl.org/api/v1/pattern.html?filter-content-type=article&filter-id=580&pattern=node-body&source=contenthub" data-target="self" data-embl-js-content-hub-loader>
     </div>
-  </header>
 
-  {# <div class="vf-body">
-    <div class="vf-grid">
-      <nav class="vf-breadcrumbs" aria-label="Breadcrumb">
-        <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
-          <li class="vf-breadcrumbs__item">
-            <a href="https://dev.beta.embl.org/guidelines" class="vf-breadcrumbs__link">Guidelines</a>
-          </li>
-          <li class="vf-breadcrumbs__item">
-          <a href="/" class="vf-breadcrumbs__link">EMBL Design System</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div> #}
+    {# <div class="vf-body">
+      <div class="vf-grid">
+        <nav class="vf-breadcrumbs" aria-label="Breadcrumb">
+          <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
+            <li class="vf-breadcrumbs__item">
+              <a href="https://dev.beta.embl.org/guidelines" class="vf-breadcrumbs__link">Guidelines</a>
+            </li>
+            <li class="vf-breadcrumbs__item">
+            <a href="/" class="vf-breadcrumbs__link">EMBL Design System</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div> #}
 
-{#
-  <div class="vf-masthead" style="background-color: var(--vf-masthead__color--background, var(--vf-masthead__color--background-default)); color: var(--vf-masthead__color--foreground, var(--vf-masthead__color--foreround-default) );">
-    <div class="vf-masthead__inner">
-      <div class="vf-masthead__title">
-        <h1 class="vf-masthead__heading">
-          <a href="/" class="vf-masthead__heading__link">{{siteConfig.siteInformation.title}}</a>
-          <span class="vf-masthead__heading--additional">{{siteConfig.siteInformation.short_description}}</span>
-        </h1>
-        <h2 class="vf-masthead__subheading">
-          <span class="vf-masthead__location">VF Hamburg</span>
-          <span class="vf-masthead__group">Structural Biology</span>
-        </h2>
+  {#
+    <div class="vf-masthead" style="background-color: var(--vf-masthead__color--background, var(--vf-masthead__color--background-default)); color: var(--vf-masthead__color--foreground, var(--vf-masthead__color--foreround-default) );">
+      <div class="vf-masthead__inner">
+        <div class="vf-masthead__title">
+          <h1 class="vf-masthead__heading">
+            <a href="/" class="vf-masthead__heading__link">{{siteConfig.siteInformation.title}}</a>
+            <span class="vf-masthead__heading--additional">{{siteConfig.siteInformation.short_description}}</span>
+          </h1>
+          <h2 class="vf-masthead__subheading">
+            <span class="vf-masthead__location">VF Hamburg</span>
+            <span class="vf-masthead__group">Structural Biology</span>
+          </h2>
+        </div>
       </div>
     </div>
-  </div>
 
 
 
-  <nav class="vf-navigation vf-navigation--main">
-    <ul class="vf-navigation__list | vf-list--inline">
-      <li class="vf-navigation__item {% if section == "gettingstarted" %}is-active{% endif %}"><a href="/getting-started/" class="vf-navigation__link">Getting started</a></li>
-      <li class="vf-navigation__item {% if section == "guidelines" %}is-active{% endif %}"><a href="/brand-guidelines/" class="vf-navigation__link">Brand guidelines</a></li>
-      <li class="vf-navigation__item {% if section == "styles" %}is-active{% endif %}"><a href="/styles/" class="vf-navigation__link">Styles</a></li>
-    </ul>
-  </nav> #}
+    <nav class="vf-navigation vf-navigation--main">
+      <ul class="vf-navigation__list | vf-list--inline">
+        <li class="vf-navigation__item {% if section == "gettingstarted" %}is-active{% endif %}"><a href="/getting-started/" class="vf-navigation__link">Getting started</a></li>
+        <li class="vf-navigation__item {% if section == "guidelines" %}is-active{% endif %}"><a href="/brand-guidelines/" class="vf-navigation__link">Brand guidelines</a></li>
+        <li class="vf-navigation__item {% if section == "styles" %}is-active{% endif %}"><a href="/styles/" class="vf-navigation__link">Styles</a></li>
+      </ul>
+    </nav> #}
 
 
-  {% if page.url != '/' %}
-  {# don't show breadcrumb on homepage #}
-  <nav class="vf-breadcrumbs" aria-label="Breadcrumb">
-    <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
-      <li class="vf-breadcrumbs__item">
-        <a href="{{ '/' | url }}" class="vf-breadcrumbs__link">{{siteConfig.siteInformation.title}}</a>
-      </li>
-      {# don't show section link on a section #}
-      {% if is_index != true %}
-        {# load section breadcrumbs from siteConfig.js #}
+    {% if page.url != '/' %}
+    {# don't show breadcrumb on homepage #}
+    <nav class="vf-breadcrumbs" aria-label="Breadcrumb">
+      <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
         <li class="vf-breadcrumbs__item">
-          <a href="{{ siteConfig.sections[section].url | url }}" class="vf-breadcrumbs__link">{{ siteConfig.sections[section].title }}</a>
+          <a href="{{ '/' | url }}" class="vf-breadcrumbs__link">{{siteConfig.siteInformation.title}}</a>
         </li>
-      {% endif %}
-      <li class="vf-breadcrumbs__item">
-        {% if pagination.items[0].name %}
-          {{ pagination.items[0].name }}
-        {% else %}
-          {{ title }}
+        {# don't show section link on a section #}
+        {% if is_index != true %}
+          {# load section breadcrumbs from siteConfig.js #}
+          <li class="vf-breadcrumbs__item">
+            <a href="{{ siteConfig.sections[section].url | url }}" class="vf-breadcrumbs__link">{{ siteConfig.sections[section].title }}</a>
+          </li>
         {% endif %}
-      </li>
-    </ul>
-  </nav>
-  {% endif %}
+        <li class="vf-breadcrumbs__item">
+          {% if pagination.items[0].name %}
+            {{ pagination.items[0].name }}
+          {% else %}
+            {{ title }}
+          {% endif %}
+        </li>
+      </ul>
+    </nav>
+    {% endif %}
 
-  {{ content | safe }}
+    {{ content | safe }}
+  </section>
   {% include "footer.njk" %}
 </body>
 </html>
