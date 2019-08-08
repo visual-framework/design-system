@@ -7,6 +7,23 @@
   <link rel="stylesheet" media="all" href="{{ '/css/app.css' | url }}" />
   {# <link rel="stylesheet" media="all" href="https://dev.assets.emblstatic.net/vf/develop/css/styles.css" /> #}
   <title>{{ title or (renderData and renderData.title) or siteConfig.siteInformation.title}}</title>
+
+  <!-- Content descriptors -->
+  <meta name="embl:who" content="Head of EMBL Comms"> <!-- the people, groups and teams involved -->
+  <meta name="embl:where" content="EMBL"> <!-- at which EMBL sites the content applies -->
+  <meta name="embl:what" content="EMBL Design System"> <!-- the activities covered -->
+  <meta name="embl:active" content="what"> <!-- which of the who/what/where is active -->
+
+  <!-- Content role -->
+  <meta name="embl:utility" content="-8"> <!-- if content is task and work based or if is meant to inspire -->
+  <meta name="embl:reach" content="-5"> <!-- if content is externally (public) or internally focused (those that work at EMBL) -->
+
+  <!-- Page infromation -->
+  <meta name="embl:maintainer" content="Communications Digital Team"> <!-- the contact person or group responsible for the page -->
+  <meta name="embl:last-review" content="2019-08-08"> <!-- the last time the page was reviewed or updated -->
+  <meta name="embl:review-cycle" content="90"> <!-- how long in days before the page should be checked -->
+  <meta name="embl:expiry" content="null"> <!-- if there is a fixed point in time when the page is no longer relevant -->
+
 </head>
 <style>.vf-intro {margin-top: 3rem;}</style>
 <body class="{{ bodyClass }}" >
@@ -61,6 +78,11 @@
         <li class="vf-navigation__item {% if section == "styles" %}is-active{% endif %}"><a href="/styles/" class="vf-navigation__link">Styles</a></li>
       </ul>
     </nav> #}
+
+
+    <nav class="vf-breadcrumbs embl-breadcrumbs-lookup" aria-label="Breadcrumb" data-embl-js-breadcrumbs-lookup>
+      <div class="vf-list vf-list--inline | vf-breadcrumbs__list | embl-breadcrumbs-lookup--ghosting"></div>
+    </nav>
 
 
     {% if page.url != '/' %}
