@@ -80,15 +80,22 @@
     </nav> #}
 
 
-    <nav class="vf-breadcrumbs embl-breadcrumbs-lookup" aria-label="Breadcrumb" data-embl-js-breadcrumbs-lookup>
+    {# <nav class="vf-breadcrumbs embl-breadcrumbs-lookup" aria-label="Breadcrumb" data-embl-js-breadcrumbs-lookup>
       <div class="vf-list vf-list--inline | vf-breadcrumbs__list | embl-breadcrumbs-lookup--ghosting"></div>
-    </nav>
+    </nav> #}
 
 
     {% if page.url != '/' %}
     {# don't show breadcrumb on homepage #}
     <nav class="vf-breadcrumbs" aria-label="Breadcrumb">
       <ul class="vf-breadcrumbs__list | vf-list vf-list--inline">
+
+
+        <!-- 1. the parent should come from the contentHub, which is already done by the breadcrumbs lookup -->
+        <li class="vf-breadcrumbs__item">Communications</li>
+
+        <!-- 2. but what isn't possible is to add local child crumbs, which we can really do yet -->
+        <!-- perhaps this can be added as `embl-breadcrumbs-local`, and then appended to the result from the contentHub -->
         <li class="vf-breadcrumbs__item">
           <a href="{{ '/' | url }}" class="vf-breadcrumbs__link">{{siteConfig.siteInformation.title}}</a>
         </li>
@@ -107,6 +114,9 @@
           {% endif %}
         </li>
       </ul>
+
+      <!-- 3. and then we want to lookup related, which is also possible currently -->
+      <span class="vf-breadcrumbs__heading">Related:</span><ul class="vf-breadcrumbs__list vf-breadcrumbs__list--related vf-list vf-list--inline"><li class="vf-breadcrumbs__item"><a href="#addBreadcrumbPatternForSimpleTerms" class="vf-breadcrumbs__link">Head of EMBL Comms</a></li><li class="vf-breadcrumbs__item"><a href="#addBreadcrumbPatternForSimpleTerms" class="vf-breadcrumbs__link">All EMBL sites</a></li></ul>
     </nav>
     {% endif %}
 
