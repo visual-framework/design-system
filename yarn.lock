@@ -461,6 +461,10 @@
   version "1.0.0-beta.3"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-box/-/vf-box-1.0.0-beta.3.tgz#5c17f07565b4baabcc3cc6ace4b480a8a2749fa7"
 
+"@visual-framework/vf-breadcrumbs@^1.0.0-beta.3":
+  version "1.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-breadcrumbs/-/vf-breadcrumbs-1.0.0-beta.3.tgz#cf5fa9836893ab69c65c2a7061191032e307e0c8"
+
 "@visual-framework/vf-button@^1.0.0-beta.3":
   version "1.0.0-beta.3"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-button/-/vf-button-1.0.0-beta.3.tgz#216cefbf0306e47dbd3b83538023b5be0c311d43"
