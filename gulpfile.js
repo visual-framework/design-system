@@ -79,24 +79,25 @@ gulp.task('eleventy', function(done) {
   }
 });
 
-// Let's build this sucker.
-gulp.task('build', gulp.series(
-  'vf-clean',
-  gulp.parallel('css','js','vf-css', 'vf-scripts','vf-component-assets'),
-  'elventy-set-to-build',
-  'eleventy'
-));
-
-gulp.task("copyJs", function () {
+gulp.task('copy-design-tokens', function () {
   return gulp.src('./node_modules/@visual-framework/vf-design-tokens/dist/json/*.json')
   .pipe(gulp.dest('./src/site/_data/styles/'))
   .pipe(ext_replace('.ios.json', '.json'))
 });
 
+// Let's build this sucker.
+gulp.task('build', gulp.series(
+  'vf-clean',
+  'copy-design-tokens',
+  gulp.parallel('css','js','vf-css', 'vf-scripts','vf-component-assets'),
+  'elventy-set-to-build',
+  'eleventy'
+));
+
 // Build and watch things during dev
 gulp.task('dev', gulp.series(
-  'copyJs',
   'vf-clean',
+  'copy-design-tokens',
   gulp.parallel('css','js','vf-css', 'vf-scripts','vf-component-assets'),
   'elventy-set-to-serve',
   'eleventy',
