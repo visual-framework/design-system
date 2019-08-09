@@ -10,10 +10,10 @@ templateEngineOverride: njk, md
   <div>
     <h1 class="vf-intro__heading">{{title}}</h1>
     {% if subtitle %}
-    <div class="vf-lede">{{subtitle | markdown | safe | replace("<p>", "<span class='vf-content'>") | replace("</p>", "</span>") }}</div>
+<div class="vf-lede">{{subtitle | markdown | safe | replace("<p>", "<span class='vf-content'>") | replace("</p>", "</span>") }}</div>
     {% endif %}
     {% if intro %}
-    <div class="vf-intro__text">{{intro | markdown | safe | replace("<p>", "<span class='vf-content'>") | replace("</p>", "</span>") }}</div>
+<div class="vf-intro__text">{{intro | markdown | safe | replace("<p>", "<span class='vf-content'>") | replace("</p>", "</span>") }}</div>
     {% endif %}
   </div>
 </section>

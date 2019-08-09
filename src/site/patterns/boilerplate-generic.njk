@@ -20,10 +20,9 @@ layout: layouts/boilerplate.njk
 
   {# <link rel="stylesheet" media="all" href="{{ '/css/app.css' | url }}" /> #}
 
-  {% if _config.project.environment.local %}
+  {% if serverInfo.environment == "development" %}
   <link rel="stylesheet" media="all" href="{{ '/css/styles.css' | url }}" />
-  {% endif %}
-  {% if _config.project.environment.production %}
+  {% else %}
   <link rel="stylesheet" href="https://heuristic-swirles-12e12d.netlify.com/css/styles.css">
   {% endif %}
 </head>
