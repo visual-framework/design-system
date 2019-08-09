@@ -8,6 +8,8 @@
   {# <link rel="stylesheet" media="all" href="https://dev.assets.emblstatic.net/vf/develop/css/styles.css" /> #}
   <title>{{ title or (renderData and renderData.title) or siteConfig.siteInformation.title}}</title>
 
+  {% render '@embl-favicon' %}
+
   <!-- Content descriptors -->
   <meta name="embl:who" content="Head of EMBL Comms"> <!-- the people, groups and teams involved -->
   <meta name="embl:where" content="EMBL"> <!-- at which EMBL sites the content applies -->

@@ -88,7 +88,10 @@ templateEngineOverride: njk
         {% markdown %}
 
         #### Nunjucks demo
+
+        (to do: regex out the `component-type`)
         {% endmarkdown %}
+
 
         <pre><code>
         {%- raw %}{% render '@{% endraw %}{{variant.handle}}', {{variant.context | dump(2)}} {% raw %}%}{% endraw %}
