@@ -8,9 +8,13 @@ module.exports = {
     email: "digital-comms@embl.org",
   },
   sections: {
-    gettingstarted: {
-      url: '/getting-started',
-      title: 'Getting started'
+    digital: {
+      url: '/digital',
+      title: 'Digital'
+    },
+    print: {
+      url: '/print',
+      title: 'Print'
     },
     guidelines: {
       url: '/brand-guidelines',

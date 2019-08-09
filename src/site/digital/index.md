@@ -1,16 +1,14 @@
 ---
+is_index: true
 title: Digital
 subtitle: Websites generally follow the print guidelines, however there are special considerations around colour, navigation and behaviour.
-section: gettingstarted
-date: 2018-08-22 12:24:50
-tags: posts
+section: digital
+tags: sections
+date: 2018-08-22 12:24:51
 layout: layouts/post.njk
 ---
 
-
-
 ## Making websites
-
 
 General guidance, tips and screenshots.
 
