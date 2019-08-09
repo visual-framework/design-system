@@ -636,6 +636,14 @@
   version "1.0.0-beta.3"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-sass-config/-/vf-sass-config-1.0.0-beta.3.tgz#3eca42bd1e452af5777b565bfeda6ef621a348f1"
 
+"@visual-framework/vf-section-header@^1.0.0-beta.3":
+  version "1.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-section-header/-/vf-section-header-1.0.0-beta.3.tgz#1f15467787f65ae2801cbb54e09b2e2d56d96069"
+
+"@visual-framework/vf-summary@^1.0.0-beta.3":
+  version "1.0.0-beta.3"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-summary/-/vf-summary-1.0.0-beta.3.tgz#f976c54fa5e6cf0c0d7e0573bdecd84a1d02cea4"
+
 "@visual-framework/vf-tabs@^1.0.0-beta.3":
   version "1.0.0-beta.3"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-tabs/-/vf-tabs-1.0.0-beta.3.tgz#ef61b99a05de73f123a134b0d0c994d0ba2d15d0"

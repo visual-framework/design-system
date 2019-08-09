@@ -1,0 +1,15 @@
+{% if serverInfo.environment == "development" %}
+<div class="vf-banner vf-banner--fixed vf-banner--bottom vf-banner--notice"
+data-vf-js-banner
+data-vf-js-banner-state="persistent"
+{# data-vf-js-banner-button-text="Gotcha" #}
+{# data-vf-js-banner-cookie-name="environment-{{serverInfo.environment}}" #}
+{# data-vf-js-banner-cookie-version="0.1" #}
+data-vf-js-banner-auto-accept="false">
+  <div class="vf-banner__content | vf-grid" data-vf-js-banner-text>
+    <p class="vf-text vf-text--body-l">
+      You're on your local {{serverInfo.environment}} environment.
+    </p>
+  </div>
+</div>
+{% endif %}
