@@ -8,10 +8,6 @@ module.exports = {
     email: "digital-comms@embl.org",
   },
   sections: {
-    digital: {
-      url: '/digital',
-      title: 'Digital'
-    },
     print: {
       url: '/print',
       title: 'Print'
