@@ -8,7 +8,11 @@
 
 <!-- This page was generated on {{ site.buildTime | dateDisplay('LLL d, yyyy - HH:mm') }} -->
 {# <script src="https://dev.assets.emblstatic.net/vf/develop/scripts/scripts.js"></script> #}
+{% if serverInfo.environment == "development" %}
 <script src="{{ '/scripts/scripts.js' | url }}"></script>
+{% else %}
+<script src="{{ siteConfig.siteInformation.url}}scripts/scripts.js"></script>
+{% endif %}
 
 <!-- Google Analytics -->
 <script>

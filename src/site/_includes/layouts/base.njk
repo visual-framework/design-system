@@ -4,8 +4,13 @@
   {% render '@vf-no-js' %}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% if serverInfo.environment == "development" %}
   <link rel="stylesheet" media="all" href="{{ '/css/styles.css' | url }}" />
   <link rel="stylesheet" media="all" href="{{ '/css/app.css' | url }}" />
+  {% else %}
+  <link rel="stylesheet" href="{{ siteConfig.siteInformation.url}}css/styles.css">
+  <link rel="stylesheet" href="{{ siteConfig.siteInformation.url}}css/app.css">
+  {% endif %}
   {# <link rel="stylesheet" media="all" href="https://dev.assets.emblstatic.net/vf/develop/css/styles.css" /> #}
   <title>{{ pagination.items[0].name or title or (renderData and renderData.title)}} | {{ siteConfig.siteInformation.title }} | EMBL</title>
 
