@@ -2,40 +2,41 @@
 is_index: true
 title: Patterns for digital medium
 subtitle: More than components, this is how you should do things.
+intro: General guidance, tips and screenshots.
 section: patterns
 tags: sections
 date: 2019-07-20 12:24:50
 layout: layouts/section.njk
 ---
 
-## Making websites
+## Need a site
 
-General guidance, tips and screenshots.
+Build it yourself with the guidance below, or contact the Digital Team ([digital-comms@embl.org](mailto:digital-comms@embl.org)).
 
-## 1. The Visual Framework for EMBL.org
+## 1. CSS, JS to use and its architecture
 
-The Visual Framework (VF) is designed with the needs of life science websites and services. It goes beyond guidance for tables, graphs, data-heavy typography and focuses on sane defaults. It implements CSS in a way that does not interfere with existing components. The VF 2.0 enables consistency and portability, it is extensible, modular and overridable; here to help and not get in the way.
+EMBL uses the [Visual Framework 2.0](https://visual-framework.github.io/vf-welcome/) (VF) as it is designed with the needs of life science websites and services. It goes beyond guidance for tables, graphs, data-heavy typography and focuses on sane defaults. It implements CSS in a way that does not interfere with existing components. The VF 2.0 enables consistency and portability, it is extensible, modular and overridable; here to help and not get in the way.
 
-### 2. Templates and themes
+### Need pre-buit CSS and JS?
 
-**Eleventy boilerplate**
-  - A static site generator which transforms a directory of templates (of varying types) into HTML — makes use of the Visual Framework for styling.
+If you don't need to indivdually include components, you can use the rollup CSS and JS:
 
-**WordPress theme**
-  - Some text on using the WP theme.
+- `<link rel="stylesheet" media="all" href="{{ siteConfig.siteInformation.url}}css/styles.css" />`
+- `<script src="{{ siteConfig.siteInformation.url}}scripts/scripts.js"></script>`
 
-**Angular boilerplate**
-  - To come.
+## 2. Templates and themes
 
-**React boilerplate**
-  - To come.
+Site templates:
 
-**Vanilla HTML boilerplates**
-  - To come.
+- link to vf-eleventy
+- link to react boilerplate
+- link to WP theme and guidance how
 
-### 3. Patterns and components
+## 3. Patterns and boilerplates
 
 Once you've started with a template above follow guidance and copy-paste examples from the EMBL VF Pattern+Component library.
 
 Where components offer technical implementations, patterns and boilerplates show
 how things should come together to facilitate tasks and goals.
+
+- Need sepecific component guidance? [Go to the Components section]({{ '/components' | url }})
