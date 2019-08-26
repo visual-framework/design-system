@@ -6,8 +6,21 @@ function filterVfCoreComponents(item) {
   return item.handle == 'vf-core-components';
 }
 
-let vfCoreComponents = localComponents.find(filterVfCoreComponents)
-// console.log(vfCoreComponents)
+let vfCoreComponents = localComponents.find(filterVfCoreComponents);
+
+
+// merge the vf-core components into the local components, so the display is simpler for users
+localComponents = localComponents.concat(vfCoreComponents.items);
+
+// now remove the "vf-core" components,
+localComponents = localComponents.filter(obj => {
+  return obj.handle != "vf-core-components"
+})
+localComponents = localComponents.filter(obj => {
+  return obj.handle != "vf-core"
+})
+
+console.log(localComponents)
 
 module.exports = {
   fractal: global.fractal,
