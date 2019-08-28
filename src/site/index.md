@@ -24,7 +24,7 @@ layout: layouts/base.njk
       {% if section.data.is_index ==  true %}
         {% set absolutePostUrl %}{{ metadata.id }}{{ section.url }}{% endset %}
 
-## [{{ section.data.title }}]({{ absolutePostUrl }})
+## [{{ section.data.title }}]({{ absolutePostUrl | url }})
 
 {{ section.data.subtitle }}
 
