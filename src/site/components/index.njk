@@ -13,14 +13,35 @@ hideSubPosts: true
 
 ## All components
 
-<div class="vf-content">
+{% macro componentSection(type='element',displayName='Elements',summary='') %}
+### {{ displayName | safe }}
+
+{{ summary | safe }}
+
 <ul>
 {%- for item in fractalEnvironment.localComponents %}
+  {% set componentType = item.variants.items[0].context['component-type'] + "" %}
+  {# the `+ ""` ensures the type is always a string #}
   {%- if item.isHidden == false %}
+    {% if type in componentType %}
 <li><a class="vf-link" href="{{ item.handle}}">{{ item.title }}</a> <code> {{ item.name }} </code></li>
+    {% endif %}
   {% endif %}
 {% endfor -%}
 </ul>
+{% endmacro %}
+
+
+<div class="vf-content">
+
+{{ componentSection(summary='The micro elements of the component library.') }}
+
+{{ componentSection('block','Blocks','Simple components like sections headers, galleries and so on.') }}
+
+{{ componentSection('container','Containers','More complex components that sometimes have specific layout, like page intros, mastheads, news sections and so on.') }}
+
+{{ componentSection('grid','Grids','Put stuff in columns.') }}
+
 </div>
 
 ## Need pre-buit CSS and JS?

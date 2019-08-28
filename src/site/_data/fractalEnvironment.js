@@ -20,8 +20,6 @@ localComponents = localComponents.filter(obj => {
   return obj.handle != "vf-core"
 })
 
-console.log(localComponents)
-
 module.exports = {
   fractal: global.fractal,
   localComponents: localComponents,
