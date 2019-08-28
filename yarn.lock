@@ -668,11 +668,6 @@
   dependencies:
     "@11ty/eleventy-plugin-rss" "^1.0.6"
 
-"@visual-framework/vf-favicon@1.0.0-beta.4":
-  version "1.0.0-beta.4"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-favicon/-/vf-favicon-1.0.0-beta.4.tgz#e3821b8070c68d97a7a0a4401837614c9d0f7b4f"
-  integrity sha512-wL2VXLSxyPa5d6ICbmtuCc3qEPGPrPVp8c2CXtSoCNHwPF3MGQ2vKM7MsULAKgaI6v5AVwr8AI19oa8f/2yEBw==
-
 "@visual-framework/vf-figure@^1.0.0-alpha.4":
   version "1.0.0-alpha.4"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-figure/-/vf-figure-1.0.0-alpha.4.tgz#0d318a06dce4cf05ac674c69f86ee5fd8cf21010"
@@ -796,11 +791,6 @@
   version "1.0.0-beta.4"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-list/-/vf-list-1.0.0-beta.4.tgz#26d083205c8f0a874d50c0364787c7f38e5634d0"
   integrity sha512-fIvGwpJtENz443+WXnpC4Vx7uauEhE8qap9YLnalZ5bhxmPl1sdGv1WPHvY7wkp9NgSgawRCRGn/vq+QHuP7kw==
-
-"@visual-framework/vf-logo@^1.0.0-alpha.4":
-  version "1.0.0-alpha.4"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-logo/-/vf-logo-1.0.0-alpha.4.tgz#48bbf679ee2699406a2723eab6d22b7a92a0cc82"
-  integrity sha512-KRFDfXCKonChXIXnt5yS575891QHx0h4bxdrPHaLBqEQ4qXjDtrI2WJq8DX4XEv7pgZMmjMuA16WHJvGFicSpQ==
 
 "@visual-framework/vf-masthead@^1.0.0-alpha.4":
   version "1.0.0-alpha.4"

@@ -25,7 +25,7 @@ hideSubPosts: true
   {%- if item.isHidden == false %}
     {% if type in componentType %}
 <tr>
-  <td><a class="vf-link" href="{{ item.handle}}">{{ item.title }}</a></td>
+  <td><a class="vf-link" href="{{ item.handle}}">{{ item.label }}</a></td>
   <td><code> {{ item.name }} </code></li></td>
 </tr>
     {% endif %}
