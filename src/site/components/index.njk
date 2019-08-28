@@ -18,17 +18,20 @@ hideSubPosts: true
 
 {{ summary | safe }}
 
-<ul>
+<table>
 {%- for item in fractalEnvironment.localComponents %}
   {% set componentType = item.variants.items[0].context['component-type'] + "" %}
   {# the `+ ""` ensures the type is always a string #}
   {%- if item.isHidden == false %}
     {% if type in componentType %}
-<li><a class="vf-link" href="{{ item.handle}}">{{ item.title }}</a> <code> {{ item.name }} </code></li>
+<tr>
+  <td><a class="vf-link" href="{{ item.handle}}">{{ item.title }}</a></td>
+  <td><code> {{ item.name }} </code></li></td>
+</tr>
     {% endif %}
   {% endif %}
 {% endfor -%}
-</ul>
+</table>
 {% endmacro %}
 
 
