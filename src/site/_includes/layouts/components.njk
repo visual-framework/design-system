@@ -14,6 +14,25 @@ templateEngineOverride: njk
 
     {% set variants = component.variants.items %}
 
+
+    {# alpha, beta, live #}
+    {% render '@vf-badge--primary', {
+      "style": [
+        "pill"
+      ],
+      "text": "Status: " + variants[0].status.label
+    } %}
+
+    {# type: element, block, etc. #}
+    {% render '@vf-badge--primary', {
+      "style": [
+        "pill"
+      ],
+      "text": "Type: " + variants[0].context['component-type']
+    } %}
+
+
+
     {% if component.notes %}
       {{ component.notes | string | markdown | safe }}
     {% else %}
@@ -70,19 +89,6 @@ templateEngineOverride: njk
 
         <h3>
           Variant: {{ variant.label }}
-          {% render '@vf-badge--primary', {
-            "style": [
-              "pill"
-            ],
-            "text": variant.status.label
-          } %}
-
-          {% render '@vf-badge--primary', {
-            "style": [
-              "pill"
-            ],
-            "text": variant.context['component-type']
-          } %}
         </h3>
 
         {% markdown %}
