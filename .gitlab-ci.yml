@@ -1,0 +1,106 @@
+# This script runs on gitlab.ebi.ac.uk
+# https://gitlab.ebi.ac.uk/emblorg/design-system-mirror
+# We do it to deploy the pattern library for view
+# http://dev.beta.embl.org/guidelines/design/
+# https://dev.assets.emblstatic.net/vf/develop/
+# https://dev.assets.emblstatic.net/vf/{tag}/ (eg v2.1.2 / v2.1.3-alpha.3)
+# https://dev.assets.emblstatic.net/vf/{minor}/ (eg v2.1)
+# https://dev.assets.emblstatic.net/vf/{major}/ (eg v2)
+image: node:10.9.0
+
+variables:
+  # project specific variables can be defined here
+  VM_DEV: wp-np2-10
+  VM_PROD: wp-p1m-12 wp-p1m-13 wp-p2m-12 wp-p2m-13
+  VM_PATH: /var/www/drupal/beta.embl.org.guidelines.design
+  SSH_OWNER_ID: wd_drupl
+  SSH_APACHE_ID: w3_wd01
+  S3_BUCKET_DEV: origin.dev.embl-design-system.assets.emblstatic.net
+  S3_BUCKET_PROD: origin.embl-design-system.assets.emblstatic.net
+  # set secrets in Settings -> Pipelines -> Secret Variables
+  SSH_OWNER_KEY: secret-key
+  SSH_APACHE_KEY: secret-key
+  AWS_KEY: key
+  AWS_SECRET: secret-key
+
+
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  tags:
+    - docker
+  script:
+    - npm install
+    - npm install -g gulp-cli
+    - gulp build
+  artifacts:
+    paths:
+      - build
+  cache:
+    paths:
+      - node_modules
+  except:
+    - /^.visual-framework\/.*$/
+
+deploy-dev:
+  stage: deploy
+  image: ebiwd/alpine-ssh
+  tags:
+    - docker
+  before_script:
+    - add-ssh-key ${SSH_OWNER_ID} "${SSH_OWNER_KEY}" ${SSH_APACHE_ID} "${SSH_APACHE_KEY}"
+    - add-search-domain ebi.ac.uk
+  script:
+    - for VM in ${VM_DEV}; do rsync -acv --delete-after build/. ${SSH_OWNER_ID}@${VM}:${VM_PATH}/; done;
+  only:
+    # only match on develop branch, or specific tag patterns
+    - develop
+    - /^v\d+\.\d+\.\d+$/
+    - /^v\d+\.\d+\.\d+-(alpha|beta|rc)\.\d+$/
+
+deploy-prod:
+  stage: deploy
+  image: ebiwd/alpine-ssh
+  tags:
+    - docker
+  before_script:
+    - add-ssh-key ${SSH_OWNER_ID} "${SSH_OWNER_KEY}" ${SSH_APACHE_ID} "${SSH_APACHE_KEY}"
+    - add-search-domain ebi.ac.uk
+  script:
+    - for VM in ${VM_PROD}; do rsync -acv --delete-after build/. ${SSH_OWNER_ID}@${VM}:${VM_PATH}/; done;
+  only:
+    # only match on specific tag patterns
+    - /^v\d+\.\d+\.\d+$/
+    - /^v\d+\.\d+\.\d+-(alpha|beta|rc)\.\d+$/
+
+deploy-aws-dev:
+  stage: deploy
+  image: ebiwd/alpine-ssh
+  tags:
+    - docker
+  before_script:
+    - add-aws-key ${AWS_KEY} ${AWS_SECRET}
+  script:
+    - bin/deploy-aws
+  only:
+    # only match on develop branch, or specific tag patterns
+    - develop
+    - /^v\d+\.\d+\.\d+$/
+    - /^v\d+\.\d+\.\d+-(alpha|beta|rc)\.\d+$/
+
+deploy-aws-prod:
+  stage: deploy
+  image: ebiwd/alpine-ssh
+  tags:
+    - docker
+  before_script:
+    - add-aws-key ${AWS_KEY} ${AWS_SECRET}
+  script:
+    - bin/deploy-aws prod
+  only:
+    # only match on specific tag patterns
+    - /^v\d+\.\d+\.\d+$/
+    - /^v\d+\.\d+\.\d+-(alpha|beta|rc)\.\d+$/
