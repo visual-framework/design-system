@@ -23,7 +23,7 @@ To add a component you can use npm/Yarn or install it manually.
 
 ### By package
 
-- installation: `yarn add @visual-framework/vf-logo`
+- installation: `yarn add @visual-framework/embl-logo`
 - updating components: `yarn upgrade-interactive --latest`
   - alias: `npm run update-components`
 
