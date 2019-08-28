@@ -82,8 +82,9 @@ templateEngineOverride: njk
 
   {%- for variant in variants %}
 
-  <div class="vf-grid">
-    <section class="vf-content">
+    <div class="vf-grid">
+
+      <section class="vf-content">
 
         <hr class="vf-divider" />
 
@@ -91,64 +92,82 @@ templateEngineOverride: njk
           Variant: {{ variant.label }}
         </h3>
 
-        {% markdown %}
-
-        #### Nunjucks demo
-
-        {% endmarkdown %}
-
-        {# Strip out the "component type" from the Nunjucks code snippet #}
-        {% set regExp = r/("component-type"\: ".*",\s*)/ %}
-
-        <pre><code>
-        {%- raw %}{% render '@{% endraw %}{{variant.handle}}', {{variant.context | dump(2) | replace(regExp,'') }} {% raw %}%}{% endraw %}
-        </code></pre>
-
-        {% markdown %}
-          #### Sample output
-        {% endmarkdown %}
-
       </section>
     </div>
-
-    {% if variant.context['component-type'] == 'grid' %}
-      <div class="vf-gridxx" style="grid-column: -1/1;">
-        {% render '@'+variant.handle, variant.context %}
-      </div>
-    {% else %}
-      <div class="vf-grid">
-        <section class="">
-          {% render '@'+variant.handle, variant.context %}
-        </section>
-      </div>
-    {% endif %}
 
     <div class="vf-grid">
-      <section class="vf-content">
 
-        {% markdown %}
-          #### Sample output as HTML
-        {% endmarkdown %}
+      <section>
 
-        {# Show and escaped version of the html #}
-        <pre>
-          {%- render '@'+variant.handle, variant.context, false, { escape: false, beautify: true, highlight: true } %}
-        </pre>
+        <div class="vf-tabs">
+          <ul class="vf-tabs__list" data-vf-js-tabs>
+            <li class="vf-tabs__item">
+              <a class="vf-tabs__link" href="#vf-tabs__section--1">Sample output</a>
+            </li>
+            <li class="vf-tabs__item">
+              <a class="vf-tabs__link" href="#vf-tabs__section--html">HTML</a>
+            </li>
+            <li class="vf-tabs__item">
+              <a class="vf-tabs__link" href="#vf-tabs__section--2">Nunjucks template</a>
+            </li>
+            <li class="vf-tabs__item">
+              <a class="vf-tabs__link" href="#vf-tabs__section--assets">Component assets</a>
+            </li>
+          </ul>
+        </div>
 
-        {% markdown %}
+        <div class="vf-tabs-content" data-vf-js-tabs-content>
+          <section class="vf-tabs__section vf-content" id="vf-tabs__section--1">
+            {% if variant.context['component-type'] == 'grid' %}
+              <div class="vf-gridxx" style="grid-column: -1/1;">
+                {% render '@'+variant.handle, variant.context %}
+              </div>
+            {% else %}
+              <div class="vf-grid">
+                <section class="">
+                  {% render '@'+variant.handle, variant.context %}
+                </section>
+              </div>
+            {% endif %}
 
-          ### Assets
+          </section>
+          <section class="vf-tabs__section vf-content" id="vf-tabs__section--html">
 
-          - [Nunjucks template]({{ '/src/' + variant.viewPath.split('/src/')[1] | url }})
-          {%- for asset in variant.resources.assets %}
-            - [{{asset.base}}]({{asset.srcPath}})
-          {%- endfor %}
+            {# Show and escaped version of the html #}
+            <pre>
+              {%- render '@'+variant.handle, variant.context, false, { escape: false, beautify: true, highlight: true } %}
+            </pre>
 
-        {% endmarkdown %}
+          </section>
+          <section class="vf-tabs__section vf-content" id="vf-tabs__section--assets">
 
+            {% markdown %}
+
+              ### Assets
+
+              - [Nunjucks template]({{ '/src/' + variant.viewPath.split('/src/')[1] | url }})
+              {%- for asset in variant.resources.assets %}
+                - [{{asset.base}}]({{asset.srcPath}})
+              {%- endfor %}
+
+            {% endmarkdown %}
+
+          </section>
+          <section class="vf-tabs__section vf-content" id="vf-tabs__section--2">
+
+            {# Strip out the "component type" from the Nunjucks code snippet #}
+            {% set regExp = r/("component-type"\: ".*",\s*)/ %}
+
+            <pre><code>
+            {%- raw %}{% render '@{% endraw %}{{variant.handle}}', {{variant.context | dump(2) | replace(regExp,'') }} {% raw %}%}{% endraw %}
+            </code></pre>
+          </section>
+        </div>
 
       </section>
+
     </div>
+
   {% endfor -%}
 {% endif %}
 
@@ -160,11 +179,7 @@ templateEngineOverride: njk
 
     {% endmarkdown %}
 
-    <ul class="vf-list vf-list--unordered">
-      {%- for item in fractalEnvironment.localComponents %}
-        <li class="vf-list__item vf-content"><a class="vf-link" href="../{{ item.handle}}">{{ item.title }}</a> <code> {{ item.name }} </code></li>
-      {% endfor -%}
-    </ul>
+    Add link to component index
   </section>
 </div>
 
