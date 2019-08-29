@@ -34,7 +34,9 @@ templateEngineOverride: njk
 
 
     {% if component.notes %}
-      {{ component.notes | string | markdown | safe }}
+      {# Show the portion of the readme before Installation notes #}
+      {% set trimmedNotes = component.notes.split('Installation and Implementation')[0] %}
+      {{ trimmedNotes | string | markdown | safe }}
     {% else %}
       {% markdown %}
         # {{ component.title }}
@@ -63,7 +65,7 @@ templateEngineOverride: njk
 </div>
 
 {% if variants %}
-  <div class="vf-grid">
+  <div class="vf-grid | vf-u-margin__top--xxl">
     <section>
       <h1 class="vf-text vf-text-heading--1 vf-text--invert">Variants in this component</h1>
     </section>
@@ -75,10 +77,8 @@ templateEngineOverride: njk
 
       <section class="vf-content">
 
-        <hr class="vf-divider" />
-
         <h3>
-          Variant: {{ variant.label }}
+          {{ variant.label }} <code class="vf-code"> {{ variant.handle }} </code>
         </h3>
 
       </section>
@@ -155,11 +155,32 @@ templateEngineOverride: njk
 
     </div>
 
+    <hr class="vf-divider" />
+
   {% endfor -%}
 {% endif %}
 
 
-<hr class="vf-divider" />
+
+
+
+<div class="vf-grid">
+  <div class="vf-content">
+    {% if component.notes %}
+      {# Show the Installation notes portion of the readme #}
+      {% set trimmedNotes = component.notes.split('Installation and Implementation') %}
+      {% if trimmedNotes[1] %}
+
+        <h1 class="vf-text vf-text-heading--1 vf-text--invert">Installation and Implementation</h1>
+
+        {{ trimmedNotes[1] | string | markdown | safe }}
+
+        <hr class="vf-divider" />
+      {% endif %}
+    {% endif %}
+  </div>
+</div>
+
 
 <div class="vf-grid">
   <p class="vf-text">
