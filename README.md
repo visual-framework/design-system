@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/bcc90532-46e2-43f5-ada4-8163140ed723/deploy-status)](https://app.netlify.com/sites/heuristic-swirles-12e12d/deploys)
+[![pipeline status](https://gitlab.ebi.ac.uk/emblorg/design-system-mirror/badges/develop/pipeline.svg)](https://gitlab.ebi.ac.uk/emblorg/design-system-mirror/commits/develop)
 
 # EMBL Design System documentation
 
