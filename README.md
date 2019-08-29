@@ -1,4 +1,4 @@
-[![pipeline status](https://gitlab.ebi.ac.uk/emblorg/design-system-mirror/badges/develop/pipeline.svg)](https://gitlab.ebi.ac.uk/emblorg/design-system-mirror/commits/develop)
+<a href="https://gitlab.ebi.ac.uk/emblorg/design-system-mirror/commits/develop"><img alt="pipeline status" src="https://gitlab.ebi.ac.uk/emblorg/design-system-mirror/badges/develop/pipeline.svg" /></a>
 
 # EMBL Design System documentation
 
