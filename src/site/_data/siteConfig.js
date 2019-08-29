@@ -20,10 +20,6 @@ module.exports = {
       url: '/patterns',
       title: 'Patterns'
     },
-    styles: {
-      url: '/styles',
-      title: 'Styles'
-    },
     components: {
       url: '/components',
       title: 'Components'

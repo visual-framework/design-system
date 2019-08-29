@@ -1,6 +1,6 @@
 ---
 title: Illustration and Infographics
-section: styles
+section: guidelines
 subtitle: Illustration and Infographics
 date: 2018-08-22 12:24:50
 tags: posts
