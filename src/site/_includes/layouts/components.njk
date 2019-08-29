@@ -41,12 +41,6 @@ templateEngineOverride: njk
       {% endmarkdown %}
     {% endif %}
 
-    <hr/>
-    <small>{% markdown %}
-      File system location: `components/{{ component.baseHandle }}`
-    {% endmarkdown %}</small>
-
-
     {% if collectionComponents %}
 
       {% render '@vf-heading--display', {
@@ -71,12 +65,7 @@ templateEngineOverride: njk
 {% if variants %}
   <div class="vf-grid">
     <section>
-      {% render '@vf-heading--display', {
-        "type": "display",
-        "heading": "Variants",
-        "style": "invert",
-        "tags": "h1"
-      } %}
+      <h1 class="vf-text vf-text-heading--1 vf-text--invert">Variants in this component</h1>
     </section>
   </div>
 
@@ -102,13 +91,13 @@ templateEngineOverride: njk
         <div class="vf-tabs">
           <ul class="vf-tabs__list" data-vf-js-tabs>
             <li class="vf-tabs__item">
-              <a class="vf-tabs__link" href="#vf-tabs__section--1">Sample output</a>
+              <a class="vf-tabs__link" href="#vf-tabs__section--rendered">Sample output</a>
             </li>
             <li class="vf-tabs__item">
               <a class="vf-tabs__link" href="#vf-tabs__section--html">HTML</a>
             </li>
             <li class="vf-tabs__item">
-              <a class="vf-tabs__link" href="#vf-tabs__section--2">Nunjucks template</a>
+              <a class="vf-tabs__link" href="#vf-tabs__section--nunjucks">Nunjucks template</a>
             </li>
             <li class="vf-tabs__item">
               <a class="vf-tabs__link" href="#vf-tabs__section--assets">Component assets</a>
@@ -117,7 +106,7 @@ templateEngineOverride: njk
         </div>
 
         <div class="vf-tabs-content" data-vf-js-tabs-content>
-          <section class="vf-tabs__section vf-content" id="vf-tabs__section--1">
+          <section class="vf-tabs__section vf-content" id="vf-tabs__section--rendered">
             {% if variant.context['component-type'] == 'grid' %}
               <div class="vf-gridxx" style="grid-column: -1/1;">
                 {% render '@'+variant.handle, variant.context %}
@@ -139,21 +128,7 @@ templateEngineOverride: njk
             </pre>
 
           </section>
-          <section class="vf-tabs__section vf-content" id="vf-tabs__section--assets">
-
-            {% markdown %}
-
-              ### Assets
-
-              - [Nunjucks template]({{ '/src/' + variant.viewPath.split('/src/')[1] | url }})
-              {%- for asset in variant.resources.assets %}
-                - [{{asset.base}}]({{asset.srcPath}})
-              {%- endfor %}
-
-            {% endmarkdown %}
-
-          </section>
-          <section class="vf-tabs__section vf-content" id="vf-tabs__section--2">
+          <section class="vf-tabs__section vf-content" id="vf-tabs__section--nunjucks">
 
             {# Strip out the "component type" from the Nunjucks code snippet #}
             {% set regExp = r/("component-type"\: ".*",\s*)/ %}
@@ -161,6 +136,18 @@ templateEngineOverride: njk
             <pre><code>
             {%- raw %}{% render '@{% endraw %}{{variant.handle}}', {{variant.context | dump(2) | replace(regExp,'') }} {% raw %}%}{% endraw %}
             </code></pre>
+          </section>
+          <section class="vf-tabs__section vf-content" id="vf-tabs__section--assets">
+
+            {% markdown %}
+
+              - [Nunjucks template]({{ '/' | url}}{{ 'src/' + variant.viewPath.split('/src/')[1] }})
+              {%- for asset in variant.resources.assets %}
+              - [{{asset.base}}]({{ '/' | url}}{{ 'src/' + asset.srcPath }})
+              {%- endfor %}
+
+            {% endmarkdown %}
+
           </section>
         </div>
 
@@ -171,22 +158,11 @@ templateEngineOverride: njk
   {% endfor -%}
 {% endif %}
 
-<div class="vf-grid">
-  <section>
-    {% markdown %}
 
-      ## All components in this design system
-
-    {% endmarkdown %}
-
-    Add link to component index
-  </section>
-</div>
+<hr class="vf-divider" />
 
 <div class="vf-grid">
-  <div class="footnote">
-    <p class="vf-text--body">
-      This page is part of the components section.
-    </p>
-  </div>
+  <p class="vf-text">
+    <a href="{{ '/components' | url }}" class="vf-link">View all components in this design system</a>
+  </p>
 </div>

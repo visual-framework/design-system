@@ -73,6 +73,11 @@ module.exports = function(config) {
   // pass some assets right through
   config.addPassthroughCopy("./src/site/images");
 
+  // copy all component assets, so they're available for developer inspection
+  config.addPassthroughCopy("./src/components");
+  config.addPassthroughCopy("./node_modules/\@visual-framework");
+  // config.addPassthroughCopy({"./node_modules/\@visual-framework": "src/components"});
+
   return {
     dir: {
       input: "src/site",
