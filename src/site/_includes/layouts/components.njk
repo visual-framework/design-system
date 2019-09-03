@@ -106,7 +106,7 @@ templateEngineOverride: njk
         </div>
 
         <div class="vf-tabs-content" data-vf-js-tabs-content>
-          <section class="vf-tabs__section vf-content" id="vf-tabs__section--rendered">
+          <section class="vf-tabs__section" id="vf-tabs__section--rendered">
             {% if variant.context['component-type'] == 'grid' %}
               <div class="vf-gridxx" style="grid-column: -1/1;">
                 {% render '@'+variant.handle, variant.context %}

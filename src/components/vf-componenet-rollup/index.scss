@@ -160,6 +160,5 @@ html, button {
 @import 'vf-text/vf-text.scss';
 @import 'vf-utility-classes/vf-utility-classes.scss';
 
-// This is a demonstration of vf-core's ability to warn and proceed on missing
-// sass imports
-@import 'vf-somepattern/vf-i-dont-exist.scss';
+/* EBI VF 1.x compatiblity */
+@import 'embl-compatibility-ebivf/embl-compatibility-ebivf.scss';

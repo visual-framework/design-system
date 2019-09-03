@@ -1,0 +1,15 @@
+// setup files required
+
+// sass-lint:disable clean-import-paths
+@import 'vf-global-variables';
+@import 'vf-variables';
+@import 'vf-functions';
+@import 'vf-mixins';
+
+// component specific styles
+
+@import 'embl-compatibility-ebivf.variables.scss';
+@import 'embl-compatibility-ebivf.scss';
+
+// component variant styles
+// @import 'embl-compatibility-ebivf--variant.scss';
