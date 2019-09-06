@@ -162,3 +162,6 @@ html, button {
 
 /* EBI VF 1.x compatiblity */
 @import 'embl-compatibility-ebivf/embl-compatibility-ebivf.scss';
+
+// If you have any locoal overrides, put them in:
+@import 'vf-local-overrides/vf-local-overrides.scss';
