@@ -77,7 +77,7 @@ The set below shows all the colours for the EMBL brand. Other colours are not al
 {% for item in styles.colors.properties %}
 
 <article class="swatch">
-  <div class="swatch__colour" style="background-color: {{ item.value}};"></div>
+  <div class="swatch__colour" style="background-color: {{ item.meta.rgb}};"></div>
   <section class="swatch__details">
   <h3 class="swatch__colour-name">{{ item.meta.friendlyName }}</h3>
   <p class="swatch__colour-hex"><span class="swatch__meta">Hex: </span>{{ item.value }}</p>
