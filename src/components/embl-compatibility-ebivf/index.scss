@@ -11,5 +11,10 @@
 @import 'embl-compatibility-ebivf.variables.scss';
 @import 'embl-compatibility-ebivf.scss';
 
+// dependencies
+@import 'vf-font-plex-sans/vf-font-plex-sans.scss';
+@import 'vf-font-plex-mono/vf-font-plex-mono.scss';
+
+
 // component variant styles
 // @import 'embl-compatibility-ebivf--variant.scss';

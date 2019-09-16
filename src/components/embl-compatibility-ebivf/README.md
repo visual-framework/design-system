@@ -11,6 +11,20 @@ b. wrapping a section of html with the class `.embl-compatibility-ebivf`
 
 ## Install
 
+### Option 1
+
+Use the global VF 2.0 CSS along side your existing VF 1.x CSS; see: https://dev.beta.embl.org/guidelines/design/patterns/
+
+### Option 2
+
+If you don't want to include all the VF 2.0 CSS, add only the compatibility CSS:
+
+```
+https://dev.beta.embl.org/guidelines/design/assets/embl-compatibility-ebivf/assets/embl-compatibility-ebivf.css
+```
+
+### Option 3
+
 This repository is distributed with [npm][npm]. After [installing npm][install-npm], you can install `embl-compatibility-ebivf` with this command.
 
 ```
