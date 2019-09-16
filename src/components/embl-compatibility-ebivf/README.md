@@ -4,7 +4,7 @@
 
 This adds fixes, compatibility and workarounds for sites that use the EBI VF versions 1.1, 1.2 or 1.3.
 
-Enable it's use by:
+Enable its use by:
 
 a. `body class="embl-compatibility-ebivf"`, or
 b. wrapping a section of html with the class `.embl-compatibility-ebivf`
@@ -20,7 +20,7 @@ Use the global VF 2.0 CSS along side your existing VF 1.x CSS; see: https://dev.
 If you don't want to include all the VF 2.0 CSS, add only the compatibility CSS:
 
 ```
-https://dev.beta.embl.org/guidelines/design/assets/embl-compatibility-ebivf/assets/embl-compatibility-ebivf.css
+https://dev.assets.emblstatic.net/embl-design-system/develop/assets/embl-compatibility-ebivf/embl-compatibility-ebivf.css
 ```
 
 ### Option 3
