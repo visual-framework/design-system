@@ -91,7 +91,7 @@ let fractalBuildMode = 'build';
 gulp.task('build', gulp.series(
   'vf-clean',
   'copy-design-tokens',
-  gulp.parallel('vf-css','vf-scripts','vf-component-assets'),
+  gulp.parallel('vf-css','vf-css:generate-component-css','vf-scripts','vf-component-assets'),
   'elventy-set-to-build',
   'eleventy'
 ));
