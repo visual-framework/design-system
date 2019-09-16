@@ -86,12 +86,21 @@ gulp.task('copy-design-tokens', function () {
   .pipe(ext_replace('.ios.json', '.json'))
 });
 
+// A placeholder until vf-core beta.4
+gulp.task('component-compiled-css', function() {
+  return gulp
+    .src([componentPath + '/vf-core-components/**/*.css', componentPath + '/**/*.css'])
+    .pipe(gulp.dest(buildDestionation + '/assets'));
+});
+
+
 // Let's build this sucker.
 let fractalBuildMode = 'build';
 gulp.task('build', gulp.series(
   'vf-clean',
   'copy-design-tokens',
-  gulp.parallel('vf-css','vf-scripts','vf-component-assets'),
+  gulp.parallel('vf-css','vf-css:generate-component-css','vf-scripts','vf-component-assets'),
+  'component-compiled-css',
   'elventy-set-to-build',
   'eleventy'
 ));

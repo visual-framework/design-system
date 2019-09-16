@@ -693,6 +693,11 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-figure/-/vf-figure-1.0.0-alpha.6.tgz#0aae5a6b0500628a6034d757fcf2e38beb294d1e"
   integrity sha512-uGeYMi33ql2N/yTpD4Jel5S2YYgkRmJdHe9a0y+AxsIh0+c7TNPEqCOlLUKPuI2zM77hOip46hhvshbwaZBVjA==
 
+"@visual-framework/vf-font-plex-mono@^1.0.0-beta.6":
+  version "1.0.0-beta.6"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-font-plex-mono/-/vf-font-plex-mono-1.0.0-beta.6.tgz#0369a3997da9fbe19e6755be208113c00cd15f89"
+  integrity sha512-c+d3ymuzH8tu2SSzVJ6DcXfIhk7cKdLhKz9ohLFjyBu2y/cJ41ZqsNHd9Jd6Ucw4HAeUZnj2FvoVWr3eAg+RfQ==
+
 "@visual-framework/vf-font-plex-sans@^1.0.0-beta.6":
   version "1.0.0-beta.6"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-font-plex-sans/-/vf-font-plex-sans-1.0.0-beta.6.tgz#21359ab04fa9b3b9f45da341914a4cdcf3a54436"
