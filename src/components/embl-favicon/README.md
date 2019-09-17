@@ -2,6 +2,8 @@
 
 ## About
 
+Note: There is no Sass for this component.
+
 ## Installation and Implementation
 
 This component is distributed with npm. After [installing npm](https://www.npmjs.com/get-npm), you can install the `embl-favicon` with this command.

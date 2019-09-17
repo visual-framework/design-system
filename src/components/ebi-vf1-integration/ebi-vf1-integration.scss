@@ -68,16 +68,21 @@ body.ebi-vf1-integration,
     text-decoration: underline;
   }
   
+  a:hover {
+    text-decoration: unset;
+  }  
+  
   // EBI Global header and local masthead
   #local-title a,
   .masthead-black-bar .global-nav a, 
-  .masthead-black-bar .global-nav a:hover,
   .masthead ul li a,
   ul.menu.secondary-menu a, 
-  ul.menu.secondary-menu a:hover,
-  .secondary-menu ul.menu a,
-  .secondary-menu ul.menu a:hover {
+  .secondary-menu ul.menu a {
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   // vf 1.x utility class
@@ -92,9 +97,7 @@ body.ebi-vf1-integration,
     text-decoration: none;
   }
 
-  a:hover {
-    text-decoration: unset;
-  }
+
 
   .vf-button--primary:visited,
   .vf-button--secondary:visited,

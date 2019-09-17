@@ -44,7 +44,7 @@ process.argv.push('--config=eleventy.js');
 
 // Watch folders for changess
 gulp.task('watch', function() {
-  gulp.watch(['./src/components/**/*.scss', '!./src/components/**/package.variables.scss'], gulp.parallel('vf-css'));
+  gulp.watch(['./src/components/**/*.scss', '!./src/components/**/package.variables.scss'], gulp.parallel('vf-css','vf-css:generate-component-css'));
   gulp.watch(['./src/components/**/*.js'], gulp.parallel('vf-scripts'));
 });
 
@@ -109,7 +109,7 @@ gulp.task('build', gulp.series(
 gulp.task('dev', gulp.series(
   'vf-clean',
   'copy-design-tokens',
-  gulp.parallel('vf-css','vf-scripts','vf-component-assets'),
+  gulp.parallel('vf-css','vf-css:generate-component-css','vf-scripts','vf-component-assets'),
   'elventy-set-to-serve',
   'eleventy',
   gulp.parallel('watch','vf-watch')
