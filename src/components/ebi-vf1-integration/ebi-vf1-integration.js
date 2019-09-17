@@ -1,4 +1,4 @@
-// embl-compatibility-ebivf
+// ebi-vf1-integration
 
 // Don't need JS? Then feel free to delete this file.
 

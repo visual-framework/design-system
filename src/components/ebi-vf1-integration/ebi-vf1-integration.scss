@@ -1,4 +1,4 @@
-// embl-compatibility-ebivf
+// ebi-vf1-integration
 
 // **Thinking about deleting this file?**
 // If your component needs no CSS/Sass, we still recommend leaving the
@@ -24,11 +24,11 @@
  * Location: #{map-get($componentInfo, 'location')}
  */
 
-@import 'embl-compatibility-ebivf.variables.scss';
+@import 'ebi-vf1-integration.variables.scss';
 
 
-.embl-compatibility-ebivf,
-html body.embl-compatibility-ebivf {
+.ebi-vf1-integration,
+html body.ebi-vf1-integration {
   font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
 
   h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
@@ -36,13 +36,13 @@ html body.embl-compatibility-ebivf {
   }
 }
 
-body.embl-compatibility-ebivf,
-.embl-compatibility-ebivf p {
+body.ebi-vf1-integration,
+.ebi-vf1-integration p {
   -webkit-font-smoothing: unset !important;
   text-rendering: initial;
 }
 
-.embl-compatibility-ebivf {
+.ebi-vf1-integration {
 
   h1 {
     color: unset;
