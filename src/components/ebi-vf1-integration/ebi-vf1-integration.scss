@@ -97,11 +97,12 @@ body.ebi-vf1-integration,
     text-decoration: none;
   }
 
-
-
-  .vf-button--primary:visited,
-  .vf-button--secondary:visited,
-  .vf-button--tertiary:visited {
-    color: white;
+  .vf-button--primary,
+  .vf-button--secondary,
+  .vf-button--tertiary {
+    &:hover,
+    &:visited {
+      color: white;
+    }
   }
 }
