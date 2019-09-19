@@ -18,8 +18,6 @@ layout: layouts/boilerplate.njk
   {% render "@embl-favicon" %}
   {% render "@embl-content-meta-properties", {"meta_who": "Group Jane", "meta_where": "Barcelona", "meta_what": "research", "meta_active": "what"} %}
 
-  {# <link rel="stylesheet" media="all" href="{{ '/css/app.css' | url }}" /> #}
-
   {% if serverInfo.environment == "development" %}
   <link rel="stylesheet" media="all" href="{{ '/css/styles.css' | url }}" />
   {% else %}
