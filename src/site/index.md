@@ -13,9 +13,6 @@ layout: layouts/base.njk
   ]
 } %}
 
-
-
-
 <section class="embl-grid embl-grid--has-centered-content">
   <div></div>
   <div class="vf-content">
