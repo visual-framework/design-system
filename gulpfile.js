@@ -101,6 +101,8 @@ gulp.task('manual-exit', function(done) {
 
 // Let's build this sucker.
 let fractalBuildMode = 'build';
+// todo: switch build mode once vf-core beta.4 is out
+// fractalBuildMode = 'dataobject'; // run fractal in server mode as there's no need for static html assets 
 gulp.task('build', gulp.series(
   'vf-clean',
   'copy-design-tokens',
