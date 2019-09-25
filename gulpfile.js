@@ -47,6 +47,8 @@ process.argv.push('--config=eleventy.js');
 gulp.task('watch', function() {
   gulp.watch(['./src/components/**/*.scss', '!./src/components/**/package.variables.scss'], gulp.parallel('vf-css','vf-css:generate-component-css'));
   gulp.watch(['./src/components/**/*.js'], gulp.parallel('vf-scripts'));
+  // build search index after search page is compiled
+  gulp.watch(['./build/search/index.html'], gulp.parallel('vf-build-search-index'));
 });
 
 gulp.task('elventy-set-to-serve', function(done) {
@@ -76,8 +78,15 @@ gulp.task('eleventy', function(done) {
 
   function fractalReadyCallback(fractal) {
     global.fractal = fractal; // save fractal globally
-    global.eleventy = require('@11ty/eleventy/cmd.js');
-    done();
+    let elev = require('./node_modules/\@visual-framework/vf-eleventy--extensions/11ty/cmd.js');
+    buildEleventy(elev);
+  }
+  
+  function buildEleventy(elev) {
+    elev.write().then( function() {
+      console.log('Done building 11ty');
+      done();
+    });  
   }
 });
 
