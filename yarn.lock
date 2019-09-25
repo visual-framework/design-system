@@ -681,10 +681,10 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-divider/-/vf-divider-1.0.0-rc.6.tgz#bcfb4c530ad31abf2ed21575cb22a2cce4c8350c"
   integrity sha512-ia14ijfEKnc/2z+s3xdkPQM/KH4CUAAI//RO3pj06PRNdULelXE4qUz1gdZTbKecYc1vJJXA/TkKD7KZFQEsgg==
 
-"@visual-framework/vf-eleventy--extensions@^1.0.0-alpha.6":
-  version "1.0.0-alpha.6"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-eleventy--extensions/-/vf-eleventy--extensions-1.0.0-alpha.6.tgz#592654d408162c364b3b89f3be560c9e241d0d6a"
-  integrity sha512-z/rCTJ0qRpHv1uDih1ieoVO3pDP9p61JZx992pL2pv/9x7YeW5yFKLYbgPluwzSd7vT4ET7FPbhs+icuhasqOQ==
+"@visual-framework/vf-eleventy--extensions@^1.0.0-alpha.7":
+  version "1.0.0-alpha.7"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-eleventy--extensions/-/vf-eleventy--extensions-1.0.0-alpha.7.tgz#48098b2b80dbadc9d720c204bd4874ce35a54b31"
+  integrity sha512-ne4vpMSavOsLa+OWyDkZXIh7xROdGgQ05K6OIFkeRkMRmzoQDtnXRQdh+c17v1ryscCxHBEMGmELrqAXNaOk0Q==
   dependencies:
     "@11ty/eleventy-plugin-rss" "^1.0.6"
 
@@ -7104,10 +7104,10 @@ luxon@^1.17.2:
   version "1.17.2"
   resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.17.2.tgz#95189c450341cfddf5f826ef8c32b5b022943fd5"
 
-luxon@^1.19.2:
-  version "1.19.2"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.19.2.tgz#f041a9031e7dff6fdbff46e46c73b3fdf4ab2764"
-  integrity sha512-4Dn6oriheX04QQd7mMhuScnyQPdD7h11aCJgSTq9FqkOWdxX7xRUXoX/OXu4rkw98NmcVz3QSLpLbDnT6lVsMw==
+luxon@^1.19.3:
+  version "1.19.3"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.19.3.tgz#86c04a1395529b4386ae235a8fe16d0a82a0695b"
+  integrity sha512-YwTDjGRQC0QC9Iya2g2eKZfgEFqRId4ZoLHORQcfTMB/5xrTx427V7ZPjQJ1vzvhA2vJfG2bh1Kv8V8IFMWCUA==
 
 macos-release@^2.2.0:
   version "2.3.0"
