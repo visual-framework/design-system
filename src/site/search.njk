@@ -9,8 +9,24 @@ layout: layouts/base.njk
 {# https://lunrjs.com/docs/index.html #}
 <script src="{{ '/search_index.js' | url }}"></script>
 
+<div class="vf-grid">
+  <form action="{{ '/search/' | url }}" method="GET" class="vf-form | vf-search vf-search--inline">
+    <div class="vf-form__item | vf-search__item">
+      <label class="vf-form__label vf-sr-only | vf-search__label" for="text">
+        Search
+      </label>
+      <input type="text" id="text" name="search_query" class="vf-form__input | vf-search__input" data-vf-search-client-side-input>
+    </div>
+    <button type="submit" class="vf-search__button | vf-button vf-button--primary">
+      Search
+    </button>
+  </form>
+</div>
+
+
+
 <div class="vf-search-client-side vf-grid | vf-content">
-  <div class="results-container" data-search-results>
+  <div class="results-container" data-vf-search-client-side-results>
     Loading...
   </div>
 </div>
