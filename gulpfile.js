@@ -93,6 +93,10 @@ gulp.task('component-compiled-css', function() {
     .pipe(gulp.dest(buildDestionation + '/assets'));
 });
 
+// Eleventy doesn't always finish promptly, this ensures we exit gulp "cleanly"
+gulp.task('manual-exit', function(done) {
+  done()(process.exit());
+});
 
 // Let's build this sucker.
 let fractalBuildMode = 'build';
@@ -103,6 +107,7 @@ gulp.task('build', gulp.series(
   'component-compiled-css',
   'elventy-set-to-build',
   'eleventy'
+  'manual-exit'
 ));
 
 // Build and watch things during dev
