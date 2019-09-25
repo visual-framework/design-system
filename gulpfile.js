@@ -38,6 +38,7 @@ const buildDestionation = path.resolve('.', global.vfBuildDestination).replace(/
 
 // Tasks to build/run vf-core component system
 require('./node_modules/\@visual-framework/vf-core/tools/gulp-tasks/_gulp_rollup.js')(gulp, path, componentPath, componentDirectories, buildDestionation);
+require('./node_modules/\@visual-framework/vf-eleventy--extensions/utils/vf-build-search-index.gulpfile.js')(gulp, path, buildDestionation);
 
 // Eleventy config
 process.argv.push('--config=eleventy.js');
@@ -106,7 +107,8 @@ gulp.task('build', gulp.series(
   gulp.parallel('vf-css','vf-css:generate-component-css','vf-scripts','vf-component-assets'),
   'component-compiled-css',
   'elventy-set-to-build',
-  'eleventy'
+  'eleventy',
+  'vf-build-search-index',
   'manual-exit'
 ));
 
@@ -117,5 +119,5 @@ gulp.task('dev', gulp.series(
   gulp.parallel('vf-css','vf-css:generate-component-css','vf-scripts','vf-component-assets'),
   'elventy-set-to-serve',
   'eleventy',
-  gulp.parallel('watch','vf-watch')
+  gulp.parallel('watch','vf-watch','vf-build-search-index')
 ));
