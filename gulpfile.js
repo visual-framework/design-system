@@ -1,6 +1,7 @@
 const gulp  = require('gulp');
 const rename = require('gulp-rename');
 const ext_replace = require('gulp-ext-replace');
+var   fractalBuildMode;
 
 // -----------------------------------------------------------------------------
 // Configuration
@@ -40,9 +41,6 @@ const buildDestionation = path.resolve('.', global.vfBuildDestination).replace(/
 require('./node_modules/\@visual-framework/vf-core/tools/gulp-tasks/_gulp_rollup.js')(gulp, path, componentPath, componentDirectories, buildDestionation);
 require('./node_modules/\@visual-framework/vf-eleventy--extensions/utils/vf-build-search-index.gulpfile.js')(gulp, path, buildDestionation);
 
-// Eleventy config
-process.argv.push('--config=eleventy.js');
-
 // Watch folders for changess
 gulp.task('watch', function() {
   gulp.watch(['./src/components/**/*.scss', '!./src/components/**/package.variables.scss'], gulp.parallel('vf-css','vf-css:generate-component-css'));
@@ -51,26 +49,27 @@ gulp.task('watch', function() {
   gulp.watch(['./build/search/index.html'], gulp.parallel('vf-build-search-index'));
 });
 
-gulp.task('elventy-set-to-serve', function(done) {
-  // Since we're not using the 11ty command line directly, we need to set the
-  // `--serve` param manually
+gulp.task('set-to-development', function(done) {
   process.argv.push('--serve');
   process.env.ELEVENTY_ENV = 'development';
   fractalBuildMode = 'server';
   done();
 });
 
-gulp.task('elventy-set-to-build', function(done) {
-  // Since we're not using the 11ty command line directly, we need to set the
-  // `--serve` param manually
+gulp.task('set-to-static-build', function(done) {
   process.argv.push('--quiet');
   process.env.ELEVENTY_ENV = 'production';
+  fractalBuildMode = 'build';
+  // todo: switch build mode once vf-core beta.4 is out
+  // fractalBuildMode = 'dataobject'; // run fractal in server mode as there's no need for static html assets
   done();
 });
 
 // Run eleventy, but only after we wait for fractal to bootstrap
 // @todo: consider if this could/should be two parallel gulp tasks
 gulp.task('eleventy', function(done) {
+  let elev;
+  process.argv.push('--config=eleventy.js'); // Eleventy config
   global.vfBuilderPath   = __dirname + '/build/vf-core-components';
   global.vfDocsPath      = __dirname + '/node_modules/\@visual-framework/vf-eleventy--extensions/fractal/docs';
   global.vfOpenBrowser   = false; // if you want to open a browser tab for the component library
@@ -78,16 +77,27 @@ gulp.task('eleventy', function(done) {
 
   function fractalReadyCallback(fractal) {
     global.fractal = fractal; // save fractal globally
-    let elev = require('./node_modules/\@visual-framework/vf-eleventy--extensions/11ty/cmd.js');
-    buildEleventy(elev);
+    elev = require('./node_modules/\@visual-framework/vf-eleventy--extensions/11ty/cmd.js');
+    console.log('Done building Fractal');
+    buildEleventy();
   }
-  
-  function buildEleventy(elev) {
-    elev.write().then( function() {
-      console.log('Done building 11ty');
-      done();
-    });  
+
+  function buildEleventy() {
+    if (process.env.ELEVENTY_ENV == 'production') {
+      elev.write().then(function() {
+        console.log('Done building 11ty');
+        done();
+      });
+    }
+    if (process.env.ELEVENTY_ENV == 'development') {
+      elev.watch().then(function() {
+        elev.serve('3000');
+        // console.log('Done building 11ty');
+        done();
+      });
+    }
   }
+
 });
 
 gulp.task('copy-design-tokens', function () {
@@ -109,15 +119,12 @@ gulp.task('manual-exit', function(done) {
 });
 
 // Let's build this sucker.
-let fractalBuildMode = 'build';
-// todo: switch build mode once vf-core beta.4 is out
-// fractalBuildMode = 'dataobject'; // run fractal in server mode as there's no need for static html assets 
 gulp.task('build', gulp.series(
   'vf-clean',
   'copy-design-tokens',
   gulp.parallel('vf-css','vf-css:generate-component-css','vf-scripts','vf-component-assets'),
   'component-compiled-css',
-  'elventy-set-to-build',
+  'set-to-static-build',
   'eleventy',
   'vf-build-search-index',
   'manual-exit'
@@ -128,7 +135,7 @@ gulp.task('dev', gulp.series(
   'vf-clean',
   'copy-design-tokens',
   gulp.parallel('vf-css','vf-css:generate-component-css','vf-scripts','vf-component-assets'),
-  'elventy-set-to-serve',
+  'set-to-development',
   'eleventy',
   gulp.parallel('watch','vf-watch','vf-build-search-index')
 ));
