@@ -15,12 +15,15 @@
 function vfSearchClientSide(firstPassedVar) {
   firstPassedVar = firstPassedVar || 'defaultVal';
   var searchTerm;
+  const searchQueryInput = document.querySelectorAll('[data-vf-search-client-side-input]'); // where we put the query
 
   // some tips
   // https://lunrjs.com/guides/customising.html
   // https://davidwalsh.name/adding-search-to-your-site-with-javascript
 
-  var customPipeline = function (builder) {
+  // this lunr pipeline disregards hypens by breaking up words
+  // It's particuarly good if users might type `vf-tabs` or `tabs` to find `vf-tabs`
+  var customPipelineWithoutHypens = function (builder) {
     var pipelineFunction = function (token) {
       var tokenStr = token.toString();
       // if there are no hyphens then skip this logic
@@ -48,12 +51,32 @@ function vfSearchClientSide(firstPassedVar) {
       return tokens;
     };
 
-    lunr.Pipeline.registerFunction(pipelineFunction, 'customPipeline');
+    lunr.Pipeline.registerFunction(pipelineFunction, 'customPipelineWithoutHypens');
     builder.pipeline.before(lunr.stemmer, pipelineFunction);
     builder.searchPipeline.before(lunr.stemmer, pipelineFunction);
 
   };
 
+  // set up lunr search index
+  var idx = lunr(function () {
+    this.tokenizer.separator = /[\s]+/;
+    this.use(customPipelineWithoutHypens);
+
+    this.field('title', {
+      boost: 100
+    });
+    this.field('text', {
+      boost: 0.1
+    });
+    this.field('url');
+    this.metadataWhitelist = ['position']
+
+    searchIndex.pages.forEach(function (page) {
+      this.add(page);
+    }, this);
+
+  });
+  
   function getQueryVariable(variable) {
     var query = window.location.search.substring(1);
     var vars = query.split("&");
@@ -61,52 +84,45 @@ function vfSearchClientSide(firstPassedVar) {
       var pair = vars[i].split("=");
       if (pair[0] === variable) {
         var temp = decodeURIComponent(pair[1].replace(/\+/g, "%20"));
-        temp = temp.replace(/(<([^>]+)>)/ig, "");
-        "strip tags"
+        temp = temp.replace(/(<([^>]+)>)/ig, ""); // "strip tags"
+        console.log('Fonud query', temp);
         return temp;
       }
     }
   }
 
-  // where we put the query
-  const searchQueryInput = document.querySelectorAll('[data-vf-search-client-side-input]');
+  // Grab any query from the URL on bootstrap
+  searchTerm = getQueryVariable("search_query");
 
-  // watch the search box for changes
-  searchQueryInput[0].addEventListener('change', (event) => {
-    console.log(searchQueryInput[0].value)
-    runSearch();
-  });
+  // set the input box to the search query
+  if (typeof searchTerm !== "undefined") {
+    searchQueryInput[0].value = searchTerm;
+  };
 
-  var buildSearchIndex = function () {
-
-    // set up lunr search
-    var idx = lunr(function () {
-      this.tokenizer.separator = /[\s]+/;
-      this.use(customPipeline);
-
-      this.field('title', {
-        boost: 100
-      });
-      this.field('text', {
-        boost: 0.1
-      });
-      this.field('url');
-      this.metadataWhitelist = ['position']
-
-      searchIndex.pages.forEach(function (page) {
-        this.add(page);
-      }, this);
-
-    });
-
-    // strip out searches for `vf-` as it's a junk term
-    searchTerm = searchTerm.replace('vf-', '')
-
-    // run the earch
-    renderResults(idx.search(searchTerm), searchTerm);
+  // See what the query in the searchbox is
+  function getValueFromSearchBox() {
+    searchTerm = searchQueryInput[0].value.replace(/(<([^>]+)>)/ig, ""); // "strip tags"
+    renderResults();
   }
 
-  var renderResults = function (results, searchTerm) {
+  // watch the search box for changes
+  let searchQueryInputTimeout;
+  searchQueryInput[0].addEventListener('keypress', function(){
+    if(searchQueryInputTimeout) {
+      clearTimeout(searchQueryInputTimeout);
+      searchQueryInputTimeout = null;
+    }
+
+    searchQueryInputTimeout = setTimeout(getValueFromSearchBox, 600)
+  });
+
+  var renderResults = function () {
+
+    // strip out searches for `vf-` as it's a junk term
+    let searchTermTrimmed = searchTerm.replace('vf-', '')
+
+    // run the search
+    let results = idx.search(searchTermTrimmed)
 
     // where we put the search results
     const searchResultsContainer = document.querySelectorAll('[data-vf-search-client-side-results]');
@@ -131,21 +147,8 @@ function vfSearchClientSide(firstPassedVar) {
     searchResultsContainer[0].innerHTML = renderedResults;
   }
 
-  function runSearch() {
-    searchTerm = getQueryVariable("search_query");
-
-    if (typeof searchTerm !== "undefined") {
-
-      // set the input box to the search query
-      searchQueryInput[0].value = searchTerm;
-
-      buildSearchIndex();
-    };
-  }
-
   // default invokation
-  runSearch();
-
+  getValueFromSearchBox();
 
 }
 
