@@ -16,6 +16,7 @@ function vfSearchClientSide(firstPassedVar) {
   firstPassedVar = firstPassedVar || 'defaultVal';
   var searchTerm;
   const searchQueryInput = document.querySelectorAll('[data-vf-search-client-side-input]'); // where we put the query
+  const searchResultsContainer = document.querySelectorAll('[data-vf-search-client-side-results]'); // where we put the search results
 
   // some tips
   // https://lunrjs.com/guides/customising.html
@@ -116,16 +117,20 @@ function vfSearchClientSide(firstPassedVar) {
     searchQueryInputTimeout = setTimeout(getValueFromSearchBox, 600)
   });
 
-  var renderResults = function () {
+  function renderResults() {
 
     // strip out searches for `vf-` as it's a junk term
     let searchTermTrimmed = searchTerm.replace('vf-', '')
 
     // run the search
-    let results = idx.search(searchTermTrimmed)
+    let results = idx.search(searchTermTrimmed);
 
-    // where we put the search results
-    const searchResultsContainer = document.querySelectorAll('[data-vf-search-client-side-results]');
+    if (results.length === 0) {
+      searchResultsContainer[0].innerHTML = 'No results found';
+
+      return false;
+    }
+
 
     // map the search hits to the search pages
     let resultPages = results.map(function (match) {
