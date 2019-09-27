@@ -1,14 +1,39 @@
 ---
-permalink: search.json
+title: Seach this site
+subtitle: Search documentation and guidance on the EMBL Design System.
+date: 2018-08-22 12:24:50
+is_index: true
+layout: layouts/post.njk
 ---
-[
-{%- for page in collections.all -%}
-  {%- if page.data.layout %}
-  {
-    "url": "{{ page.url }}",
-    "title": "{{ page.data.title }}",
-    "index": "{{ page.templateContent | squash }}"
-  }{% if not loop.last %},{% endif %}
-  {%- endif -%}
-{%- endfor -%}
-]
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.6/lunr.js"></script>
+{# https://lunrjs.com/docs/index.html #}
+<script src="{{ '/search_index.js' | url }}"></script>
+
+<div class="vf-grid">
+  <form action="{{ '/search/' | url }}" method="GET" class="vf-form | vf-search vf-search--inline">
+    <div class="vf-form__item | vf-search__item">
+      <label class="vf-form__label vf-sr-only | vf-search__label" for="text">
+        Search
+      </label>
+      <input type="text" id="text" name="search_query" class="vf-form__input | vf-search__input" data-vf-search-client-side-input>
+    </div>
+    <button type="submit" class="vf-search__button | vf-button vf-button--primary">
+      Search
+    </button>
+  </form>
+</div>
+
+
+
+<div class="vf-search-client-side vf-grid | vf-content">
+  <div class="results-container" data-vf-search-client-side-results>
+    Loading...
+  </div>
+</div>
+
+<script type="text/javascript">
+  window.onload = function () {
+    vfSearchClientSide();
+  };
+</script>

@@ -31,3 +31,6 @@ emblBreadcrumbs();
 
 import { emblContentMetaProperties_Read } from 'embl-content-meta-properties/embl-content-meta-properties';
 // No default invokation
+
+import { vfSearchClientSide } from 'vf-search-client-side/vf-search-client-side';
+// No default invokation
