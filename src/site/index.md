@@ -13,6 +13,22 @@ layout: layouts/base.njk
   ]
 } %}
 
+<section class="vf-content | embl-grid embl-grid--has-centered-content">
+  <div><!-- empty --></div>
+  <form action="{{ '/search/' | url }}" method="GET" class="vf-form | vf-search vf-search--inline">
+    <div class="vf-form__item | vf-search__item">
+      <label class="vf-form__label vf-sr-only | vf-search__label" for="text">
+        Search
+      </label>
+      <input placeholder="Search the EMBL Design System documentation" type="text" id="text" name="search_query" class="vf-form__input | vf-search__input" data-vf-search-client-side-input>
+    </div>
+    <button type="submit" class="vf-search__button | vf-button vf-button--primary">
+      Search
+    </button>
+  </form>
+</section>
+
+
 <section class="embl-grid embl-grid--has-centered-content">
   <div></div>
   <div class="vf-content">
