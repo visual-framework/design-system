@@ -1,0 +1,42 @@
+---
+title: Blog
+layout: layouts/page.njk
+---
+
+Updates 
+
+{%- set siteConfig = siteConfig.siteInformation -%}
+
+{%- for blog in collections.blog %}
+{% set absoluteblogUrl %}{{ metadata.id }}{{ blog.url }}{% endset %}
+
+  {# 
+  this nunjuck template isn't accepting local inputs
+  {% render '@vf-summary--article', {
+    "summary__title": ,
+    "summary__text": blog.templateContent,
+    "image": "/assets/vf-summary/assets/vf-icon--avatar.svg",
+    "name": blog.author
+  } %}
+ #}
+
+<article class="vf-summary vf-summary--article">
+
+  <h3 class="vf-summary__title">
+    <a href="JavaScript:Void(0);" class="vf-summary__link">{{ blog.data.title }}</a>
+  </h3>
+
+  <div class="vf-summary__meta">
+    <a href="JavaScript:Void(0);" class="vf-summary__author vf-summary__link">{{ blog.data.author }}</a>
+    <p class="vf-summary__date">{{ blog.date | dateDisplay }}</p>
+  </div>
+
+  <p class="vf-summary__text">{{ blog.templateContent | htmlToAbsoluteUrls(absoluteblogUrl) | safe }}</p>
+
+</article>
+
+    <h2></h2>
+    {{ absoluteblogUrl | url}}
+    
+    <content type="html"></content>
+  {%- endfor %}

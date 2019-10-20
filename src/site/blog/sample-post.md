@@ -1,7 +1,8 @@
 ---
 title: I'm an update
 date: 2019-04-09 12:24:50
-tags: posts
+tags: blog
+author: Ken Hawkins
 layout: layouts/post.njk
 ---
 
