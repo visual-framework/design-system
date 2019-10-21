@@ -48,7 +48,7 @@ let elev;
 
 // Watch folders for changess
 gulp.task('watch', function() {
-  gulp.watch(['./src/components/**/*.scss', '!./src/components/**/package.variables.scss'], gulp.parallel('vf-css','vf-css:generate-component-css'));
+  gulp.watch(['./src/components/**/*.scss', '!./src/components/**/package.variables.scss'], gulp.series(gulp.parallel('vf-css','vf-css:generate-component-css'),'vf-component-assets:all'));
   gulp.watch(['./src/components/**/*.js'], gulp.parallel('vf-scripts'));
   // build search index after search page is compiled
   gulp.watch(['./build/search/index.html'], gulp.parallel('vf-build-search-index'));
@@ -129,12 +129,21 @@ gulp.task('manual-exit', function(done) {
   done()(process.exit());
 });
 
+// More thoroghouh than the other `vf-component-assets`,
+// this copies all assets. Good for design system docs
+gulp.task('vf-component-assets:all', function() {
+  return gulp
+    .src([componentPath + '/vf-core-components/**/*', componentPath + '/**/*'])
+    .pipe(gulp.dest(buildDestionation + '/assets'));
+});
+
 // Let's build this sucker.
 gulp.task('build', gulp.series(
   'vf-clean',
   'copy-design-tokens',
   'vf-build-search-index',
-  gulp.parallel('vf-css','vf-css:generate-component-css','vf-scripts','vf-component-assets'),
+  gulp.parallel('vf-css','vf-css:generate-component-css','vf-scripts'),
+  'vf-component-assets:all',
   'fractal:build',
   'fractal',
   'eleventy:init',
@@ -146,7 +155,8 @@ gulp.task('build', gulp.series(
 gulp.task('dev', gulp.series(
   'vf-clean',
   'copy-design-tokens',
-  gulp.parallel('vf-css','vf-css:generate-component-css','vf-scripts','vf-component-assets'),
+  gulp.parallel('vf-css','vf-css:generate-component-css','vf-scripts'),
+  'vf-component-assets:all',
   'fractal:development',
   'fractal',
   'eleventy:init',
