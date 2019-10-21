@@ -140,10 +140,9 @@ templateEngineOverride: njk
           <section class="vf-tabs__section vf-content" id="vf-tabs__section--assets">
 
             {% markdown %}
-
-              - [Nunjucks template]({{ '/' | url}}{{ 'src/' + variant.viewPath.split('/src/')[1] }})
+              - [Nunjucks template]({{ '/' | url}}assets/{{ variant.viewPath.split('/src/components/')[1] | replace('vf-core-components/','') }})
               {%- for asset in variant.resources.assets %}
-              - [{{asset.base}}]({{ '/' | url}}{{ 'src/' + asset.srcPath }})
+              - [{{asset.base}}]({{ '/' | url}}{{ asset.srcPath | replace('vf-core-components/','') | replace('components/','assets/') }})
               {%- endfor %}
 
             {% endmarkdown %}
