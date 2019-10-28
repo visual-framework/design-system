@@ -18,8 +18,6 @@ let elev;
 
 // Watch folders for changess
 gulp.task('watch', function() {
-  gulp.watch(['./src/components/**/*.scss', '!./src/components/**/package.variables.scss'], gulp.series(gulp.parallel('vf-css','vf-css:generate-component-css'),'vf-component-assets:all'));
-  gulp.watch(['./src/components/**/*.js'], gulp.parallel('vf-scripts'));
   // build search index after search page is compiled
   gulp.watch(['./build/search/index.html'], gulp.parallel('vf-build-search-index'));
   // gulp.watch(['./src/**/*.{njk,html,md}'], gulp.series('eleventy:reload'));
