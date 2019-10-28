@@ -14,6 +14,7 @@
     "vfNamespace": "embl-",
     "vfComponentPath": "./src/components",
     "vfBuildDestination": "./build",
+    "vfBuildFractalMode": "dataObject",
     "vfThemePath": "@frctl/mandelbrot"
   },
   "scripts": {
@@ -39,8 +40,9 @@
     "@visual-framework/vf-breadcrumbs": "^1.0.0-beta.8",
     "@visual-framework/vf-card": "^1.0.0-alpha.8",
     "@visual-framework/vf-code-example": "^1.0.0-alpha.8",
+    "@visual-framework/vf-config": "^0.0.2",
     "@visual-framework/vf-content": "^1.0.0-beta.8",
-    "@visual-framework/vf-core": "^2.0.0-beta.4",
+    "@visual-framework/vf-core": "^2.0.0-beta.5",
     "@visual-framework/vf-design-tokens": "^1.0.0-beta.7",
     "@visual-framework/vf-discussion": "^1.0.0-alpha.8",
     "@visual-framework/vf-divider": "^1.0.0-rc.8",
