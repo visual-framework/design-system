@@ -17,9 +17,9 @@ let searchIndex = {
 
 ## Building a search index
 
-To generate that JS file, if you're using a vf-eleventy based site, you may also want to make use of the `vf-eleventy--extensions`'s `vf-build-search-index.gulpfile.js`:
+To generate that JS file, if you're using a vf-eleventy based site, you may also want to make use of the `vf-extensions`'s `vf-build-search-index.gulpfile.js`:
 
-> `require('./node_modules/\@visual-framework/vf-eleventy--extensions/utils/vf-build-search-index.gulpfile.js')(gulp, path, buildDestionation);`
+> `require('./node_modules/\@visual-framework/vf-extensions/utils/vf-build-search-index.gulpfile.js')(gulp, path, buildDestionation);`
 
 And you should build that search index after updating your html pages, a la:
 
