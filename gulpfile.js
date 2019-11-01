@@ -35,13 +35,13 @@ gulp.task('vf-component-assets:all', function() {
 gulp.task('build', gulp.series(
   'vf-clean',
   'copy-design-tokens',
-  'vf-build-search-index',
   gulp.parallel('vf-css','vf-css:generate-component-css','vf-scripts'),
   'vf-component-assets:all',
   'fractal:build',
   'fractal',
   'eleventy:init',
   'eleventy:build',
+  'vf-build-search-index',
   'manual-exit'
 ));
 
