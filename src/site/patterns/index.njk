@@ -1,17 +1,36 @@
 ---
 is_index: true
 title: "Digital: Patterns and documentation"
-subtitle: More than components, this is how you should do things.
+subtitle: More than components, guidance on making web content.
 intro: General guidance, tips and screenshots.
 section: patterns
 tags: sections
 date: 2019-07-20 12:24:50
 layout: layouts/section.njk
+hideSubPosts: true
 ---
 
-## Need a site
+<div class="vf-box vf-box--inlay">
+{% markdown %}
 
-Build it yourself with the guidance below, or contact the Digital Team ([digital-comms@embl.org](mailto:digital-comms@embl.org)).
+## Need a site?
+
+None-technical teams contact the Digital Team ([digital-comms@embl.org](mailto:digital-comms@embl.org)) for assistance. 
+
+If you have skilled web developers, follow the guidance below to get started — and you can also contact ([digital-comms@embl.org](mailto:digital-comms@embl.org)) for assistance and questions.
+
+{% endmarkdown %}
+</div>
+
+## First, an introduction
+
+Some information on the tools we use and the challenges we address.
+
+<div class="google-slides-container">
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSD1m4z3UxBimiwp7IOAO2WTsG4vJGEvjoDDqQZ-tmywU-Wzx3Owxnar2ZrXZX4NhTKGsLYiuKmJWfg/embed?start=false&loop=false&delayms=30000" frameborder="0" width="1440" height="839" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<br/>
 
 ## 1. CSS, JS to use and its architecture
 
@@ -26,8 +45,16 @@ If you don't need to indivdually include components, you can use the rollup CSS 
 <script src="https://dev.assets.emblstatic.net/embl-design-system/develop/scripts/scripts.js"></script>
 {% endcodeblock %}
 
-## 2. Templates and themes
+## 2. Patterns and boilerplates
 
+Once you've started with a template above follow guidance and copy-paste examples from the EMBL VF Pattern+Component library.
+
+Where components offer technical implementations, patterns and boilerplates show
+how things should come together to facilitate tasks and goals.
+
+- Need sepecific component guidance? [Go to the Components section]({{ '/components' | url }})
+
+## 3. Templates and themes
 
 ### Build static sites with Eleventy 
 
@@ -38,7 +65,7 @@ If you don't need to indivdually include components, you can use the rollup CSS 
 
 ### React boilerplate
 
-[Coming in early 2020]
+[Coming in 2020]
 
 ### WordPress theme
 
@@ -46,11 +73,14 @@ WordPress theme and plugins for Visual Framework integration.
 
 - [project homepage](https://github.com/visual-framework/vf-wp)
 
-## 3. Patterns and boilerplates
+### Generic HTML templates
 
-Once you've started with a template above follow guidance and copy-paste examples from the EMBL VF Pattern+Component library.
+For those that don't need a static-site generator or CMS, we offer a few sample HTML tempaltes to get your started:
 
-Where components offer technical implementations, patterns and boilerplates show
-how things should come together to facilitate tasks and goals.
-
-- Need sepecific component guidance? [Go to the Components section]({{ '/components' | url }})
+{%- for post in collections.posts %}
+{% if section == post.data.section %}
+{% set absolutePostUrl %}{{ metadata.id }}{{ post.url }}{% endset %}
+- <a href="{{ absolutePostUrl | url }}" class="vf-link">{{ post.data.title }}</a>
+  {{ post.data.subtitle }}
+{%- endif -%}
+{%- endfor %}

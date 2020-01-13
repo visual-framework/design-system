@@ -39,6 +39,7 @@ templateEngineOverride: njk, md
 {%- endfor %}
 
 {% if sectionHasSubposts and hideSubPosts != true %}
+{% if hideSubPostsHeader != true %}
 <section class="vf-grid embl-grid--has-centered-content">
   <div></div>
   <div class="vf-content">
@@ -47,6 +48,7 @@ templateEngineOverride: njk, md
 
   </div>
 </section>
+{% endif %}
 
 {%- for post in collections.posts %}
 {% if section == post.data.section %}
