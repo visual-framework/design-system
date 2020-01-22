@@ -36,6 +36,7 @@ gulp.task('build', gulp.series(
   'vf-clean',
   'copy-design-tokens',
   gulp.parallel('vf-css','vf-css:generate-component-css','vf-scripts'),
+  'vf-css:production', //optimise, prefix css
   'vf-component-assets:all',
   'fractal:build',
   'fractal',
