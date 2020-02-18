@@ -31,6 +31,16 @@ module.exports = function(config) {
     }).toFormat(format);
   });
 
+  // config.addFilter("makeLowercase", function(value) {
+  //   value = value || '';
+  //   return value.toLowerCase();
+  // });
+  
+  // config.addFilter("spaceToDashes", function(value) {
+  //   value = value || '';
+  //   return value.replace(/\s+/g, '-').toLowerCase();
+  // });
+  
   // Shortcodes
   // https://www.11ty.io/docs/shortcodes/
   // -----
@@ -70,6 +80,11 @@ module.exports = function(config) {
   //   }();
   // });
 
+  // copy js files
+  // this is neccesary now that 11ty tries to compile JS files as templates
+  // @todo: backport to vf-eleventy
+  config.addPassthroughCopy("./src/site/**/*.js");
+
   // pass some assets right through
   config.addPassthroughCopy("./src/site/images");
 
@@ -81,9 +96,8 @@ module.exports = function(config) {
     },
     templateFormats : [
       "njk", "md", // note that .md files will also be parsed with njk processor
-      "css", "js" // passthrough file copying for static assets
+      "css" // passthrough file copying for static assets
     ],
-    openBrowser: true,
     htmlTemplateEngine : ["njk", "md"],
     markdownTemplateEngine : "njk",
     passthroughFileCopy: true,
