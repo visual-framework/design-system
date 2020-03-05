@@ -12,7 +12,7 @@ variables:
   # project specific variables can be defined here
   VM_DEV: wp-np2-19
   VM_PROD: wp-p2m-1a wp-p2m-1b wp-p1m-4d wp-p1m-4e
-  VM_PATH: /var/www/drupal/beta.embl.org.guidelines.design
+  VM_PATH: /var/www/drupal/embl.org.guidelines.design
   SSH_OWNER_ID: wd_drupl
   SSH_APACHE_ID: w3_wd01
   S3_BUCKET_DEV: origin.dev.embl-design-system.assets.emblstatic.net
