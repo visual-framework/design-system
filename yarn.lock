@@ -1373,6 +1373,11 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/embl-content-meta-properties/-/embl-content-meta-properties-1.0.1.tgz#ab990ae5d4a0cd34b3ce92ea966f7e3b6fb9498f"
   integrity sha512-QiCUy0KVIiUMMNo1RHDDDSjIefGUgKXsTo4IUfh/62Ns4FvtaI+8ywJaYAjLCjpxRR/HxuGG8+4MXjeof9Hu/g==
 
+"@visual-framework/embl-favicon@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@visual-framework/embl-favicon/-/embl-favicon-1.0.1.tgz#f72630965fc36a84999508aa031d2807b9871f66"
+  integrity sha512-xEw6v6v57DPq5a+DWxrJyD7TVx/xMXKAhfPrJG3t5xe/eUtDuf28sxXF/hnQYx1oNfNuad8muHLcHKgEteXWPg==
+
 "@visual-framework/embl-grid@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@visual-framework/embl-grid/-/embl-grid-1.0.3.tgz#5a0445f37bd0c962df38fd71f80146b277ddbb84"
