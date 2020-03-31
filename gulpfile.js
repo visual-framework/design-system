@@ -40,7 +40,8 @@ gulp.task('build', gulp.series(
   'fractal:build',
   'fractal',
   'eleventy:init',
-  'eleventy:build'
+  'eleventy:build',
+  'vf-build-search-index'
 ));
 
 // Build and watch things during dev
