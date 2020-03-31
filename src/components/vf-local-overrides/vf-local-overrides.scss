@@ -1,34 +1,10 @@
 // vf-local-overrides
 
-// **Thinking about deleting this file?**
-// If your component needs no CSS/Sass, we still recommend leaving the
-// scss files in place. As this is primarily a CSS framework, it is better to
-// leave the empty files so you know a file wasn't accidently omitted.
-// If you don't have any Sass, you can trim this block down to:
-// "This page was intentionally left blank"
-
-
 @import 'vf-local-overrides.variables.scss';
 
 .vf-local-overrides {
   // nothing yet
 }
-
-// needed until https://github.com/visual-framework/vf-core/pull/663
-html.vf-js:not(.vf-disable-deprecated) {
-  // Some things should only be show to screen readers
-  .vf-sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
-}
-
 
 // Make google slide repsonsive
 // Via https://chrisyee.ca/blog/responsive-google-slides/
