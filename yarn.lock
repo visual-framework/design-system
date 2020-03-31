@@ -1539,13 +1539,13 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-explainer/-/vf-explainer-0.0.2.tgz#724f7d20540c77bec724d4bc2d75ecdaa7d3c3a9"
   integrity sha512-F53WVeksHIkVYZNS22OHElklvrd5DGGNgxzn2/oMwALr5TT6mecKXDHJ4LkRFnghmL3VlWFHCFPfuVHwz5ouBg==
 
-"@visual-framework/vf-extensions@^1.0.0-alpha.5":
-  version "1.0.0-alpha.5"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-extensions/-/vf-extensions-1.0.0-alpha.5.tgz#e7027dfa48d1900421310cc5a70257d7d83d17b9"
-  integrity sha512-u4ytURGhXwgEyCGpjY3pI3zCNBG/bqfq58OOHDhg9BK0OPs47njTtsDHAodOP4sME3X1HOkPn37ZJAB4G5FezA==
+"@visual-framework/vf-extensions@^1.0.0-alpha.6":
+  version "1.0.0-alpha.6"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-extensions/-/vf-extensions-1.0.0-alpha.6.tgz#f72d7bb80a3b1471958e75950bd1ab3287e37455"
+  integrity sha512-XokygGNVnwxE8dlLu7LiExIkzZl4l9lPTyffB1RGSHZirIYLG4LrOUC20I9qa2+OIc+ajwSyzCt+Ndz01EbJVQ==
   dependencies:
     "@11ty/eleventy-plugin-rss" "^1.0.7"
-    luxon "^1.22.0"
+    luxon "^1.22.2"
     touch "^3.1.0"
 
 "@visual-framework/vf-figure@^1.0.0-beta.2":
@@ -8739,10 +8739,10 @@ luxon@^1.21.3:
   resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.21.3.tgz#f1d5c2a7e855d039836cf4954f883ecac8fc4727"
   integrity sha512-lLRwNcNnkZLuv13A1FUuZRZmTWF7ro2ricYvb0L9cvBYHPvZhQdKwrYnZzi103D2XKmlVmxWpdn2wfIiOt2YEw==
 
-luxon@^1.22.0:
-  version "1.22.0"
-  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.22.0.tgz#639525c7c69e594953c7b142794466b8ea85b868"
-  integrity sha512-3sLvlfbFo+AxVEY3IqxymbumtnlgBwjDExxK60W3d+trrUzErNAz/PfvPT+mva+vEUrdIodeCOs7fB6zHtRSrw==
+luxon@^1.22.2:
+  version "1.22.2"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-1.22.2.tgz#799d65cc1ed0ba85b4cb3f7dd38fc08a8d1a6750"
+  integrity sha512-vq6eSaOOw1fKob+JXwfu0e3/UFUT4G4HTFRJab7dch8J1OdOGW/vXqCiJsY7rm2In+5gKNYx0EtnYT0Tc5V4Qw==
 
 macos-release@^2.2.0:
   version "2.3.0"
