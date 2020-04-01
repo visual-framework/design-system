@@ -23,7 +23,7 @@ gulp.task('copy-design-tokens', function () {
   .pipe(ext_replace('.ios.json', '.json'))
 });
 
--// More thoroghouh than the other `vf-component-assets`,
+// More thorough than the other `vf-component-assets`,
 // this copies all assets. Good for design system docs
 gulp.task('vf-component-assets:all', function() {
   return gulp
@@ -37,6 +37,7 @@ gulp.task('build', gulp.series(
   'copy-design-tokens',
   gulp.parallel('vf-css','vf-css:generate-component-css','vf-scripts'),
   'vf-css:production', //optimise, prefix css
+  'vf-component-assets',
   'fractal:build',
   'fractal',
   'eleventy:init',
