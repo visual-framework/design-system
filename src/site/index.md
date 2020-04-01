@@ -5,11 +5,10 @@ is_index: true
 layout: layouts/base.njk
 ---
 
-
 {% render '@vf-intro', {"vf_intro_phase": "alpha", "vf_intro_heading": title,
   "vf_intro_lede": siteConfig.siteInformation.short_description+".",
   "vf_intro_text": [
-    "The system contains basic information about EMBL branding including colours, typography, and guidelines for the use of the EMBL logo. You will find onboarding tools, design templates and practical resources on the EMBL Design System (EDS) website."
+    "The system contains basic information about EMBL branding including colours, typography and guidelines for the use of the EMBL logo. You will find onboarding tools, design templates and practical resources on the EMBL Design System (EDS) website."
   ]
 } %}
 
