@@ -1,3 +1,4 @@
+/* stylelint-disable */
 :root {
   --vf-color--green: #18974c;
   --vf-color--green--darkest: #0a5032;
@@ -30,6 +31,16 @@
 }
 
 :root {
+  --vf-theme--primary: #3b6fb6;
+  --vf-theme--primary--dark: #193f90;
+  --vf-theme--secondary: #18974c;
+  --vf-theme--secondary--dark: #007b53;
+  --vf-theme--tertiary: #54585a;
+  --vf-theme--quaternary: #f4c61f;
+  --vf-theme--quinary: #d0d0ce;
+}
+
+:root {
   --vf-ui-color--black: #000000;
   --vf-ui-color--grey: #d8d8d8;
   --vf-ui-color--grey--light: #f3f3f3;
@@ -39,6 +50,7 @@
   --vf-ui-color--off-white: #fafafa;
 }
 
+/* stylelint-enable */
 .embl-group-page--bg-color {
   background-color: #d8d8d8;
 }
@@ -49,7 +61,7 @@
 
 .embl-group-header__header {
   display: grid;
-  grid-column: 2 / -2;
+  grid-column: 2/-2;
   /* stylelint-disable declaration-colon-space-after, indentation */
   grid-template-columns: minmax(var(--page-grid-gap), 60px) [main-start] auto minmax(auto, 18.125em) [main-end] minmax(var(--page-grid-gap), 60px);
   /* stylelint-enable */
@@ -58,13 +70,12 @@
 .embl-group-header__navigation {
   background-color: #54585a;
   display: grid;
-  grid-column: 1 / -1;
+  grid-column: 1/-1;
   /* stylelint-disable declaration-colon-space-after, indentation */
   grid-template-columns: minmax(var(--page-grid-gap), 60px) auto minmax(var(--page-grid-gap), 60px);
   /* stylelint-enable */
 }
-
 .embl-group-header__navigation > * {
-  grid-column: 2 / -2;
+  grid-column: 2/-2;
   margin-left: -18px;
 }
