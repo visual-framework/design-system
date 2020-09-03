@@ -1418,10 +1418,10 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-frctl-extensions/-/vf-frctl-extensions-1.0.0-alpha.2.tgz#7742a9b86ab9a448d7971adde80e9d70e12c2ec6"
   integrity sha512-cZDRI0Due3B+096T06oCzohWO178+VQjhTvXLrbzdfbsMrF+7fWNV03ORtJ0LRasz1ptt9KuXfi787PpRkOj9Q==
 
-"@visual-framework/vf-global-header@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-global-header/-/vf-global-header-2.0.1.tgz#5a8a042292c518f4d0e54033be749269f71b2b1f"
-  integrity sha512-J1V1ak0aEMc9snchcVoJIlkya7EiIGHJ9+WwMjlXZo0GNGJfMYOUw5JFaLevcWRlAgcoqpbltmzF2rphyOQY4A==
+"@visual-framework/vf-global-header@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-global-header/-/vf-global-header-3.0.0.tgz#735112071c5a9d4db8cf6e56289ce7a9f8dd6267"
+  integrity sha512-7ehtGZX3oBk8oxaawmxwV9CQ3HA7pIorlbhkZBJZ2WArKhZNs3DOSDujNp/R3qYwN0OBOPktzK4u5V8n0TTFwg==
 
 "@visual-framework/vf-grid-page@^2.0.0":
   version "2.0.0"
