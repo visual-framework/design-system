@@ -5,5 +5,5 @@ is_index: true
 layout: layouts/boilerplate.njk
 ---
 
-<link rel="canonical" href="https://wwwdev.embl.org/guidelines/design/corporate-design/" />
-<meta http-equiv="refresh" content="0;url=https://wwwdev.embl.org/guidelines/design/corporate-design/" />
+<link rel="canonical" href="https://wwwdev.embl.org/guidelines/design/page/" />
+<meta http-equiv="refresh" content="0;url=https://wwwdev.embl.org/guidelines/design/page/" />
