@@ -1483,10 +1483,10 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-no-js/-/vf-no-js-1.0.0.tgz#d1824789965e003af075e89434bdcc4c7b4caebc"
   integrity sha512-vdFgPUQgqPNOhm+gVUWmMqaqBrwjfzwqNCQxwc0FLDhtVdN2tUzc4CEcBBVvDHHbiA0bF0tlEC5lrXCPv6e/vg==
 
-"@visual-framework/vf-page-header@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-page-header/-/vf-page-header-1.0.0.tgz#f36988f16f80a82bb536fbfcb69148cff2ddd791"
-  integrity sha512-pwjv/ZUng5KZpHVAWjF7jMR3oW7c/zIgXBvxDR8M3yIi+TZBdLeOM2mNyZgvDKBo+86l8CJxD8wZVVU4nKoYpg==
+"@visual-framework/vf-page-header@1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-page-header/-/vf-page-header-1.1.0.tgz#90468c9d221a8677af31f2691d75759d9a8908d1"
+  integrity sha512-QAB3eOLV8+cjC8koAoZNFbEAhNG2zQMKW8RaGwz1hHbO3Gu1sE1DlYxOoQjfBToBldrOWpaWmnSneLh7TiEARg==
 
 "@visual-framework/vf-pagination@1.0.0-rc.1":
   version "1.0.0-rc.1"
