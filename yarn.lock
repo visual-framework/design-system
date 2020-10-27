@@ -1514,10 +1514,10 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-news-container/-/vf-news-container-1.0.0-beta.1.tgz#0ff5918a7050dd91a9cf045dcd324b133867c166"
   integrity sha512-6SyganlWb/6WjCEISzeP72zvpdc3B+HpGWfrxUbApqE8jY3Sjh6s2RjFA1tWjhEPK6ubw93RjsTWqkhkBdV8IQ==
 
-"@visual-framework/vf-no-js@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-no-js/-/vf-no-js-1.0.0.tgz#d1824789965e003af075e89434bdcc4c7b4caebc"
-  integrity sha512-vdFgPUQgqPNOhm+gVUWmMqaqBrwjfzwqNCQxwc0FLDhtVdN2tUzc4CEcBBVvDHHbiA0bF0tlEC5lrXCPv6e/vg==
+"@visual-framework/vf-no-js@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-no-js/-/vf-no-js-1.0.1.tgz#c0c02713616705e2408a041e67588afc5aa7f845"
+  integrity sha512-T/LEPJ+JAsYRnf55gIbRs6AtolB1cuJsuVuACQHvUzam+RqFa3n42NjkGm5h/hBCZpNPmMUeftWq3VFrKAdffg==
 
 "@visual-framework/vf-page-header@1.1.0":
   version "1.1.0"
