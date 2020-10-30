@@ -8423,10 +8423,10 @@ no-case@^2.2.0:
   dependencies:
     lower-case "^1.1.1"
 
-node-html-parser@1.4.4:
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/node-html-parser/-/node-html-parser-1.4.4.tgz#479a143cf648a3cbfa995972b8ee86a5db3e11a7"
-  integrity sha512-aXE8CNzu2suSSEmV3f1CAG7I8xXRj/JAOfLlRLlTjPWBckB0CM6UURtlXpT6nTypsVhl6so2sqfvZsXKinR34Q==
+node-html-parser@1.4.5:
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/node-html-parser/-/node-html-parser-1.4.5.tgz#0697045ccaf4e5f8f99b78d0a5579d096b7da6d2"
+  integrity sha512-sNm4Tdc8zj5HnFtkNEcK/1tpvyfRxEuz1d4rkVceGPeMTfzd2twPTiEo/UbqxOexSt9AzJ/cvQXSTj7fa6Ey1w==
   dependencies:
     he "1.2.0"
 
