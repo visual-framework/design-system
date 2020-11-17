@@ -1716,10 +1716,10 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-summary/-/vf-summary-1.3.1.tgz#ee1eea4286e0ed4df430a7ccb16fa04a26005c4c"
   integrity sha512-rfcffnVsZPnsRxqUMecKfcqVWj5WvZHvo2FFfWqGt/7kS3S0YEWiHZBS98cvWOm7EQFFirxEsxzcHEB6HPOt8A==
 
-"@visual-framework/vf-table@1.0.1-1.1.1.0":
-  version "1.0.1-1.1.1.0"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-table/-/vf-table-1.0.1-1.1.1.0.tgz#d7b1b81135d8008dbe9eb2583b49c1e814199563"
-  integrity sha512-ZUHMa7hXcQxkbrVGLBYE8W/nHuooRRqHvP++jeOYk3/k/2/LCoJ0LvYscIwRU5UolGubnOhTQOter4DRpcHUXg==
+"@visual-framework/vf-table@1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-table/-/vf-table-1.1.2.tgz#8639a10adf19aba1f7b14e5b7e785da03554ec73"
+  integrity sha512-aDSnTQqCshH6ZARwu8sGEcwJ16wGU+2kpV8YVVGqmV8WDZLbPZUwJPVQjlFsj5Cf7S+C5odhlYk+q5AgdSaqRA==
 
 "@visual-framework/vf-tabs@1.1.2":
   version "1.1.2"
