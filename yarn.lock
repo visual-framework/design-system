@@ -1736,10 +1736,10 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-tree/-/vf-tree-1.0.1.tgz#693729b8a2a989ca8a17cbf08af461334034b422"
   integrity sha512-BTvoEQOWIXNoGB5DVZlBJO0tJbwDDTzUqiaUUJ0TdFIqJpab/3u5SeWUvnTyTv1bPVWEgrwfAoZe1o4FTSsg2Q==
 
-"@visual-framework/vf-u-fullbleed@1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-u-fullbleed/-/vf-u-fullbleed-1.2.1.tgz#4d617f48dd773338ef0f41449a60da8a28713ac7"
-  integrity sha512-XG+Cc0013NfVraR21T6ByI+Sk8KJenVufldsINiSDMegg3+Azf6y54aaOxgpQFyFSTvH6+4i5GLgBWXT233+tQ==
+"@visual-framework/vf-u-fullbleed@1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-u-fullbleed/-/vf-u-fullbleed-1.2.2.tgz#b61ed67dbd9e78888caced868ab338c3dd7e953e"
+  integrity sha512-/dJ+c3N1ItKqoJEAYbSiL7Il3uwtiVV83h4ygy94lAbbIMwwZYbLt7vXnevhDrWZ0OY684sl5YH9d3haVjlfsw==
 
 "@visual-framework/vf-utility-classes@1.2.0":
   version "1.2.0"
