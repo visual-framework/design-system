@@ -1706,10 +1706,10 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-social-links/-/vf-social-links-0.0.1.tgz#5218c086dd5d0100e86eb547d05adedf9f7a98c3"
   integrity sha512-WUrmX1wObymMWbFnvresqVMmLZMSiSrBtcTe+hIUQibodGYWweKqt7DyXSrW2x7Z+x3Jo9pOf5JClfR2E39/kA==
 
-"@visual-framework/vf-stack@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-stack/-/vf-stack-1.0.0.tgz#669f6446ed0bca6368828574bc7ff56bbce33a83"
-  integrity sha512-JfIiv7zn8bUPwjBTx/xcTXhqkGu9AMkdQ2WHS0o8GhHoF47KLCbI5eo7Gol22RUVyqJvDlRFYLSylCE2x2qBYQ==
+"@visual-framework/vf-stack@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-stack/-/vf-stack-2.0.0.tgz#d6148578e1cd26b2cdaf7243e226081d9593f54b"
+  integrity sha512-uXCPjz1wG6bdk6lHvWxRTlQ/6K1K7997GMYvRXPMAG/1sO31iIFCYKO2O7R29ExkuK0lKKAbJfBiHTnLSP2nfw==
 
 "@visual-framework/vf-summary@1.4.1":
   version "1.4.1"
