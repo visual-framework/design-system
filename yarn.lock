@@ -1348,10 +1348,10 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-body/-/vf-body-1.1.0.tgz#94cd849af13ea298fbe8946f2923827eae631002"
   integrity sha512-GeHXQKzBAEVczaGeB2wGovlfiE1XkcHDhH3FsC62w7Ib2rkSYb0b7n7TBgj0wuXXEs5/mXf8wpHgEgDehbe0Hw==
 
-"@visual-framework/vf-box@1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-box/-/vf-box-1.1.1.tgz#84eaa718299c902087818504326c10a89a9c8982"
-  integrity sha512-Vq4JE6kUAoLPAfDyNUROMep0l/U6C6qBL78p8fx+QaPk6k6HwzSFnten/0Be4K3fXFEoynwhTpijTPpAZZnjUg==
+"@visual-framework/vf-box@2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-box/-/vf-box-2.3.1.tgz#30acd0f46dd292482e87c6e66469c919ce192701"
+  integrity sha512-e0Yn8Id3pId7IXrc90jWMyzIGfTaPu9iJ5rJQvzUTBqdTIiAj2+yg2eRumxPZwvYND7+rte39Rj14W/JVt7ulw==
 
 "@visual-framework/vf-box@^2.3.0":
   version "2.3.0"
