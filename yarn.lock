@@ -1764,7 +1764,12 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-header/-/vf-header-1.0.4.tgz#016446385fe9a7fbe5a03ddad25daf94f99565f3"
   integrity sha512-w8v6F1YfGxtaS2kVveUbDt/7o9xnCe/emaeJ7xA2c3VkqYZ5oDkEN/vNPNOnsevcjoFM91lvSsl2JytcN86KOw==
 
-"@visual-framework/vf-heading@1.0.0", "@visual-framework/vf-heading@^1.0.0":
+"@visual-framework/vf-heading@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-heading/-/vf-heading-1.0.1.tgz#eca72aa548ae25a80750384ec8c3e5fb0e93f96b"
+  integrity sha512-c5mapj0/NK57KkY+RYZdR9RCAlaKGoyg0x0nBv3fCnGlcr+gxB1spg/5s8RfZkFerLFDjymInmrAxsB7PRkwqQ==
+
+"@visual-framework/vf-heading@^1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-heading/-/vf-heading-1.0.0.tgz#c3c07b9c5830492dcebc8de8a7085ffce4ccf9b6"
   integrity sha512-x5d26AErY2LoTGvmpfxtlJoupl0TvsF2qf+Bog+UOfcJEdBBKc817W1obI80uVuT70PIpuO/gCAB95yrofVdCg==
