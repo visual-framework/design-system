@@ -1533,12 +1533,7 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-discussion/-/vf-discussion-1.0.1.tgz#c5c18f4a9d0db72ef98e1c2932622fa539d82d1e"
   integrity sha512-ywUAGYRxjsX/iXHnghHPN9dzM2GA1yeFzagfI9WW490mV4kgeflZXHOj/mY+bPFYl/orAWJmOru0j6Jun1d57Q==
 
-"@visual-framework/vf-divider@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-divider/-/vf-divider-1.0.0.tgz#68bbdc0c074d76ada83643c79d8077cb44b094c8"
-  integrity sha512-K9Fgk8dONbF9yqbIhNVN1dhgA2aaOeWvnBx6M1JE3dCAdzo5zWDl3SEX0GGHDDCQqOaWk6s6KrPKJkdaZhrWsg==
-
-"@visual-framework/vf-divider@^2.0.0":
+"@visual-framework/vf-divider@2.0.0", "@visual-framework/vf-divider@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-divider/-/vf-divider-2.0.0.tgz#1a23ebc5475be7f7e927c09ed2b6ce6e75e88fc0"
   integrity sha512-TVRB3Jg6wcKZi7TlQvWjAX7nzGdS9kJTMtvOMWfyM8+rFnM8A+VZ32vkT+UXHGa/8Lxl5ccTsCCnHgsRZu2mgA==
