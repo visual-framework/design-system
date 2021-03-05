@@ -1582,10 +1582,10 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-footer/-/vf-footer-1.1.1.tgz#b2e1eaf9c26295593fbed82d5b86e7bb0684027d"
   integrity sha512-DGKe4Sj14OgWaD4XP2x4a7VE93I9dzYxIdPqFyCnadn7xkigXBzo27A13k9yvFL1lvhaM5Od9lt+3njqLVNWmQ==
 
-"@visual-framework/vf-form__checkbox@1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__checkbox/-/vf-form__checkbox-1.0.2.tgz#8b70d71c2c758a83ff136fcb106b36236cb35ade"
-  integrity sha512-+KhXL1bruzlTJItn7BGoOoxpH9iaA+/EQz2cM0jccAxIc2x4IFPzZrcrJJuX16if7UXWpYD1YUb9kfOFLRJDSw==
+"@visual-framework/vf-form__checkbox@2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-form__checkbox/-/vf-form__checkbox-2.0.2.tgz#fed47440322fda7f2a5f9eb1cab288a602a1a2d0"
+  integrity sha512-1uwkATIBU5WOQhxKt+DQJrWU7wAkeeYuW3l1jizbhwbzTtWUvXdbUpQDgUpZhCIDse4qisizLbxhyDU8q4jdOA==
 
 "@visual-framework/vf-form__checkbox@^2.0.0":
   version "2.0.0"
