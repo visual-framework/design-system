@@ -1763,10 +1763,10 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-collapse/-/vf-collapse-0.0.2.tgz#dbb85530f7d7b46392ddae63bdf814871f2577cf"
   integrity sha512-gJd1Hk9I5fBuFR1YBQQHOFZY8l/SzA9SGsE+quz3gGlKgMmnZozy4uxogeCW/hcP0g0JTkthIQRG2CIz6whfAQ==
 
-"@visual-framework/vf-component-generator@^1.1.4":
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-component-generator/-/vf-component-generator-1.1.4.tgz#a3c30bd317ea1ed3f20ffffefd88b851f670a791"
-  integrity sha512-AD5yN/ZTWP9n6q5E57JgHyeaWUEe3HwjrZTPpK8HmXuCrY4Cf49yRv2AFTYxRLJ0nKm6L8ORPivpS97NjuypkQ==
+"@visual-framework/vf-component-generator@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-component-generator/-/vf-component-generator-1.1.5.tgz#32df721ae4212faf3211a849af2d66c0fd64b633"
+  integrity sha512-U6Uf+9S6ZF8ek7kVpOD6X2abeHzOnN/xtt3B2OloA88eJWh8HoUco77sXKRqaDqn1k19+HAT8wbCJek1xh3Ppg==
   dependencies:
     gulp-shell "^0.8.0"
     yeoman-generator "^4.2.0"
@@ -1802,21 +1802,21 @@
     "@visual-framework/vf-list" "^1.0.0"
     "@visual-framework/vf-text" "^1.0.2"
 
-"@visual-framework/vf-core@2.2.26":
-  version "2.2.26"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-core/-/vf-core-2.2.26.tgz#3020fca2ead3f5888fc3a0e98eab938d93a94eb4"
-  integrity sha512-qK8XEJuHTfbSac5dKgpF3VkTZYHHCTei0rIwhpCBz4sN3+igii1TbTtdfci8LpraPK5+K+rxQ6o0xfI3dJnQlA==
+"@visual-framework/vf-core@2.2.27":
+  version "2.2.27"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-core/-/vf-core-2.2.27.tgz#0f7a53ef70632836830fcbf9c4b9d92295033452"
+  integrity sha512-gwIhK40L/gVrKD+UJ1Cghvka/007tMwxzBMWbmOSn6dBRCsgnAcgIAdMApSvrG9P+coy+gcHwaUmZy0Umn2mwQ==
   dependencies:
-    "@visual-framework/vf-component-generator" "^1.1.4"
+    "@visual-framework/vf-component-generator" "^1.1.5"
     "@visual-framework/vf-component-initialization" "^1.1.6"
     "@visual-framework/vf-frctl-extensions" "^1.0.1"
-    "@visual-framework/vf-sass-compilation" "^1.1.10"
+    "@visual-framework/vf-sass-compilation" "^1.1.11"
     chalk "^4.0.0"
     del "^6.0.0"
     fast-glob "^3.1.0"
     gulp "^4.0.2"
     gulp-watch "^5.0.1"
-    highlight.js "^10.1.2"
+    highlight.js "^11.0.0"
     marked "^2.0.0"
 
 "@visual-framework/vf-design-tokens@3.4.1":
@@ -2105,10 +2105,10 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-pagination/-/vf-pagination-1.1.0.tgz#e48127f74b4c09e3399846bf700b237dc1519037"
   integrity sha512-gSgoYtgkn2dimhriF7ieBYy2YJHgOrHqa3glHbxD3eVV9TxW7tSD7mKlrSxDv2KTF5Hd1kCpvjkZPfquGAsEWg==
 
-"@visual-framework/vf-sass-compilation@^1.1.10":
-  version "1.1.10"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-sass-compilation/-/vf-sass-compilation-1.1.10.tgz#e4c6736b3af572cedf87b1f50d5ed800df307784"
-  integrity sha512-ccVv13Tdig9sAbfzHscp9TpK56f2ne1lBqBsq2ez3njXI9M1l7CV5SUlFoxDXej3Me5ak3dAeH67xtBMa+MhJQ==
+"@visual-framework/vf-sass-compilation@^1.1.11":
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-sass-compilation/-/vf-sass-compilation-1.1.11.tgz#5216ba151d4bd69a831f436e44c02024d8a60f56"
+  integrity sha512-Zor3m9yiVoI9lQw+61q4hVEKtM2ZSwH2PhKVaYB1IBz8AiaPsFpNLjOrAGYkyWmvnr5STy07f7LLdnmv7j02pg==
   dependencies:
     "@babel/preset-env" "7.14.4"
     eslint "^7.15.0"
@@ -2124,7 +2124,7 @@
     prettier-stylelint "0.4.2"
     rollup "^2.35.1"
     rollup-plugin-includepaths "^0.2.4"
-    sass "1.34.0"
+    sass "1.34.1"
     stylelint "^13.8.0"
     stylelint-order "^4.1.0"
     stylelint-scss "^3.18.0"
@@ -6770,15 +6770,15 @@ he@1.2.0, he@^1.2.0:
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
 
-highlight.js@^10.1.2:
-  version "10.1.2"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.1.2.tgz#c20db951ba1c22c055010648dfffd7b2a968e00c"
-  integrity sha512-Q39v/Mn5mfBlMff9r+zzA+gWxRsCRKwEMvYTiisLr/XUiFI/4puWt0Ojdko3R3JCNWGdOWaA5g/Yxqa23kC5AA==
-
 highlight.js@^10.7.2:
   version "10.7.2"
   resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-10.7.2.tgz#89319b861edc66c48854ed1e6da21ea89f847360"
   integrity sha512-oFLl873u4usRM9K63j4ME9u3etNF0PLiJhSQ8rdfuL51Wn3zkD6drf9ZW0dOzjnZI22YYG24z30JcmfCZjMgYg==
+
+highlight.js@^11.0.0:
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.0.1.tgz#a78bafccd9aa297978799fe5eed9beb7ee1ef887"
+  integrity sha512-EqYpWyTF2s8nMfttfBA2yLKPNoZCO33pLS4MnbXQ4hECf1TKujCt1Kq7QAdrio7roL4+CqsfjqwYj4tYgq0pJQ==
 
 homedir-polyfill@^1.0.1:
   version "1.0.3"
@@ -11152,10 +11152,10 @@ sass-lint@^1.12.0:
     path-is-absolute "^1.0.0"
     util "^0.10.3"
 
-sass@1.34.0:
-  version "1.34.0"
-  resolved "https://registry.yarnpkg.com/sass/-/sass-1.34.0.tgz#e46d5932d8b0ecc4feb846d861f26a578f7f7172"
-  integrity sha512-rHEN0BscqjUYuomUEaqq3BMgsXqQfkcMVR7UhscsAVub0/spUrZGBMxQXFS2kfiDsPLZw5yuU9iJEFNC2x38Qw==
+sass@1.34.1:
+  version "1.34.1"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.34.1.tgz#30f45c606c483d47b634f1e7371e13ff773c96ef"
+  integrity sha512-scLA7EIZM+MmYlej6sdVr0HRbZX5caX5ofDT9asWnUJj21oqgsC+1LuNfm0eg+vM0fCTZHhwImTiCU0sx9h9CQ==
   dependencies:
     chokidar ">=3.0.0 <4.0.0"
 
