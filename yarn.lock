@@ -2013,10 +2013,10 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-sass-config/-/vf-sass-config-2.5.4.tgz#418ca4bbdd83b6954622cc2ce3f4f5a135889d51"
   integrity sha512-zDqq1MCVx57K2+H6OqDDw/EtvREkhFz5gXZQwx9YvGDG74ZGLdJVqK4X6Gmfl8rUUnAr5Pz8UlYywv5yjRL4jg==
 
-"@visual-framework/vf-search-client-side@2.0.0-alpha.0":
-  version "2.0.0-alpha.0"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-search-client-side/-/vf-search-client-side-2.0.0-alpha.0.tgz#afb41c7369252170f3cc5b5df43f00caf8bb697f"
-  integrity sha512-TqBB4TCXV3TsvCKHF9I3zjQTcD3Cms4+qZwi0+q+L0Yi4UqGtCtkxikdXoOSmf4zqWjUarGuuGXIcRD9zZgamQ==
+"@visual-framework/vf-search-client-side@2.0.0-alpha.1":
+  version "2.0.0-alpha.1"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-search-client-side/-/vf-search-client-side-2.0.0-alpha.1.tgz#581f37741c6d9cf934def680f3a2cbb9a4d4ff87"
+  integrity sha512-N/BN5w1Yj8Mhs5uy+5hIFbGLcGA8gQvF4jsjScFcGLTZJ8/5FDRyiVmHmokoBm3iv2DRHdxEIxQHhN35gooFWw==
 
 "@visual-framework/vf-search@3.0.0-alpha.0":
   version "3.0.0-alpha.0"
