@@ -29,7 +29,7 @@
     "@11ty/eleventy-plugin-rss": "1.1.1",
     "@node-sass/node-module-importer": "1.2.3",
     "@visual-framework/ebi-vf1-integration": "1.0.7",
-    "@visual-framework/embl-breadcrumbs-lookup": "1.1.1",
+    "@visual-framework/embl-breadcrumbs-lookup": "1.2.0",
     "@visual-framework/embl-conditional-edit": "1.0.3",
     "@visual-framework/embl-content-hub-loader": "1.1.0",
     "@visual-framework/embl-content-meta-properties": "1.0.1",
