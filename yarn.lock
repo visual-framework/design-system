@@ -1636,10 +1636,10 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-card/-/vf-card-2.6.0.tgz#36adcf76172ebcdbfc49d8e2894db2f2facab344"
   integrity sha512-H2xeKysTqZh52xT5pPXTN+QQJYpvYC1rzcbkK+9yERg8npT+qWlcePSf1gpa0nZOWz7Mqr10PUJoRDR+cnebyw==
 
-"@visual-framework/vf-code-example@1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@visual-framework/vf-code-example/-/vf-code-example-1.2.2.tgz#9103e8bd87f304dae8089bc1d470d5e115e1ae30"
-  integrity sha512-7nTVcxW2QIn2HbcdwWmp1r14sre6Y2ID0IIhbuS67J07iLfNR4e7UCEV0j9V8Y2mseSzzr6Y36Tg7TvR5H8ayQ==
+"@visual-framework/vf-code-example@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-code-example/-/vf-code-example-1.3.0.tgz#664e8fb86366fb12515e656d2a0bd362bef8849c"
+  integrity sha512-3qTJc9gBZ6uBgzs5tr1dLrjGq7c3KYF26/URzMc2R27RRKO6BfmHggBMf8AKxA3SLq//dUvuQ0GIGv6JGODNpw==
 
 "@visual-framework/vf-collapse@0.0.2":
   version "0.0.2"
