@@ -113,7 +113,7 @@
     "gulp-util": "3.0.8",
     "html-minifier": "4.0.0",
     "list-stream": "2.0.0",
-    "luxon": "1.27.0",
+    "luxon": "1.28.0",
     "node-html-parser": "3.3.6",
     "strip-js": "1.2.0",
     "striptags": "3.2.0",
